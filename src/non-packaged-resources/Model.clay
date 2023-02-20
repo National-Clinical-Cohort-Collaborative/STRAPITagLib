@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<clay-model clay-version="1.4.2">
+    <database-model alias="" author="" begin-script="" end-script="" name="myModel3" remarks="" sql-dialect-id="jp.azzurri.clay.dialect.Postgre_7_3_Dialect" uid="34dcf4d9:12c7933ea8c:-7fe2" version="1.0">
+        <database-model-description/>
+        <schema-list>
+            <schema alias="" name="DEFAULT_SCHEMA" remarks="" uid="34dcf4d9:12c7933ea8c:-7fdf">
+                <schema-description/>
+                <domain-list/>
+                <table-list/>
+            </schema>
+            <schema alias="" name="strapi" remarks="" uid="6f3d6bb2:1866f82b77d:-7ffd">
+                <schema-description/>
+                <domain-list/>
+                <table-list>
+                    <table alias="" name="domain_teams" remarks="" uid="6f3d6bb2:1866f82b77d:-7ffc">
+                        <table-description/>
+                        <table-figure-bounds height="-1" width="-1" x="195" y="109"/>
+                        <column-list>
+                            <column alias="" auto-increment="true" column-size="0" decimal-digits="0" default-value="nextval('strapi.domain_teams_id_seq'::regclass)" mandatory="true" name="id" remarks="" uid="6f3d6bb2:1866f82b77d:-7ffa">
+                                <column-description/>
+                                <data-type jdbc-type="4" name="INT4" selected-variant-pattern="INT4">
+                                    <variant type-name-pattern="INT4"/>
+                                </data-type>
+                            </column>
+                            <column alias="" auto-increment="false" column-size="255" decimal-digits="0" default-value="" mandatory="false" name="name" remarks="" uid="6f3d6bb2:1866f82b77d:-7ff9">
+                                <column-description/>
+                                <data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+                                    <variant precision-max="2147483647" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+                                </data-type>
+                            </column>
+                            <column alias="" auto-increment="false" column-size="2147483647" decimal-digits="0" default-value="" mandatory="false" name="description" remarks="" uid="6f3d6bb2:1866f82b77d:-7ff8">
+                                <column-description/>
+                                <data-type jdbc-type="-1" literal-prefix="'" literal-suffix="'" name="TEXT" selected-variant-pattern="TEXT">
+                                    <variant type-name-pattern="TEXT"/>
+                                </data-type>
+                            </column>
+                            <column alias="" auto-increment="false" column-size="29" decimal-digits="6" default-value="" mandatory="false" name="created_at" remarks="" uid="6f3d6bb2:1866f82b77d:-7ff7">
+                                <column-description/>
+                                <data-type jdbc-type="93" name="TIMESTAMP" selected-variant-pattern="TIMESTAMP(%p)">
+                                    <variant type-name-pattern="TIMESTAMP"/>
+                                    <variant precision-max="9" precision-min="1" precision-variable="%p" type-name-pattern="TIMESTAMP(%p)"/>
+                                    <variant type-name-pattern="TIMESTAMP WITH TIME ZONE"/>
+                                    <variant precision-max="9" precision-min="1" precision-variable="%p" type-name-pattern="TIMESTAMP(%p) WITH TIME ZONE"/>
+                                    <variant precision-max="9" precision-min="1" precision-variable="%p" type-name-pattern="TIMESTAMP(%p) WITHOUT TIME ZONE"/>
+                                </data-type>
+                            </column>
+                            <column alias="" auto-increment="false" column-size="29" decimal-digits="6" default-value="" mandatory="false" name="updated_at" remarks="" uid="6f3d6bb2:1866f82b77d:-7ff6">
+                                <column-description/>
+                                <data-type jdbc-type="93" name="TIMESTAMP" selected-variant-pattern="TIMESTAMP(%p)">
+                                    <variant type-name-pattern="TIMESTAMP"/>
+                                    <variant precision-max="9" precision-min="1" precision-variable="%p" type-name-pattern="TIMESTAMP(%p)"/>
+                                    <variant type-name-pattern="TIMESTAMP WITH TIME ZONE"/>
+                                    <variant precision-max="9" precision-min="1" precision-variable="%p" type-name-pattern="TIMESTAMP(%p) WITH TIME ZONE"/>
+                                    <variant precision-max="9" precision-min="1" precision-variable="%p" type-name-pattern="TIMESTAMP(%p) WITHOUT TIME ZONE"/>
+                                </data-type>
+                            </column>
+                            <column alias="" auto-increment="false" column-size="29" decimal-digits="6" default-value="" mandatory="false" name="published_at" remarks="" uid="6f3d6bb2:1866f82b77d:-7ff5">
+                                <column-description/>
+                                <data-type jdbc-type="93" name="TIMESTAMP" selected-variant-pattern="TIMESTAMP(%p)">
+                                    <variant type-name-pattern="TIMESTAMP"/>
+                                    <variant precision-max="9" precision-min="1" precision-variable="%p" type-name-pattern="TIMESTAMP(%p)"/>
+                                    <variant type-name-pattern="TIMESTAMP WITH TIME ZONE"/>
+                                    <variant precision-max="9" precision-min="1" precision-variable="%p" type-name-pattern="TIMESTAMP(%p) WITH TIME ZONE"/>
+                                    <variant precision-max="9" precision-min="1" precision-variable="%p" type-name-pattern="TIMESTAMP(%p) WITHOUT TIME ZONE"/>
+                                </data-type>
+                            </column>
+                            <column alias="" auto-increment="false" column-size="10" decimal-digits="0" default-value="" mandatory="false" name="created_by_id" remarks="" uid="6f3d6bb2:1866f82b77d:-7ff4">
+                                <column-description/>
+                                <data-type jdbc-type="4" name="INT4" selected-variant-pattern="INT4">
+                                    <variant type-name-pattern="INT4"/>
+                                </data-type>
+                            </column>
+                            <column alias="" auto-increment="false" column-size="10" decimal-digits="0" default-value="" mandatory="false" name="updated_by_id" remarks="" uid="6f3d6bb2:1866f82b77d:-7ff3">
+                                <column-description/>
+                                <data-type jdbc-type="4" name="INT4" selected-variant-pattern="INT4">
+                                    <variant type-name-pattern="INT4"/>
+                                </data-type>
+                            </column>
+                        </column-list>
+                        <primary-key alias="" name="domain_teams_pkey" remarks="" uid="6f3d6bb2:1866f82b77d:-7ffb">
+                            <primary-key-description/>
+                            <primary-key-column name="id"/>
+                        </primary-key>
+                        <unique-key-list/>
+                        <foreign-key-list/>
+                        <index-list>
+                            <index alias="" name="domain_teams_created_by_id_fk" remarks="" uid="6f3d6bb2:1866f82b77d:-7ff2" unique="false">
+                                <index-description/>
+                                <index-column name="created_by_id" sort="ASC"/>
+                            </index>
+                            <index alias="" name="domain_teams_updated_by_id_fk" remarks="" uid="6f3d6bb2:1866f82b77d:-7ff1" unique="false">
+                                <index-description/>
+                                <index-column name="updated_by_id" sort="ASC"/>
+                            </index>
+                        </index-list>
+                    </table>
+                    <table alias="" name="landing_pages" remarks="" uid="6f3d6bb2:1866f82b77d:-7ff0">
+                        <table-description/>
+                        <table-figure-bounds height="-1" width="-1" x="703" y="72"/>
+                        <column-list>
+                            <column alias="" auto-increment="true" column-size="0" decimal-digits="0" default-value="nextval('strapi.landing_pages_id_seq'::regclass)" mandatory="true" name="id" remarks="" uid="6f3d6bb2:1866f82b77d:-7fee">
+                                <column-description/>
+                                <data-type jdbc-type="4" name="INT4" selected-variant-pattern="INT4">
+                                    <variant type-name-pattern="INT4"/>
+                                </data-type>
+                            </column>
+                            <column alias="" auto-increment="false" column-size="255" decimal-digits="0" default-value="" mandatory="false" name="welcome" remarks="" uid="6f3d6bb2:1866f82b77d:-7fed">
+                                <column-description/>
+                                <data-type jdbc-type="12" literal-prefix="'" literal-suffix="'" name="VARCHAR" selected-variant-pattern="VARCHAR(%n)">
+                                    <variant precision-max="2147483647" precision-min="1" precision-variable="%n" type-name-pattern="VARCHAR(%n)"/>
+                                </data-type>
+                            </column>
+                            <column alias="" auto-increment="false" column-size="29" decimal-digits="6" default-value="" mandatory="false" name="created_at" remarks="" uid="6f3d6bb2:1866f82b77d:-7fec">
+                                <column-description/>
+                                <data-type jdbc-type="93" name="TIMESTAMP" selected-variant-pattern="TIMESTAMP(%p)">
+                                    <variant type-name-pattern="TIMESTAMP"/>
+                                    <variant precision-max="9" precision-min="1" precision-variable="%p" type-name-pattern="TIMESTAMP(%p)"/>
+                                    <variant type-name-pattern="TIMESTAMP WITH TIME ZONE"/>
+                                    <variant precision-max="9" precision-min="1" precision-variable="%p" type-name-pattern="TIMESTAMP(%p) WITH TIME ZONE"/>
+                                    <variant precision-max="9" precision-min="1" precision-variable="%p" type-name-pattern="TIMESTAMP(%p) WITHOUT TIME ZONE"/>
+                                </data-type>
+                            </column>
+                            <column alias="" auto-increment="false" column-size="29" decimal-digits="6" default-value="" mandatory="false" name="updated_at" remarks="" uid="6f3d6bb2:1866f82b77d:-7feb">
+                                <column-description/>
+                                <data-type jdbc-type="93" name="TIMESTAMP" selected-variant-pattern="TIMESTAMP(%p)">
+                                    <variant type-name-pattern="TIMESTAMP"/>
+                                    <variant precision-max="9" precision-min="1" precision-variable="%p" type-name-pattern="TIMESTAMP(%p)"/>
+                                    <variant type-name-pattern="TIMESTAMP WITH TIME ZONE"/>
+                                    <variant precision-max="9" precision-min="1" precision-variable="%p" type-name-pattern="TIMESTAMP(%p) WITH TIME ZONE"/>
+                                    <variant precision-max="9" precision-min="1" precision-variable="%p" type-name-pattern="TIMESTAMP(%p) WITHOUT TIME ZONE"/>
+                                </data-type>
+                            </column>
+                            <column alias="" auto-increment="false" column-size="29" decimal-digits="6" default-value="" mandatory="false" name="published_at" remarks="" uid="6f3d6bb2:1866f82b77d:-7fea">
+                                <column-description/>
+                                <data-type jdbc-type="93" name="TIMESTAMP" selected-variant-pattern="TIMESTAMP(%p)">
+                                    <variant type-name-pattern="TIMESTAMP"/>
+                                    <variant precision-max="9" precision-min="1" precision-variable="%p" type-name-pattern="TIMESTAMP(%p)"/>
+                                    <variant type-name-pattern="TIMESTAMP WITH TIME ZONE"/>
+                                    <variant precision-max="9" precision-min="1" precision-variable="%p" type-name-pattern="TIMESTAMP(%p) WITH TIME ZONE"/>
+                                    <variant precision-max="9" precision-min="1" precision-variable="%p" type-name-pattern="TIMESTAMP(%p) WITHOUT TIME ZONE"/>
+                                </data-type>
+                            </column>
+                            <column alias="" auto-increment="false" column-size="10" decimal-digits="0" default-value="" mandatory="false" name="created_by_id" remarks="" uid="6f3d6bb2:1866f82b77d:-7fe9">
+                                <column-description/>
+                                <data-type jdbc-type="4" name="INT4" selected-variant-pattern="INT4">
+                                    <variant type-name-pattern="INT4"/>
+                                </data-type>
+                            </column>
+                            <column alias="" auto-increment="false" column-size="10" decimal-digits="0" default-value="" mandatory="false" name="updated_by_id" remarks="" uid="6f3d6bb2:1866f82b77d:-7fe8">
+                                <column-description/>
+                                <data-type jdbc-type="4" name="INT4" selected-variant-pattern="INT4">
+                                    <variant type-name-pattern="INT4"/>
+                                </data-type>
+                            </column>
+                        </column-list>
+                        <primary-key alias="" name="landing_pages_pkey" remarks="" uid="6f3d6bb2:1866f82b77d:-7fef">
+                            <primary-key-description/>
+                            <primary-key-column name="id"/>
+                        </primary-key>
+                        <unique-key-list/>
+                        <foreign-key-list/>
+                        <index-list>
+                            <index alias="" name="landing_pages_created_by_id_fk" remarks="" uid="6f3d6bb2:1866f82b77d:-7fe7" unique="false">
+                                <index-description/>
+                                <index-column name="created_by_id" sort="ASC"/>
+                            </index>
+                            <index alias="" name="landing_pages_updated_by_id_fk" remarks="" uid="6f3d6bb2:1866f82b77d:-7fe6" unique="false">
+                                <index-description/>
+                                <index-column name="updated_by_id" sort="ASC"/>
+                            </index>
+                        </index-list>
+                    </table>
+                    <table alias="" name="landing_pages_domain_teams_links" remarks="" uid="6f3d6bb2:1866f82b77d:-7fe5">
+                        <table-description/>
+                        <table-figure-bounds height="-1" width="-1" x="458" y="346"/>
+                        <column-list>
+                            <column alias="" auto-increment="true" column-size="0" decimal-digits="0" default-value="nextval('strapi.landing_pages_domain_teams_links_id_seq'::regclass)" mandatory="true" name="id" remarks="" uid="6f3d6bb2:1866f82b77d:-7fe3">
+                                <column-description/>
+                                <data-type jdbc-type="4" name="INT4" selected-variant-pattern="INT4">
+                                    <variant type-name-pattern="INT4"/>
+                                </data-type>
+                            </column>
+                            <column alias="" auto-increment="false" column-size="10" decimal-digits="0" default-value="" mandatory="false" name="landing_page_id" remarks="" uid="6f3d6bb2:1866f82b77d:-7fe2">
+                                <column-description/>
+                                <data-type jdbc-type="4" name="INT4" selected-variant-pattern="INT4">
+                                    <variant type-name-pattern="INT4"/>
+                                </data-type>
+                            </column>
+                            <column alias="" auto-increment="false" column-size="10" decimal-digits="0" default-value="" mandatory="false" name="domain_team_id" remarks="" uid="6f3d6bb2:1866f82b77d:-7fe1">
+                                <column-description/>
+                                <data-type jdbc-type="4" name="INT4" selected-variant-pattern="INT4">
+                                    <variant type-name-pattern="INT4"/>
+                                </data-type>
+                            </column>
+                            <column alias="" auto-increment="false" column-size="17" decimal-digits="17" default-value="" mandatory="false" name="domain_team_order" remarks="" uid="6f3d6bb2:1866f82b77d:-7fe0">
+                                <column-description/>
+                                <data-type jdbc-type="8" name="DOUBLE PRECISION" selected-variant-pattern="DOUBLE PRECISION">
+                                    <variant type-name-pattern="DOUBLE PRECISION"/>
+                                </data-type>
+                            </column>
+                        </column-list>
+                        <primary-key alias="" name="landing_pages_domain_teams_links_pkey" remarks="" uid="6f3d6bb2:1866f82b77d:-7fe4">
+                            <primary-key-description/>
+                            <primary-key-column name="id"/>
+                        </primary-key>
+                        <unique-key-list/>
+                        <foreign-key-list>
+                            <foreign-key alias="" name="landing_pages_domain_teams_links_inv_fk" on-delete="CASCADE" on-update="NO ACTION" referenced-key="domain_teams_pkey" referenced-table="domain_teams" referenced-table-schema="strapi" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="" uid="6f3d6bb2:1866f82b77d:-7fdb">
+                                <foreign-key-description/>
+                                <foreign-key-figure>
+                                    <fk-fig-bendpoint-list/>
+                                </foreign-key-figure>
+                                <foreign-key-column column-name="domain_team_id" referenced-key-column-name="id"/>
+                            </foreign-key>
+                            <foreign-key alias="" name="landing_pages_domain_teams_links_fk" on-delete="CASCADE" on-update="NO ACTION" referenced-key="landing_pages_pkey" referenced-table="landing_pages" referenced-table-schema="strapi" remarks="" source-entity-role="" source-multiplicity="0..*" source-relationship-type="" target-entity-role="" target-multiplicity="1" target-relationship-type="" uid="6f3d6bb2:1866f82b77d:-7fda">
+                                <foreign-key-description/>
+                                <foreign-key-figure>
+                                    <fk-fig-bendpoint-list/>
+                                </foreign-key-figure>
+                                <foreign-key-column column-name="landing_page_id" referenced-key-column-name="id"/>
+                            </foreign-key>
+                        </foreign-key-list>
+                        <index-list>
+                            <index alias="" name="landing_pages_domain_teams_links_unique" remarks="" uid="6f3d6bb2:1866f82b77d:-7fdf" unique="true">
+                                <index-description/>
+                                <index-column name="landing_page_id" sort="ASC"/>
+                                <index-column name="domain_team_id" sort="ASC"/>
+                            </index>
+                            <index alias="" name="landing_pages_domain_teams_links_fk" remarks="" uid="6f3d6bb2:1866f82b77d:-7fde" unique="false">
+                                <index-description/>
+                                <index-column name="landing_page_id" sort="ASC"/>
+                            </index>
+                            <index alias="" name="landing_pages_domain_teams_links_inv_fk" remarks="" uid="6f3d6bb2:1866f82b77d:-7fdd" unique="false">
+                                <index-description/>
+                                <index-column name="domain_team_id" sort="ASC"/>
+                            </index>
+                            <index alias="" name="landing_pages_domain_teams_links_order_fk" remarks="" uid="6f3d6bb2:1866f82b77d:-7fdc" unique="false">
+                                <index-description/>
+                                <index-column name="domain_team_order" sort="ASC"/>
+                            </index>
+                        </index-list>
+                    </table>
+                </table-list>
+            </schema>
+        </schema-list>
+    </database-model>
+</clay-model>
