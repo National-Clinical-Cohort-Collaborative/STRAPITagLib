@@ -120,6 +120,16 @@
 							<value>tags</value>
 						</property>
 						<property>
+							<name>suppression list</name>
+							<value>
+								admin_permissions admin_permissions_role_links admin_roles admin_users admin_users_roles_links
+								i18n_locale
+								strapi_api_token_permissions strapi_api_token_permissions_token_links strapi_api_tokens strapi_core_store_settings
+								strapi_database_schema strapi_ee_store_settings strapi_migrations strapi_webhooks
+								up_permissions up_permissions_role_links up_roles up_users up_users_role_links upload_folders upload_folders_parent_links
+							</value>
+						</property>
+						<property>
 							<name>clay.file</name>
 							<value>src/non-packaged-resources/Model.clay</value>
 						</property>

@@ -218,6 +218,570 @@
 	</tag>
 
 	<tag>
+		<name>foreachFiles</name>
+		<tag-class>org.cd2h.STRAPITagLib.files.FilesIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>files</name>
+		<tag-class>org.cd2h.STRAPITagLib.files.Files</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteFiles</name>
+		<tag-class>org.cd2h.STRAPITagLib.files.FilesDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesID</name>
+		<tag-class>org.cd2h.STRAPITagLib.files.FilesID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesName</name>
+		<tag-class>org.cd2h.STRAPITagLib.files.FilesName</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>name</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesAlternativeText</name>
+		<tag-class>org.cd2h.STRAPITagLib.files.FilesAlternativeText</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>alternativeText</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesCaption</name>
+		<tag-class>org.cd2h.STRAPITagLib.files.FilesCaption</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>caption</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesWidth</name>
+		<tag-class>org.cd2h.STRAPITagLib.files.FilesWidth</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>width</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesHeight</name>
+		<tag-class>org.cd2h.STRAPITagLib.files.FilesHeight</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>height</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesFormats</name>
+		<tag-class>org.cd2h.STRAPITagLib.files.FilesFormats</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>formats</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesHash</name>
+		<tag-class>org.cd2h.STRAPITagLib.files.FilesHash</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>hash</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesExt</name>
+		<tag-class>org.cd2h.STRAPITagLib.files.FilesExt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ext</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesMime</name>
+		<tag-class>org.cd2h.STRAPITagLib.files.FilesMime</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>mime</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesSize</name>
+		<tag-class>org.cd2h.STRAPITagLib.files.FilesSize</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>size</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesUrl</name>
+		<tag-class>org.cd2h.STRAPITagLib.files.FilesUrl</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>url</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesPreviewUrl</name>
+		<tag-class>org.cd2h.STRAPITagLib.files.FilesPreviewUrl</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>previewUrl</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesProvider</name>
+		<tag-class>org.cd2h.STRAPITagLib.files.FilesProvider</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>provider</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesProviderMetadata</name>
+		<tag-class>org.cd2h.STRAPITagLib.files.FilesProviderMetadata</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>providerMetadata</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesFolderPath</name>
+		<tag-class>org.cd2h.STRAPITagLib.files.FilesFolderPath</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>folderPath</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.files.FilesCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.files.FilesCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.files.FilesUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.files.FilesUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.files.FilesCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.files.FilesUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachFilesFolderLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.filesFolderLinks.FilesFolderLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesFolderLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.filesFolderLinks.FilesFolderLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteFilesFolderLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.filesFolderLinks.FilesFolderLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesFolderLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.filesFolderLinks.FilesFolderLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesFolderLinksFileId</name>
+		<tag-class>org.cd2h.STRAPITagLib.filesFolderLinks.FilesFolderLinksFileId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>fileId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesFolderLinksFolderId</name>
+		<tag-class>org.cd2h.STRAPITagLib.filesFolderLinks.FilesFolderLinksFolderId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>folderId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesFolderLinksFileOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.filesFolderLinks.FilesFolderLinksFileOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>fileOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachFilesRelatedMorphs</name>
+		<tag-class>org.cd2h.STRAPITagLib.filesRelatedMorphs.FilesRelatedMorphsIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesRelatedMorphs</name>
+		<tag-class>org.cd2h.STRAPITagLib.filesRelatedMorphs.FilesRelatedMorphs</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteFilesRelatedMorphs</name>
+		<tag-class>org.cd2h.STRAPITagLib.filesRelatedMorphs.FilesRelatedMorphsDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesRelatedMorphsID</name>
+		<tag-class>org.cd2h.STRAPITagLib.filesRelatedMorphs.FilesRelatedMorphsID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesRelatedMorphsFileId</name>
+		<tag-class>org.cd2h.STRAPITagLib.filesRelatedMorphs.FilesRelatedMorphsFileId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>fileId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesRelatedMorphsRelatedId</name>
+		<tag-class>org.cd2h.STRAPITagLib.filesRelatedMorphs.FilesRelatedMorphsRelatedId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>relatedId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesRelatedMorphsRelatedType</name>
+		<tag-class>org.cd2h.STRAPITagLib.filesRelatedMorphs.FilesRelatedMorphsRelatedType</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>relatedType</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesRelatedMorphsField</name>
+		<tag-class>org.cd2h.STRAPITagLib.filesRelatedMorphs.FilesRelatedMorphsField</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>field</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>filesRelatedMorphsOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.filesRelatedMorphs.FilesRelatedMorphsOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>order</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
 		<name>foreachLandingPages</name>
 		<tag-class>org.cd2h.STRAPITagLib.landingPages.LandingPagesIterator</tag-class>
 		<body-content>JSP</body-content>
@@ -518,6 +1082,800 @@
 		</attribute>
 	</tag>
 
+	<tag>
+		<name>foreachNavBars</name>
+		<tag-class>org.cd2h.STRAPITagLib.navBars.NavBarsIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navBars</name>
+		<tag-class>org.cd2h.STRAPITagLib.navBars.NavBars</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteNavBars</name>
+		<tag-class>org.cd2h.STRAPITagLib.navBars.NavBarsDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navBarsID</name>
+		<tag-class>org.cd2h.STRAPITagLib.navBars.NavBarsID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navBarsCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.navBars.NavBarsCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navBarsCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.navBars.NavBarsCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navBarsUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.navBars.NavBarsUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navBarsUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.navBars.NavBarsUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navBarsPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.navBars.NavBarsPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navBarsPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.navBars.NavBarsPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navBarsCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.navBars.NavBarsCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navBarsUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.navBars.NavBarsUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachNavColumns</name>
+		<tag-class>org.cd2h.STRAPITagLib.navColumns.NavColumnsIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navColumns</name>
+		<tag-class>org.cd2h.STRAPITagLib.navColumns.NavColumns</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteNavColumns</name>
+		<tag-class>org.cd2h.STRAPITagLib.navColumns.NavColumnsDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navColumnsID</name>
+		<tag-class>org.cd2h.STRAPITagLib.navColumns.NavColumnsID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navColumnsLabel</name>
+		<tag-class>org.cd2h.STRAPITagLib.navColumns.NavColumnsLabel</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>label</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navColumnsCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.navColumns.NavColumnsCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navColumnsCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.navColumns.NavColumnsCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navColumnsUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.navColumns.NavColumnsUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navColumnsUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.navColumns.NavColumnsUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navColumnsPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.navColumns.NavColumnsPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navColumnsPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.navColumns.NavColumnsPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navColumnsCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.navColumns.NavColumnsCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navColumnsUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.navColumns.NavColumnsUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachNavColumnsNavBarLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.navColumnsNavBarLinks.NavColumnsNavBarLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useNavBars</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useNavColumns</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>navColumnsNavBarLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.navColumnsNavBarLinks.NavColumnsNavBarLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteNavColumnsNavBarLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.navColumnsNavBarLinks.NavColumnsNavBarLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navColumnsNavBarLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.navColumnsNavBarLinks.NavColumnsNavBarLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navColumnsNavBarLinksNavColumnId</name>
+		<tag-class>org.cd2h.STRAPITagLib.navColumnsNavBarLinks.NavColumnsNavBarLinksNavColumnId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>navColumnId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navColumnsNavBarLinksNavBarId</name>
+		<tag-class>org.cd2h.STRAPITagLib.navColumnsNavBarLinks.NavColumnsNavBarLinksNavBarId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>navBarId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navColumnsNavBarLinksNavColumnOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.navColumnsNavBarLinks.NavColumnsNavBarLinksNavColumnOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>navColumnOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachNavItems</name>
+		<tag-class>org.cd2h.STRAPITagLib.navItems.NavItemsIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navItems</name>
+		<tag-class>org.cd2h.STRAPITagLib.navItems.NavItems</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteNavItems</name>
+		<tag-class>org.cd2h.STRAPITagLib.navItems.NavItemsDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navItemsID</name>
+		<tag-class>org.cd2h.STRAPITagLib.navItems.NavItemsID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navItemsLabel</name>
+		<tag-class>org.cd2h.STRAPITagLib.navItems.NavItemsLabel</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>label</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navItemsUrl</name>
+		<tag-class>org.cd2h.STRAPITagLib.navItems.NavItemsUrl</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>url</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navItemsCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.navItems.NavItemsCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navItemsCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.navItems.NavItemsCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navItemsUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.navItems.NavItemsUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navItemsUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.navItems.NavItemsUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navItemsPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.navItems.NavItemsPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navItemsPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.navItems.NavItemsPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navItemsCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.navItems.NavItemsCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navItemsUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.navItems.NavItemsUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navItemsPageId</name>
+		<tag-class>org.cd2h.STRAPITagLib.navItems.NavItemsPageId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>pageId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachNavItemsNavColumnLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.navItemsNavColumnLinks.NavItemsNavColumnLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useNavColumns</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useNavItems</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>navItemsNavColumnLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.navItemsNavColumnLinks.NavItemsNavColumnLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteNavItemsNavColumnLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.navItemsNavColumnLinks.NavItemsNavColumnLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navItemsNavColumnLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.navItemsNavColumnLinks.NavItemsNavColumnLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navItemsNavColumnLinksNavItemId</name>
+		<tag-class>org.cd2h.STRAPITagLib.navItemsNavColumnLinks.NavItemsNavColumnLinksNavItemId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>navItemId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navItemsNavColumnLinksNavColumnId</name>
+		<tag-class>org.cd2h.STRAPITagLib.navItemsNavColumnLinks.NavItemsNavColumnLinksNavColumnId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>navColumnId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navItemsNavColumnLinksNavItemOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.navItemsNavColumnLinks.NavItemsNavColumnLinksNavItemOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>navItemOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
 	<function>
 		<name>domainTeamsCount</name>
 		<function-class>org.cd2h.STRAPITagLib.domainTeams.DomainTeamsIterator</function-class>
@@ -528,6 +1886,54 @@
 		<name>domainTeamsExists</name>
 		<function-class>org.cd2h.STRAPITagLib.domainTeams.DomainTeamsIterator</function-class>
 		<function-signature>java.lang.String domainTeamsExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>filesCount</name>
+		<function-class>org.cd2h.STRAPITagLib.files.FilesIterator</function-class>
+		<function-signature>java.lang.String filesCount()</function-signature>
+	</function>
+
+	<function>
+		<name>filesExists</name>
+		<function-class>org.cd2h.STRAPITagLib.files.FilesIterator</function-class>
+		<function-signature>java.lang.String filesExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>filesFolderLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.filesFolderLinks.FilesFolderLinksIterator</function-class>
+		<function-signature>java.lang.String filesFolderLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>filesFolderLinksCountByFiles</name>
+		<function-class>org.cd2h.STRAPITagLib.filesFolderLinks.FilesFolderLinksIterator</function-class>
+		<function-signature>java.lang.String filesFolderLinksCountByFiles(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>filesHasFilesFolderLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.filesFolderLinks.FilesFolderLinksIterator</function-class>
+		<function-signature>java.lang.Boolean filesHasFilesFolderLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>filesRelatedMorphsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.filesRelatedMorphs.FilesRelatedMorphsIterator</function-class>
+		<function-signature>java.lang.String filesRelatedMorphsExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>filesRelatedMorphsCountByFiles</name>
+		<function-class>org.cd2h.STRAPITagLib.filesRelatedMorphs.FilesRelatedMorphsIterator</function-class>
+		<function-signature>java.lang.String filesRelatedMorphsCountByFiles(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>filesHasFilesRelatedMorphs</name>
+		<function-class>org.cd2h.STRAPITagLib.filesRelatedMorphs.FilesRelatedMorphsIterator</function-class>
+		<function-signature>java.lang.Boolean filesHasFilesRelatedMorphs(java.lang.String)</function-signature>
 	</function>
 
 	<function>
@@ -576,5 +1982,113 @@
 		<name>domainTeamsLandingPagesExists</name>
 		<function-class>org.cd2h.STRAPITagLib.landingPagesDomainTeamsLinks.LandingPagesDomainTeamsLinksIterator</function-class>
 		<function-signature>java.lang.Boolean domainTeamsLandingPagesExists(java.lang.String, java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>navBarsCount</name>
+		<function-class>org.cd2h.STRAPITagLib.navBars.NavBarsIterator</function-class>
+		<function-signature>java.lang.String navBarsCount()</function-signature>
+	</function>
+
+	<function>
+		<name>navBarsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.navBars.NavBarsIterator</function-class>
+		<function-signature>java.lang.String navBarsExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>navColumnsCount</name>
+		<function-class>org.cd2h.STRAPITagLib.navColumns.NavColumnsIterator</function-class>
+		<function-signature>java.lang.String navColumnsCount()</function-signature>
+	</function>
+
+	<function>
+		<name>navColumnsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.navColumns.NavColumnsIterator</function-class>
+		<function-signature>java.lang.String navColumnsExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>navColumnsNavBarLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.navColumnsNavBarLinks.NavColumnsNavBarLinksIterator</function-class>
+		<function-signature>java.lang.String navColumnsNavBarLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>navColumnsNavBarLinksCountByNavBars</name>
+		<function-class>org.cd2h.STRAPITagLib.navColumnsNavBarLinks.NavColumnsNavBarLinksIterator</function-class>
+		<function-signature>java.lang.String navColumnsNavBarLinksCountByNavBars(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>navBarsHasNavColumnsNavBarLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.navColumnsNavBarLinks.NavColumnsNavBarLinksIterator</function-class>
+		<function-signature>java.lang.Boolean navBarsHasNavColumnsNavBarLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>navColumnsNavBarLinksCountByNavColumns</name>
+		<function-class>org.cd2h.STRAPITagLib.navColumnsNavBarLinks.NavColumnsNavBarLinksIterator</function-class>
+		<function-signature>java.lang.String navColumnsNavBarLinksCountByNavColumns(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>navColumnsHasNavColumnsNavBarLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.navColumnsNavBarLinks.NavColumnsNavBarLinksIterator</function-class>
+		<function-signature>java.lang.Boolean navColumnsHasNavColumnsNavBarLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>navBarsNavColumnsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.navColumnsNavBarLinks.NavColumnsNavBarLinksIterator</function-class>
+		<function-signature>java.lang.Boolean navBarsNavColumnsExists(java.lang.String, java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>navItemsCount</name>
+		<function-class>org.cd2h.STRAPITagLib.navItems.NavItemsIterator</function-class>
+		<function-signature>java.lang.String navItemsCount()</function-signature>
+	</function>
+
+	<function>
+		<name>navItemsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.navItems.NavItemsIterator</function-class>
+		<function-signature>java.lang.String navItemsExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>navItemsNavColumnLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.navItemsNavColumnLinks.NavItemsNavColumnLinksIterator</function-class>
+		<function-signature>java.lang.String navItemsNavColumnLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>navItemsNavColumnLinksCountByNavColumns</name>
+		<function-class>org.cd2h.STRAPITagLib.navItemsNavColumnLinks.NavItemsNavColumnLinksIterator</function-class>
+		<function-signature>java.lang.String navItemsNavColumnLinksCountByNavColumns(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>navColumnsHasNavItemsNavColumnLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.navItemsNavColumnLinks.NavItemsNavColumnLinksIterator</function-class>
+		<function-signature>java.lang.Boolean navColumnsHasNavItemsNavColumnLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>navItemsNavColumnLinksCountByNavItems</name>
+		<function-class>org.cd2h.STRAPITagLib.navItemsNavColumnLinks.NavItemsNavColumnLinksIterator</function-class>
+		<function-signature>java.lang.String navItemsNavColumnLinksCountByNavItems(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>navItemsHasNavItemsNavColumnLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.navItemsNavColumnLinks.NavItemsNavColumnLinksIterator</function-class>
+		<function-signature>java.lang.Boolean navItemsHasNavItemsNavColumnLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>navColumnsNavItemsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.navItemsNavColumnLinks.NavItemsNavColumnLinksIterator</function-class>
+		<function-signature>java.lang.Boolean navColumnsNavItemsExists(java.lang.String, java.lang.String)</function-signature>
 	</function>
 </taglib>
