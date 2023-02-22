@@ -1,12 +1,13 @@
-<%@ include file="../_include.jsp" %>
+<%@ include file="../../_include.jsp"  %>
+
         <html>
-            <jsp:include page="../head.jsp" />
+            <jsp:include page="../../head.jsp" />
             <body>
                 <div class="container-fluid">
-                    <jsp:include page="../header.jsp" />
+                    <jsp:include page="../../header.jsp" />
                     <div class="row flex-nowrap">
                         <div class="col-xs-3">
-                            <jsp:include page="../menu.jsp" />
+                            <jsp:include page="../../menu.jsp" />
                         </div>
                         <div class="col-xs-8">
 <fmt:parseNumber var="ID" value="${param.ID}" />
@@ -81,6 +82,6 @@
                 </div>
             </div>
         </div>
-        <jsp:include page="../footer.jsp" />
+        <jsp:include page="../../footer.jsp" />
     </body>
 </html>

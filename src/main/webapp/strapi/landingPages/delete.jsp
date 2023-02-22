@@ -1,4 +1,4 @@
-<%@ include file="../_include.jsp"  %>
+<%@ include file="../../_include.jsp"  %>
 
 <c:if test="${ empty param.ID }">
 	<c:redirect url="list.jsp"/>
