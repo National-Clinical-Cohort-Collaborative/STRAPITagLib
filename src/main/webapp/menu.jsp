@@ -5,6 +5,7 @@
     <li><a href="<util:applicationRoot/>/files/list.jsp" />Files list</a></li>
     <li><a href="<util:applicationRoot/>/filesFolderLinks/list.jsp" />FilesFolderLinks list</a></li>
     <li><a href="<util:applicationRoot/>/filesRelatedMorphs/list.jsp" />FilesRelatedMorphs list</a></li>
+    <li><a href="<util:applicationRoot/>/footers/list.jsp" />Footers list</a></li>
     <li><a href="<util:applicationRoot/>/landingPages/list.jsp" />LandingPages list</a></li>
     <li><a href="<util:applicationRoot/>/landingPagesDomainTeamsLinks/list.jsp" />LandingPagesDomainTeamsLinks list</a></li>
     <li><a href="<util:applicationRoot/>/navBars/list.jsp" />NavBars list</a></li>

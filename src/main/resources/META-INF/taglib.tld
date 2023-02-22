@@ -782,6 +782,222 @@
 	</tag>
 
 	<tag>
+		<name>foreachFooters</name>
+		<tag-class>org.cd2h.STRAPITagLib.footers.FootersIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>footers</name>
+		<tag-class>org.cd2h.STRAPITagLib.footers.Footers</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteFooters</name>
+		<tag-class>org.cd2h.STRAPITagLib.footers.FootersDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>footersID</name>
+		<tag-class>org.cd2h.STRAPITagLib.footers.FootersID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>footersGrantCite</name>
+		<tag-class>org.cd2h.STRAPITagLib.footers.FootersGrantCite</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>grantCite</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>footersCredits</name>
+		<tag-class>org.cd2h.STRAPITagLib.footers.FootersCredits</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>credits</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>footersSignup</name>
+		<tag-class>org.cd2h.STRAPITagLib.footers.FootersSignup</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>signup</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>footersSocial</name>
+		<tag-class>org.cd2h.STRAPITagLib.footers.FootersSocial</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>social</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>footersCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.footers.FootersCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>footersCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.footers.FootersCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>footersUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.footers.FootersUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>footersUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.footers.FootersUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>footersPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.footers.FootersPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>footersPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.footers.FootersPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>footersCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.footers.FootersCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>footersUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.footers.FootersUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
 		<name>foreachLandingPages</name>
 		<tag-class>org.cd2h.STRAPITagLib.landingPages.LandingPagesIterator</tag-class>
 		<body-content>JSP</body-content>
@@ -1934,6 +2150,18 @@
 		<name>filesHasFilesRelatedMorphs</name>
 		<function-class>org.cd2h.STRAPITagLib.filesRelatedMorphs.FilesRelatedMorphsIterator</function-class>
 		<function-signature>java.lang.Boolean filesHasFilesRelatedMorphs(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>footersCount</name>
+		<function-class>org.cd2h.STRAPITagLib.footers.FootersIterator</function-class>
+		<function-signature>java.lang.String footersCount()</function-signature>
+	</function>
+
+	<function>
+		<name>footersExists</name>
+		<function-class>org.cd2h.STRAPITagLib.footers.FootersIterator</function-class>
+		<function-signature>java.lang.String footersExists(java.lang.String)</function-signature>
 	</function>
 
 	<function>
