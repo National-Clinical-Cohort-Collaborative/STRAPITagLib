@@ -21,6 +21,7 @@
 									<th>PublishedAt</th>
 									<th>CreatedById</th>
 									<th>UpdatedById</th>
+									<th>Name</th>
 									<th></th>
 								</tr>
 							</thead>
@@ -34,6 +35,7 @@
 											<td><strapi:navBarsPublishedAt /></td>
 											<td><strapi:navBarsCreatedById /></td>
 											<td><strapi:navBarsUpdatedById /></td>
+											<td><strapi:navBarsName /></td>
 											<td><a href="../navBars/edit.jsp?ID=<strapi:navBarsID />">edit</a></td>
 											<td><a href="../navBars/delete.jsp?ID=<strapi:navBarsID />">delete</a></td>
 										</tr>
@@ -57,6 +59,7 @@
 		<strapi:navBarsPublishedAt />
 		<strapi:navBarsCreatedById />
 		<strapi:navBarsUpdatedById />
+		<strapi:navBarsName />
 			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:navBars>
 			</strapi:foreachNavBars>
                 </div>

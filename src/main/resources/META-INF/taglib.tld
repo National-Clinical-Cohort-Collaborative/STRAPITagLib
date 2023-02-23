@@ -1467,6 +1467,18 @@
 	</tag>
 
 	<tag>
+		<name>navBarsName</name>
+		<tag-class>org.cd2h.STRAPITagLib.navBars.NavBarsName</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>name</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
 		<name>foreachNavColumns</name>
 		<tag-class>org.cd2h.STRAPITagLib.navColumns.NavColumnsIterator</tag-class>
 		<body-content>JSP</body-content>

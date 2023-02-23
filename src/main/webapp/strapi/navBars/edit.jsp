@@ -38,6 +38,10 @@
 											<input type="text" id="updatedById" name="updatedById" size="40" value="<strapi:navBarsUpdatedById />">
 											<br>
 
+											<label for="name">Name</label>
+											<input type="text" id="name" name="name" size="40" value="<strapi:navBarsName />">
+											<br>
+
 											<input type="submit" name="submit" value="Save">
 											<input type="submit" name="submit" value="Cancel">
 											<input type="hidden" name="ID" value="${param.ID}">
@@ -64,6 +68,7 @@
 			<strapi:navBarsPublishedAt publishedAt = "${param.publishedAt}" />
 			<strapi:navBarsCreatedById createdById = "${param.createdById}" />
 			<strapi:navBarsUpdatedById updatedById = "${param.updatedById}" />
+			<strapi:navBarsName name = "${param.name}" />
 		</strapi:navBars>
 		<c:redirect url="list.jsp" />
 	</c:when>

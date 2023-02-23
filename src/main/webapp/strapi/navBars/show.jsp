@@ -21,6 +21,7 @@
 			<th>PublishedAt</th>
 			<th>CreatedById</th>
 			<th>UpdatedById</th>
+			<th>Name</th>
 			</tr>
 			<tr>
 				<td><a href="edit.jsp?ID=<strapi:navBarsID />"><strapi:navBarsID /></a></td>
@@ -29,6 +30,7 @@
 				<td><strapi:navBarsPublishedAt /></td>
 				<td><strapi:navBarsCreatedById /></td>
 				<td><strapi:navBarsUpdatedById /></td>
+				<td><strapi:navBarsName /></td>
 			</tr>
 		</table>
 

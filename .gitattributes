@@ -111,6 +111,7 @@ src/main/java/org/cd2h/STRAPITagLib/navBars/NavBarsCreatedById.java -text
 src/main/java/org/cd2h/STRAPITagLib/navBars/NavBarsDeleter.java -text
 src/main/java/org/cd2h/STRAPITagLib/navBars/NavBarsID.java -text
 src/main/java/org/cd2h/STRAPITagLib/navBars/NavBarsIterator.java -text
+src/main/java/org/cd2h/STRAPITagLib/navBars/NavBarsName.java -text
 src/main/java/org/cd2h/STRAPITagLib/navBars/NavBarsPublishedAt.java -text
 src/main/java/org/cd2h/STRAPITagLib/navBars/NavBarsPublishedAtToNow.java -text
 src/main/java/org/cd2h/STRAPITagLib/navBars/NavBarsUpdatedAt.java -text

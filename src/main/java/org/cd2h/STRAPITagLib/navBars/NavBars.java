@@ -34,6 +34,7 @@ public class NavBars extends STRAPITagLibTagSupport {
 	Timestamp publishedAt = null;
 	int createdById = 0;
 	int updatedById = 0;
+	String name = null;
 
 	private String var = null;
 
@@ -57,7 +58,7 @@ public class NavBars extends STRAPITagLibTagSupport {
 			} else {
 				// an iterator or ID was provided as an attribute - we need to load a NavBars from the database
 				boolean found = false;
-				PreparedStatement stmt = getConnection().prepareStatement("select created_at,updated_at,published_at,created_by_id,updated_by_id from strapi.nav_bars where id = ?");
+				PreparedStatement stmt = getConnection().prepareStatement("select created_at,updated_at,published_at,created_by_id,updated_by_id,name from strapi.nav_bars where id = ?");
 				stmt.setInt(1,ID);
 				ResultSet rs = stmt.executeQuery();
 				while (rs.next()) {
@@ -71,6 +72,8 @@ public class NavBars extends STRAPITagLibTagSupport {
 						createdById = rs.getInt(4);
 					if (updatedById == 0)
 						updatedById = rs.getInt(5);
+					if (name == null)
+						name = rs.getString(6);
 					found = true;
 				}
 				stmt.close();
@@ -149,13 +152,14 @@ public class NavBars extends STRAPITagLibTagSupport {
 				}
 			}
 			if (commitNeeded) {
-				PreparedStatement stmt = getConnection().prepareStatement("update strapi.nav_bars set created_at = ?, updated_at = ?, published_at = ?, created_by_id = ?, updated_by_id = ? where id = ? ");
+				PreparedStatement stmt = getConnection().prepareStatement("update strapi.nav_bars set created_at = ?, updated_at = ?, published_at = ?, created_by_id = ?, updated_by_id = ?, name = ? where id = ? ");
 				stmt.setTimestamp( 1, createdAt );
 				stmt.setTimestamp( 2, updatedAt );
 				stmt.setTimestamp( 3, publishedAt );
 				stmt.setInt( 4, createdById );
 				stmt.setInt( 5, updatedById );
-				stmt.setInt(6,ID);
+				stmt.setString( 6, name );
+				stmt.setInt(7,ID);
 				stmt.executeUpdate();
 				stmt.close();
 			}
@@ -188,12 +192,16 @@ public class NavBars extends STRAPITagLibTagSupport {
 			log.debug("generating new NavBars " + ID);
 		}
 
-		PreparedStatement stmt = getConnection().prepareStatement("insert into strapi.nav_bars(created_at,updated_at,published_at,created_by_id,updated_by_id) values (?,?,?,?,?)", java.sql.Statement.RETURN_GENERATED_KEYS);
+		if (name == null){
+			name = "";
+		}
+		PreparedStatement stmt = getConnection().prepareStatement("insert into strapi.nav_bars(created_at,updated_at,published_at,created_by_id,updated_by_id,name) values (?,?,?,?,?,?)", java.sql.Statement.RETURN_GENERATED_KEYS);
 		stmt.setTimestamp(1,createdAt);
 		stmt.setTimestamp(2,updatedAt);
 		stmt.setTimestamp(3,publishedAt);
 		stmt.setInt(4,createdById);
 		stmt.setInt(5,updatedById);
+		stmt.setString(6,name);
 		stmt.executeUpdate();
 
 		// snag the new auto-increment value
@@ -301,6 +309,22 @@ public class NavBars extends STRAPITagLibTagSupport {
 		return updatedById;
 	}
 
+	public String getName () {
+		if (commitNeeded)
+			return "";
+		else
+			return name;
+	}
+
+	public void setName (String name) {
+		this.name = name;
+		commitNeeded = true;
+	}
+
+	public String getActualName () {
+		return name;
+	}
+
 	public String getVar () {
 		return var;
 	}
@@ -361,6 +385,14 @@ public class NavBars extends STRAPITagLibTagSupport {
 		}
 	}
 
+	public static String nameValue() throws JspException {
+		try {
+			return currentInstance.getName();
+		} catch (Exception e) {
+			 throw new JspTagException("Error in tag function nameValue()");
+		}
+	}
+
 	private void clearServiceState () {
 		ID = 0;
 		createdAt = null;
@@ -368,6 +400,7 @@ public class NavBars extends STRAPITagLibTagSupport {
 		publishedAt = null;
 		createdById = 0;
 		updatedById = 0;
+		name = null;
 		newRecord = false;
 		commitNeeded = false;
 		parentEntities = new Vector<STRAPITagLibTagSupport>();
