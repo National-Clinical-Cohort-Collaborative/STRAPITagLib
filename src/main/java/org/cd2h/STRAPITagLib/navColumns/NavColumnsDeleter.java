@@ -24,6 +24,7 @@ public class NavColumnsDeleter extends STRAPITagLibBodyTagSupport {
     Timestamp publishedAt = null;
     int createdById = 0;
     int updatedById = 0;
+    String url = null;
 	Vector<STRAPITagLibTagSupport> parentEntities = new Vector<STRAPITagLibTagSupport>();
 
 	private static final Logger log = LogManager.getLogger(NavColumnsDeleter.class);

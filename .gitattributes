@@ -130,6 +130,7 @@ src/main/java/org/cd2h/STRAPITagLib/navColumns/NavColumnsPublishedAtToNow.java -
 src/main/java/org/cd2h/STRAPITagLib/navColumns/NavColumnsUpdatedAt.java -text
 src/main/java/org/cd2h/STRAPITagLib/navColumns/NavColumnsUpdatedAtToNow.java -text
 src/main/java/org/cd2h/STRAPITagLib/navColumns/NavColumnsUpdatedById.java -text
+src/main/java/org/cd2h/STRAPITagLib/navColumns/NavColumnsUrl.java -text
 src/main/java/org/cd2h/STRAPITagLib/navColumnsNavBarLinks/NavColumnsNavBarLinks.java -text
 src/main/java/org/cd2h/STRAPITagLib/navColumnsNavBarLinks/NavColumnsNavBarLinksDeleter.java -text
 src/main/java/org/cd2h/STRAPITagLib/navColumnsNavBarLinks/NavColumnsNavBarLinksID.java -text

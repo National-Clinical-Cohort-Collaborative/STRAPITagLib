@@ -42,6 +42,10 @@
 											<input type="text" id="updatedById" name="updatedById" size="40" value="<strapi:navColumnsUpdatedById />">
 											<br>
 
+											<label for="url">Url</label>
+											<input type="text" id="url" name="url" size="40" value="<strapi:navColumnsUrl />">
+											<br>
+
 											<input type="submit" name="submit" value="Save">
 											<input type="submit" name="submit" value="Cancel">
 											<input type="hidden" name="ID" value="${param.ID}">
@@ -69,6 +73,7 @@
 			<strapi:navColumnsPublishedAt publishedAt = "${param.publishedAt}" />
 			<strapi:navColumnsCreatedById createdById = "${param.createdById}" />
 			<strapi:navColumnsUpdatedById updatedById = "${param.updatedById}" />
+			<strapi:navColumnsUrl url = "${param.url}" />
 		</strapi:navColumns>
 		<c:redirect url="list.jsp" />
 	</c:when>

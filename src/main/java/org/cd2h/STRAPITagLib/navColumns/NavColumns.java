@@ -35,6 +35,7 @@ public class NavColumns extends STRAPITagLibTagSupport {
 	Timestamp publishedAt = null;
 	int createdById = 0;
 	int updatedById = 0;
+	String url = null;
 
 	private String var = null;
 
@@ -58,7 +59,7 @@ public class NavColumns extends STRAPITagLibTagSupport {
 			} else {
 				// an iterator or ID was provided as an attribute - we need to load a NavColumns from the database
 				boolean found = false;
-				PreparedStatement stmt = getConnection().prepareStatement("select label,created_at,updated_at,published_at,created_by_id,updated_by_id from strapi.nav_columns where id = ?");
+				PreparedStatement stmt = getConnection().prepareStatement("select label,created_at,updated_at,published_at,created_by_id,updated_by_id,url from strapi.nav_columns where id = ?");
 				stmt.setInt(1,ID);
 				ResultSet rs = stmt.executeQuery();
 				while (rs.next()) {
@@ -74,6 +75,8 @@ public class NavColumns extends STRAPITagLibTagSupport {
 						createdById = rs.getInt(5);
 					if (updatedById == 0)
 						updatedById = rs.getInt(6);
+					if (url == null)
+						url = rs.getString(7);
 					found = true;
 				}
 				stmt.close();
@@ -152,14 +155,15 @@ public class NavColumns extends STRAPITagLibTagSupport {
 				}
 			}
 			if (commitNeeded) {
-				PreparedStatement stmt = getConnection().prepareStatement("update strapi.nav_columns set label = ?, created_at = ?, updated_at = ?, published_at = ?, created_by_id = ?, updated_by_id = ? where id = ? ");
+				PreparedStatement stmt = getConnection().prepareStatement("update strapi.nav_columns set label = ?, created_at = ?, updated_at = ?, published_at = ?, created_by_id = ?, updated_by_id = ?, url = ? where id = ? ");
 				stmt.setString( 1, label );
 				stmt.setTimestamp( 2, createdAt );
 				stmt.setTimestamp( 3, updatedAt );
 				stmt.setTimestamp( 4, publishedAt );
 				stmt.setInt( 5, createdById );
 				stmt.setInt( 6, updatedById );
-				stmt.setInt(7,ID);
+				stmt.setString( 7, url );
+				stmt.setInt(8,ID);
 				stmt.executeUpdate();
 				stmt.close();
 			}
@@ -195,13 +199,17 @@ public class NavColumns extends STRAPITagLibTagSupport {
 		if (label == null){
 			label = "";
 		}
-		PreparedStatement stmt = getConnection().prepareStatement("insert into strapi.nav_columns(label,created_at,updated_at,published_at,created_by_id,updated_by_id) values (?,?,?,?,?,?)", java.sql.Statement.RETURN_GENERATED_KEYS);
+		if (url == null){
+			url = "";
+		}
+		PreparedStatement stmt = getConnection().prepareStatement("insert into strapi.nav_columns(label,created_at,updated_at,published_at,created_by_id,updated_by_id,url) values (?,?,?,?,?,?,?)", java.sql.Statement.RETURN_GENERATED_KEYS);
 		stmt.setString(1,label);
 		stmt.setTimestamp(2,createdAt);
 		stmt.setTimestamp(3,updatedAt);
 		stmt.setTimestamp(4,publishedAt);
 		stmt.setInt(5,createdById);
 		stmt.setInt(6,updatedById);
+		stmt.setString(7,url);
 		stmt.executeUpdate();
 
 		// snag the new auto-increment value
@@ -325,6 +333,22 @@ public class NavColumns extends STRAPITagLibTagSupport {
 		return updatedById;
 	}
 
+	public String getUrl () {
+		if (commitNeeded)
+			return "";
+		else
+			return url;
+	}
+
+	public void setUrl (String url) {
+		this.url = url;
+		commitNeeded = true;
+	}
+
+	public String getActualUrl () {
+		return url;
+	}
+
 	public String getVar () {
 		return var;
 	}
@@ -393,6 +417,14 @@ public class NavColumns extends STRAPITagLibTagSupport {
 		}
 	}
 
+	public static String urlValue() throws JspException {
+		try {
+			return currentInstance.getUrl();
+		} catch (Exception e) {
+			 throw new JspTagException("Error in tag function urlValue()");
+		}
+	}
+
 	private void clearServiceState () {
 		ID = 0;
 		label = null;
@@ -401,6 +433,7 @@ public class NavColumns extends STRAPITagLibTagSupport {
 		publishedAt = null;
 		createdById = 0;
 		updatedById = 0;
+		url = null;
 		newRecord = false;
 		commitNeeded = false;
 		parentEntities = new Vector<STRAPITagLibTagSupport>();
