@@ -5,6 +5,8 @@
     <li><a href="<util:applicationRoot/>/bios/list.jsp" />Bios list</a></li>
     <li><a href="<util:applicationRoot/>/biosBioGroupsLinks/list.jsp" />BiosBioGroupsLinks list</a></li>
     <li><a href="<util:applicationRoot/>/domainTeams/list.jsp" />DomainTeams list</a></li>
+    <li><a href="<util:applicationRoot/>/domainTeamsLeadsLinks/list.jsp" />DomainTeamsLeadsLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/faqs/list.jsp" />Faqs list</a></li>
     <li><a href="<util:applicationRoot/>/files/list.jsp" />Files list</a></li>
     <li><a href="<util:applicationRoot/>/filesFolderLinks/list.jsp" />FilesFolderLinks list</a></li>
     <li><a href="<util:applicationRoot/>/filesRelatedMorphs/list.jsp" />FilesRelatedMorphs list</a></li>
@@ -18,4 +20,9 @@
     <li><a href="<util:applicationRoot/>/navColumnsNavBarLinks/list.jsp" />NavColumnsNavBarLinks list</a></li>
     <li><a href="<util:applicationRoot/>/navItems/list.jsp" />NavItems list</a></li>
     <li><a href="<util:applicationRoot/>/navItemsNavColumnLinks/list.jsp" />NavItemsNavColumnLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/phastrs/list.jsp" />Phastrs list</a></li>
+    <li><a href="<util:applicationRoot/>/phastrsFaqsLinks/list.jsp" />PhastrsFaqsLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/phastrsPublicHealthQuestionsLinks/list.jsp" />PhastrsPublicHealthQuestionsLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/pressReleases/list.jsp" />PressReleases list</a></li>
+    <li><a href="<util:applicationRoot/>/publicHealthQuestions/list.jsp" />PublicHealthQuestions list</a></li>
 </ul>

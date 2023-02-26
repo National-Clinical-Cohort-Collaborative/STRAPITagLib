@@ -795,6 +795,475 @@
 	</tag>
 
 	<tag>
+		<name>domainTeamsSummary</name>
+		<tag-class>org.cd2h.STRAPITagLib.domainTeams.DomainTeamsSummary</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>summary</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainTeamsSupplementalInformation</name>
+		<tag-class>org.cd2h.STRAPITagLib.domainTeams.DomainTeamsSupplementalInformation</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>supplementalInformation</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainTeamsGoogleDriveUrl</name>
+		<tag-class>org.cd2h.STRAPITagLib.domainTeams.DomainTeamsGoogleDriveUrl</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>googleDriveUrl</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainTeamsGoogleDriveLinkText</name>
+		<tag-class>org.cd2h.STRAPITagLib.domainTeams.DomainTeamsGoogleDriveLinkText</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>googleDriveLinkText</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainTeamsGoogleGroupEmail</name>
+		<tag-class>org.cd2h.STRAPITagLib.domainTeams.DomainTeamsGoogleGroupEmail</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>googleGroupEmail</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainTeamsJoinUrl</name>
+		<tag-class>org.cd2h.STRAPITagLib.domainTeams.DomainTeamsJoinUrl</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>joinUrl</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainTeamsJoinLinkText</name>
+		<tag-class>org.cd2h.STRAPITagLib.domainTeams.DomainTeamsJoinLinkText</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>joinLinkText</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainTeamsSlackUrl</name>
+		<tag-class>org.cd2h.STRAPITagLib.domainTeams.DomainTeamsSlackUrl</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>slackUrl</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainTeamsSlackLinkText</name>
+		<tag-class>org.cd2h.STRAPITagLib.domainTeams.DomainTeamsSlackLinkText</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>slackLinkText</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainTeamsCrossCutting</name>
+		<tag-class>org.cd2h.STRAPITagLib.domainTeams.DomainTeamsCrossCutting</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>crossCutting</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachDomainTeamsLeadsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.domainTeamsLeadsLinks.DomainTeamsLeadsLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useBios</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useDomainTeams</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>domainTeamsLeadsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.domainTeamsLeadsLinks.DomainTeamsLeadsLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteDomainTeamsLeadsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.domainTeamsLeadsLinks.DomainTeamsLeadsLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainTeamsLeadsLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.domainTeamsLeadsLinks.DomainTeamsLeadsLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainTeamsLeadsLinksDomainTeamId</name>
+		<tag-class>org.cd2h.STRAPITagLib.domainTeamsLeadsLinks.DomainTeamsLeadsLinksDomainTeamId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>domainTeamId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainTeamsLeadsLinksBioId</name>
+		<tag-class>org.cd2h.STRAPITagLib.domainTeamsLeadsLinks.DomainTeamsLeadsLinksBioId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>bioId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainTeamsLeadsLinksBioOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.domainTeamsLeadsLinks.DomainTeamsLeadsLinksBioOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>bioOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainTeamsLeadsLinksDomainTeamOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.domainTeamsLeadsLinks.DomainTeamsLeadsLinksDomainTeamOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>domainTeamOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachFaqs</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqs.FaqsIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqs</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqs.Faqs</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteFaqs</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqs.FaqsDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqsID</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqs.FaqsID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqsQuestion</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqs.FaqsQuestion</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>question</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqsAnswer</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqs.FaqsAnswer</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>answer</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqsCategory</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqs.FaqsCategory</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>category</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqsCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqs.FaqsCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqsCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqs.FaqsCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqsUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqs.FaqsUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqsUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqs.FaqsUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqsPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqs.FaqsPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqsPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqs.FaqsPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqsCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqs.FaqsCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqsUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqs.FaqsUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqsLabel</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqs.FaqsLabel</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>label</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
 		<name>foreachFiles</name>
 		<tag-class>org.cd2h.STRAPITagLib.files.FilesIterator</tag-class>
 		<body-content>JSP</body-content>
@@ -2982,6 +3451,1220 @@
 		</attribute>
 	</tag>
 
+	<tag>
+		<name>foreachPhastrs</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrs.PhastrsIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>phastrs</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrs.Phastrs</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deletePhastrs</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrs.PhastrsDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>phastrsID</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrs.PhastrsID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>phastrsAbout</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrs.PhastrsAbout</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>about</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>phastrsEligibility</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrs.PhastrsEligibility</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>eligibility</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>phastrsSubmission</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrs.PhastrsSubmission</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>submission</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>phastrsQuickStart</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrs.PhastrsQuickStart</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>quickStart</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>phastrsCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrs.PhastrsCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>phastrsCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrs.PhastrsCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>phastrsUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrs.PhastrsUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>phastrsUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrs.PhastrsUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>phastrsPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrs.PhastrsPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>phastrsPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrs.PhastrsPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>phastrsCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrs.PhastrsCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>phastrsUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrs.PhastrsUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachPhastrsFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrsFaqsLinks.PhastrsFaqsLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useFaqs</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>usePhastrs</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>phastrsFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrsFaqsLinks.PhastrsFaqsLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deletePhastrsFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrsFaqsLinks.PhastrsFaqsLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>phastrsFaqsLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrsFaqsLinks.PhastrsFaqsLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>phastrsFaqsLinksPhastrId</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrsFaqsLinks.PhastrsFaqsLinksPhastrId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>phastrId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>phastrsFaqsLinksFaqId</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrsFaqsLinks.PhastrsFaqsLinksFaqId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>phastrsFaqsLinksFaqOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrsFaqsLinks.PhastrsFaqsLinksFaqOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachPhastrsPublicHealthQuestionsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrsPublicHealthQuestionsLinks.PhastrsPublicHealthQuestionsLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>usePhastrs</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>usePublicHealthQuestions</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>phastrsPublicHealthQuestionsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrsPublicHealthQuestionsLinks.PhastrsPublicHealthQuestionsLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deletePhastrsPublicHealthQuestionsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrsPublicHealthQuestionsLinks.PhastrsPublicHealthQuestionsLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>phastrsPublicHealthQuestionsLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrsPublicHealthQuestionsLinks.PhastrsPublicHealthQuestionsLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>phastrsPublicHealthQuestionsLinksPhastrId</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrsPublicHealthQuestionsLinks.PhastrsPublicHealthQuestionsLinksPhastrId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>phastrId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>phastrsPublicHealthQuestionsLinksPublicHealthQuestionId</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrsPublicHealthQuestionsLinks.PhastrsPublicHealthQuestionsLinksPublicHealthQuestionId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publicHealthQuestionId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>phastrsPublicHealthQuestionsLinksPublicHealthQuestionOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.phastrsPublicHealthQuestionsLinks.PhastrsPublicHealthQuestionsLinksPublicHealthQuestionOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publicHealthQuestionOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachPressReleases</name>
+		<tag-class>org.cd2h.STRAPITagLib.pressReleases.PressReleasesIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>pressReleases</name>
+		<tag-class>org.cd2h.STRAPITagLib.pressReleases.PressReleases</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deletePressReleases</name>
+		<tag-class>org.cd2h.STRAPITagLib.pressReleases.PressReleasesDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>pressReleasesID</name>
+		<tag-class>org.cd2h.STRAPITagLib.pressReleases.PressReleasesID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>pressReleasesTitle</name>
+		<tag-class>org.cd2h.STRAPITagLib.pressReleases.PressReleasesTitle</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>title</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>pressReleasesDescription</name>
+		<tag-class>org.cd2h.STRAPITagLib.pressReleases.PressReleasesDescription</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>description</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>pressReleasesDate</name>
+		<tag-class>org.cd2h.STRAPITagLib.pressReleases.PressReleasesDate</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>date</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>dateStyle</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>timeStyle</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>pattern</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>pressReleasesDateToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.pressReleases.PressReleasesDateToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>date</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>pressReleasesUrl</name>
+		<tag-class>org.cd2h.STRAPITagLib.pressReleases.PressReleasesUrl</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>url</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>pressReleasesCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.pressReleases.PressReleasesCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>pressReleasesCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.pressReleases.PressReleasesCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>pressReleasesUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.pressReleases.PressReleasesUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>pressReleasesUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.pressReleases.PressReleasesUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>pressReleasesPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.pressReleases.PressReleasesPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>pressReleasesPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.pressReleases.PressReleasesPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>pressReleasesCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.pressReleases.PressReleasesCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>pressReleasesUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.pressReleases.PressReleasesUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachPublicHealthQuestions</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestions</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestions</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deletePublicHealthQuestions</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsID</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsPriority</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsPriority</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>priority</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsOwner</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsOwner</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>owner</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsTitle</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsTitle</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>title</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsDescription</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsDescription</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>description</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsPostDate</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsPostDate</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>postDate</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>dateStyle</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>timeStyle</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>pattern</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsPostDateToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsPostDateToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>postDate</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsOpenDate</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsOpenDate</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>openDate</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>dateStyle</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>timeStyle</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>pattern</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsOpenDateToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsOpenDateToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>openDate</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsCloseDate</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsCloseDate</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>closeDate</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>type</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>dateStyle</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>timeStyle</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>pattern</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsCloseDateToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsCloseDateToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>closeDate</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsContractLength</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsContractLength</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>contractLength</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsContractCount</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsContractCount</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>contractCount</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsContractAmount</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsContractAmount</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>contractAmount</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsContact</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsContact</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>contact</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsContactEmail</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsContactEmail</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>contactEmail</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsAims</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsAims</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>aims</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsInclusionCriteria</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsInclusionCriteria</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>inclusionCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsExclusionCriteria</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsExclusionCriteria</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>exclusionCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsPhenotype</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsPhenotype</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>phenotype</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsExpectedResults</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsExpectedResults</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>expectedResults</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsAnalysisPlan</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsAnalysisPlan</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>analysisPlan</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsDeliverables</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsDeliverables</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>deliverables</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>publicHealthQuestionsUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
 	<function>
 		<name>bioGroupsCount</name>
 		<function-class>org.cd2h.STRAPITagLib.bioGroups.BioGroupsIterator</function-class>
@@ -3052,6 +4735,54 @@
 		<name>domainTeamsExists</name>
 		<function-class>org.cd2h.STRAPITagLib.domainTeams.DomainTeamsIterator</function-class>
 		<function-signature>java.lang.String domainTeamsExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>domainTeamsLeadsLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.domainTeamsLeadsLinks.DomainTeamsLeadsLinksIterator</function-class>
+		<function-signature>java.lang.String domainTeamsLeadsLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>domainTeamsLeadsLinksCountByBios</name>
+		<function-class>org.cd2h.STRAPITagLib.domainTeamsLeadsLinks.DomainTeamsLeadsLinksIterator</function-class>
+		<function-signature>java.lang.String domainTeamsLeadsLinksCountByBios(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>biosHasDomainTeamsLeadsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.domainTeamsLeadsLinks.DomainTeamsLeadsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean biosHasDomainTeamsLeadsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>domainTeamsLeadsLinksCountByDomainTeams</name>
+		<function-class>org.cd2h.STRAPITagLib.domainTeamsLeadsLinks.DomainTeamsLeadsLinksIterator</function-class>
+		<function-signature>java.lang.String domainTeamsLeadsLinksCountByDomainTeams(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>domainTeamsHasDomainTeamsLeadsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.domainTeamsLeadsLinks.DomainTeamsLeadsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean domainTeamsHasDomainTeamsLeadsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>biosDomainTeamsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.domainTeamsLeadsLinks.DomainTeamsLeadsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean biosDomainTeamsExists(java.lang.String, java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqsCount</name>
+		<function-class>org.cd2h.STRAPITagLib.faqs.FaqsIterator</function-class>
+		<function-signature>java.lang.String faqsCount()</function-signature>
+	</function>
+
+	<function>
+		<name>faqsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.faqs.FaqsIterator</function-class>
+		<function-signature>java.lang.String faqsExists(java.lang.String)</function-signature>
 	</function>
 
 	<function>
@@ -3316,5 +5047,113 @@
 		<name>navColumnsNavItemsExists</name>
 		<function-class>org.cd2h.STRAPITagLib.navItemsNavColumnLinks.NavItemsNavColumnLinksIterator</function-class>
 		<function-signature>java.lang.Boolean navColumnsNavItemsExists(java.lang.String, java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>phastrsCount</name>
+		<function-class>org.cd2h.STRAPITagLib.phastrs.PhastrsIterator</function-class>
+		<function-signature>java.lang.String phastrsCount()</function-signature>
+	</function>
+
+	<function>
+		<name>phastrsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.phastrs.PhastrsIterator</function-class>
+		<function-signature>java.lang.String phastrsExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>phastrsFaqsLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.phastrsFaqsLinks.PhastrsFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String phastrsFaqsLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>phastrsFaqsLinksCountByFaqs</name>
+		<function-class>org.cd2h.STRAPITagLib.phastrsFaqsLinks.PhastrsFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String phastrsFaqsLinksCountByFaqs(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqsHasPhastrsFaqsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.phastrsFaqsLinks.PhastrsFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean faqsHasPhastrsFaqsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>phastrsFaqsLinksCountByPhastrs</name>
+		<function-class>org.cd2h.STRAPITagLib.phastrsFaqsLinks.PhastrsFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String phastrsFaqsLinksCountByPhastrs(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>phastrsHasPhastrsFaqsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.phastrsFaqsLinks.PhastrsFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean phastrsHasPhastrsFaqsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqsPhastrsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.phastrsFaqsLinks.PhastrsFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean faqsPhastrsExists(java.lang.String, java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>phastrsPublicHealthQuestionsLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.phastrsPublicHealthQuestionsLinks.PhastrsPublicHealthQuestionsLinksIterator</function-class>
+		<function-signature>java.lang.String phastrsPublicHealthQuestionsLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>phastrsPublicHealthQuestionsLinksCountByPhastrs</name>
+		<function-class>org.cd2h.STRAPITagLib.phastrsPublicHealthQuestionsLinks.PhastrsPublicHealthQuestionsLinksIterator</function-class>
+		<function-signature>java.lang.String phastrsPublicHealthQuestionsLinksCountByPhastrs(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>phastrsHasPhastrsPublicHealthQuestionsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.phastrsPublicHealthQuestionsLinks.PhastrsPublicHealthQuestionsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean phastrsHasPhastrsPublicHealthQuestionsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>phastrsPublicHealthQuestionsLinksCountByPublicHealthQuestions</name>
+		<function-class>org.cd2h.STRAPITagLib.phastrsPublicHealthQuestionsLinks.PhastrsPublicHealthQuestionsLinksIterator</function-class>
+		<function-signature>java.lang.String phastrsPublicHealthQuestionsLinksCountByPublicHealthQuestions(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>publicHealthQuestionsHasPhastrsPublicHealthQuestionsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.phastrsPublicHealthQuestionsLinks.PhastrsPublicHealthQuestionsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean publicHealthQuestionsHasPhastrsPublicHealthQuestionsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>phastrsPublicHealthQuestionsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.phastrsPublicHealthQuestionsLinks.PhastrsPublicHealthQuestionsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean phastrsPublicHealthQuestionsExists(java.lang.String, java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>pressReleasesCount</name>
+		<function-class>org.cd2h.STRAPITagLib.pressReleases.PressReleasesIterator</function-class>
+		<function-signature>java.lang.String pressReleasesCount()</function-signature>
+	</function>
+
+	<function>
+		<name>pressReleasesExists</name>
+		<function-class>org.cd2h.STRAPITagLib.pressReleases.PressReleasesIterator</function-class>
+		<function-signature>java.lang.String pressReleasesExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>publicHealthQuestionsCount</name>
+		<function-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsIterator</function-class>
+		<function-signature>java.lang.String publicHealthQuestionsCount()</function-signature>
+	</function>
+
+	<function>
+		<name>publicHealthQuestionsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsIterator</function-class>
+		<function-signature>java.lang.String publicHealthQuestionsExists(java.lang.String)</function-signature>
 	</function>
 </taglib>

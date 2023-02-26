@@ -36,6 +36,16 @@ public class DomainTeams extends STRAPITagLibTagSupport {
 	Timestamp publishedAt = null;
 	int createdById = 0;
 	int updatedById = 0;
+	String summary = null;
+	String supplementalInformation = null;
+	String googleDriveUrl = null;
+	String googleDriveLinkText = null;
+	String googleGroupEmail = null;
+	String joinUrl = null;
+	String joinLinkText = null;
+	String slackUrl = null;
+	String slackLinkText = null;
+	boolean crossCutting = false;
 
 	private String var = null;
 
@@ -59,7 +69,7 @@ public class DomainTeams extends STRAPITagLibTagSupport {
 			} else {
 				// an iterator or ID was provided as an attribute - we need to load a DomainTeams from the database
 				boolean found = false;
-				PreparedStatement stmt = getConnection().prepareStatement("select name,description,created_at,updated_at,published_at,created_by_id,updated_by_id from strapi.domain_teams where id = ?");
+				PreparedStatement stmt = getConnection().prepareStatement("select name,description,created_at,updated_at,published_at,created_by_id,updated_by_id,summary,supplemental_information,google_drive_url,google_drive_link_text,google_group_email,join_url,join_link_text,slack_url,slack_link_text,cross_cutting from strapi.domain_teams where id = ?");
 				stmt.setInt(1,ID);
 				ResultSet rs = stmt.executeQuery();
 				while (rs.next()) {
@@ -77,6 +87,26 @@ public class DomainTeams extends STRAPITagLibTagSupport {
 						createdById = rs.getInt(6);
 					if (updatedById == 0)
 						updatedById = rs.getInt(7);
+					if (summary == null)
+						summary = rs.getString(8);
+					if (supplementalInformation == null)
+						supplementalInformation = rs.getString(9);
+					if (googleDriveUrl == null)
+						googleDriveUrl = rs.getString(10);
+					if (googleDriveLinkText == null)
+						googleDriveLinkText = rs.getString(11);
+					if (googleGroupEmail == null)
+						googleGroupEmail = rs.getString(12);
+					if (joinUrl == null)
+						joinUrl = rs.getString(13);
+					if (joinLinkText == null)
+						joinLinkText = rs.getString(14);
+					if (slackUrl == null)
+						slackUrl = rs.getString(15);
+					if (slackLinkText == null)
+						slackLinkText = rs.getString(16);
+					if (crossCutting == false)
+						crossCutting = rs.getBoolean(17);
 					found = true;
 				}
 				stmt.close();
@@ -155,7 +185,7 @@ public class DomainTeams extends STRAPITagLibTagSupport {
 				}
 			}
 			if (commitNeeded) {
-				PreparedStatement stmt = getConnection().prepareStatement("update strapi.domain_teams set name = ?, description = ?, created_at = ?, updated_at = ?, published_at = ?, created_by_id = ?, updated_by_id = ? where id = ? ");
+				PreparedStatement stmt = getConnection().prepareStatement("update strapi.domain_teams set name = ?, description = ?, created_at = ?, updated_at = ?, published_at = ?, created_by_id = ?, updated_by_id = ?, summary = ?, supplemental_information = ?, google_drive_url = ?, google_drive_link_text = ?, google_group_email = ?, join_url = ?, join_link_text = ?, slack_url = ?, slack_link_text = ?, cross_cutting = ? where id = ? ");
 				stmt.setString( 1, name );
 				stmt.setString( 2, description );
 				stmt.setTimestamp( 3, createdAt );
@@ -163,7 +193,17 @@ public class DomainTeams extends STRAPITagLibTagSupport {
 				stmt.setTimestamp( 5, publishedAt );
 				stmt.setInt( 6, createdById );
 				stmt.setInt( 7, updatedById );
-				stmt.setInt(8,ID);
+				stmt.setString( 8, summary );
+				stmt.setString( 9, supplementalInformation );
+				stmt.setString( 10, googleDriveUrl );
+				stmt.setString( 11, googleDriveLinkText );
+				stmt.setString( 12, googleGroupEmail );
+				stmt.setString( 13, joinUrl );
+				stmt.setString( 14, joinLinkText );
+				stmt.setString( 15, slackUrl );
+				stmt.setString( 16, slackLinkText );
+				stmt.setBoolean( 17, crossCutting );
+				stmt.setInt(18,ID);
 				stmt.executeUpdate();
 				stmt.close();
 			}
@@ -202,7 +242,34 @@ public class DomainTeams extends STRAPITagLibTagSupport {
 		if (description == null){
 			description = "";
 		}
-		PreparedStatement stmt = getConnection().prepareStatement("insert into strapi.domain_teams(name,description,created_at,updated_at,published_at,created_by_id,updated_by_id) values (?,?,?,?,?,?,?)", java.sql.Statement.RETURN_GENERATED_KEYS);
+		if (summary == null){
+			summary = "";
+		}
+		if (supplementalInformation == null){
+			supplementalInformation = "";
+		}
+		if (googleDriveUrl == null){
+			googleDriveUrl = "";
+		}
+		if (googleDriveLinkText == null){
+			googleDriveLinkText = "";
+		}
+		if (googleGroupEmail == null){
+			googleGroupEmail = "";
+		}
+		if (joinUrl == null){
+			joinUrl = "";
+		}
+		if (joinLinkText == null){
+			joinLinkText = "";
+		}
+		if (slackUrl == null){
+			slackUrl = "";
+		}
+		if (slackLinkText == null){
+			slackLinkText = "";
+		}
+		PreparedStatement stmt = getConnection().prepareStatement("insert into strapi.domain_teams(name,description,created_at,updated_at,published_at,created_by_id,updated_by_id,summary,supplemental_information,google_drive_url,google_drive_link_text,google_group_email,join_url,join_link_text,slack_url,slack_link_text,cross_cutting) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)", java.sql.Statement.RETURN_GENERATED_KEYS);
 		stmt.setString(1,name);
 		stmt.setString(2,description);
 		stmt.setTimestamp(3,createdAt);
@@ -210,6 +277,16 @@ public class DomainTeams extends STRAPITagLibTagSupport {
 		stmt.setTimestamp(5,publishedAt);
 		stmt.setInt(6,createdById);
 		stmt.setInt(7,updatedById);
+		stmt.setString(8,summary);
+		stmt.setString(9,supplementalInformation);
+		stmt.setString(10,googleDriveUrl);
+		stmt.setString(11,googleDriveLinkText);
+		stmt.setString(12,googleGroupEmail);
+		stmt.setString(13,joinUrl);
+		stmt.setString(14,joinLinkText);
+		stmt.setString(15,slackUrl);
+		stmt.setString(16,slackLinkText);
+		stmt.setBoolean(17,crossCutting);
 		stmt.executeUpdate();
 
 		// snag the new auto-increment value
@@ -349,6 +426,163 @@ public class DomainTeams extends STRAPITagLibTagSupport {
 		return updatedById;
 	}
 
+	public String getSummary () {
+		if (commitNeeded)
+			return "";
+		else
+			return summary;
+	}
+
+	public void setSummary (String summary) {
+		this.summary = summary;
+		commitNeeded = true;
+	}
+
+	public String getActualSummary () {
+		return summary;
+	}
+
+	public String getSupplementalInformation () {
+		if (commitNeeded)
+			return "";
+		else
+			return supplementalInformation;
+	}
+
+	public void setSupplementalInformation (String supplementalInformation) {
+		this.supplementalInformation = supplementalInformation;
+		commitNeeded = true;
+	}
+
+	public String getActualSupplementalInformation () {
+		return supplementalInformation;
+	}
+
+	public String getGoogleDriveUrl () {
+		if (commitNeeded)
+			return "";
+		else
+			return googleDriveUrl;
+	}
+
+	public void setGoogleDriveUrl (String googleDriveUrl) {
+		this.googleDriveUrl = googleDriveUrl;
+		commitNeeded = true;
+	}
+
+	public String getActualGoogleDriveUrl () {
+		return googleDriveUrl;
+	}
+
+	public String getGoogleDriveLinkText () {
+		if (commitNeeded)
+			return "";
+		else
+			return googleDriveLinkText;
+	}
+
+	public void setGoogleDriveLinkText (String googleDriveLinkText) {
+		this.googleDriveLinkText = googleDriveLinkText;
+		commitNeeded = true;
+	}
+
+	public String getActualGoogleDriveLinkText () {
+		return googleDriveLinkText;
+	}
+
+	public String getGoogleGroupEmail () {
+		if (commitNeeded)
+			return "";
+		else
+			return googleGroupEmail;
+	}
+
+	public void setGoogleGroupEmail (String googleGroupEmail) {
+		this.googleGroupEmail = googleGroupEmail;
+		commitNeeded = true;
+	}
+
+	public String getActualGoogleGroupEmail () {
+		return googleGroupEmail;
+	}
+
+	public String getJoinUrl () {
+		if (commitNeeded)
+			return "";
+		else
+			return joinUrl;
+	}
+
+	public void setJoinUrl (String joinUrl) {
+		this.joinUrl = joinUrl;
+		commitNeeded = true;
+	}
+
+	public String getActualJoinUrl () {
+		return joinUrl;
+	}
+
+	public String getJoinLinkText () {
+		if (commitNeeded)
+			return "";
+		else
+			return joinLinkText;
+	}
+
+	public void setJoinLinkText (String joinLinkText) {
+		this.joinLinkText = joinLinkText;
+		commitNeeded = true;
+	}
+
+	public String getActualJoinLinkText () {
+		return joinLinkText;
+	}
+
+	public String getSlackUrl () {
+		if (commitNeeded)
+			return "";
+		else
+			return slackUrl;
+	}
+
+	public void setSlackUrl (String slackUrl) {
+		this.slackUrl = slackUrl;
+		commitNeeded = true;
+	}
+
+	public String getActualSlackUrl () {
+		return slackUrl;
+	}
+
+	public String getSlackLinkText () {
+		if (commitNeeded)
+			return "";
+		else
+			return slackLinkText;
+	}
+
+	public void setSlackLinkText (String slackLinkText) {
+		this.slackLinkText = slackLinkText;
+		commitNeeded = true;
+	}
+
+	public String getActualSlackLinkText () {
+		return slackLinkText;
+	}
+
+	public boolean getCrossCutting () {
+		return crossCutting;
+	}
+
+	public void setCrossCutting (boolean crossCutting) {
+		this.crossCutting = crossCutting;
+		commitNeeded = true;
+	}
+
+	public boolean getActualCrossCutting () {
+		return crossCutting;
+	}
+
 	public String getVar () {
 		return var;
 	}
@@ -425,6 +659,86 @@ public class DomainTeams extends STRAPITagLibTagSupport {
 		}
 	}
 
+	public static String summaryValue() throws JspException {
+		try {
+			return currentInstance.getSummary();
+		} catch (Exception e) {
+			 throw new JspTagException("Error in tag function summaryValue()");
+		}
+	}
+
+	public static String supplementalInformationValue() throws JspException {
+		try {
+			return currentInstance.getSupplementalInformation();
+		} catch (Exception e) {
+			 throw new JspTagException("Error in tag function supplementalInformationValue()");
+		}
+	}
+
+	public static String googleDriveUrlValue() throws JspException {
+		try {
+			return currentInstance.getGoogleDriveUrl();
+		} catch (Exception e) {
+			 throw new JspTagException("Error in tag function googleDriveUrlValue()");
+		}
+	}
+
+	public static String googleDriveLinkTextValue() throws JspException {
+		try {
+			return currentInstance.getGoogleDriveLinkText();
+		} catch (Exception e) {
+			 throw new JspTagException("Error in tag function googleDriveLinkTextValue()");
+		}
+	}
+
+	public static String googleGroupEmailValue() throws JspException {
+		try {
+			return currentInstance.getGoogleGroupEmail();
+		} catch (Exception e) {
+			 throw new JspTagException("Error in tag function googleGroupEmailValue()");
+		}
+	}
+
+	public static String joinUrlValue() throws JspException {
+		try {
+			return currentInstance.getJoinUrl();
+		} catch (Exception e) {
+			 throw new JspTagException("Error in tag function joinUrlValue()");
+		}
+	}
+
+	public static String joinLinkTextValue() throws JspException {
+		try {
+			return currentInstance.getJoinLinkText();
+		} catch (Exception e) {
+			 throw new JspTagException("Error in tag function joinLinkTextValue()");
+		}
+	}
+
+	public static String slackUrlValue() throws JspException {
+		try {
+			return currentInstance.getSlackUrl();
+		} catch (Exception e) {
+			 throw new JspTagException("Error in tag function slackUrlValue()");
+		}
+	}
+
+	public static String slackLinkTextValue() throws JspException {
+		try {
+			return currentInstance.getSlackLinkText();
+		} catch (Exception e) {
+			 throw new JspTagException("Error in tag function slackLinkTextValue()");
+		}
+	}
+
+	public static Boolean crossCuttingValue() throws JspException {
+		try {
+			return currentInstance.getCrossCutting();
+		} catch (Exception e) {
+			 throw new JspTagException("Error in tag function crossCuttingValue()");
+		}
+	}
+
 	private void clearServiceState () {
 		ID = 0;
 		name = null;
@@ -434,6 +748,16 @@ public class DomainTeams extends STRAPITagLibTagSupport {
 		publishedAt = null;
 		createdById = 0;
 		updatedById = 0;
+		summary = null;
+		supplementalInformation = null;
+		googleDriveUrl = null;
+		googleDriveLinkText = null;
+		googleGroupEmail = null;
+		joinUrl = null;
+		joinLinkText = null;
+		slackUrl = null;
+		slackLinkText = null;
+		crossCutting = false;
 		newRecord = false;
 		commitNeeded = false;
 		parentEntities = new Vector<STRAPITagLibTagSupport>();

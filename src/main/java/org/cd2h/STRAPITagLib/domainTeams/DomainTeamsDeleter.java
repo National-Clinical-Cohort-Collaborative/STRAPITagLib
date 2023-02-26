@@ -25,6 +25,16 @@ public class DomainTeamsDeleter extends STRAPITagLibBodyTagSupport {
     Timestamp publishedAt = null;
     int createdById = 0;
     int updatedById = 0;
+    String summary = null;
+    String supplementalInformation = null;
+    String googleDriveUrl = null;
+    String googleDriveLinkText = null;
+    String googleGroupEmail = null;
+    String joinUrl = null;
+    String joinLinkText = null;
+    String slackUrl = null;
+    String slackLinkText = null;
+    boolean crossCutting = false;
 	Vector<STRAPITagLibTagSupport> parentEntities = new Vector<STRAPITagLibTagSupport>();
 
 	private static final Logger log = LogManager.getLogger(DomainTeamsDeleter.class);

@@ -23,6 +23,16 @@
 			<th>PublishedAt</th>
 			<th>CreatedById</th>
 			<th>UpdatedById</th>
+			<th>Summary</th>
+			<th>SupplementalInformation</th>
+			<th>GoogleDriveUrl</th>
+			<th>GoogleDriveLinkText</th>
+			<th>GoogleGroupEmail</th>
+			<th>JoinUrl</th>
+			<th>JoinLinkText</th>
+			<th>SlackUrl</th>
+			<th>SlackLinkText</th>
+			<th>CrossCutting</th>
 			</tr>
 			<tr>
 				<td><a href="edit.jsp?ID=<strapi:domainTeamsID />"><strapi:domainTeamsID /></a></td>
@@ -33,8 +43,64 @@
 				<td><strapi:domainTeamsPublishedAt /></td>
 				<td><strapi:domainTeamsCreatedById /></td>
 				<td><strapi:domainTeamsUpdatedById /></td>
+				<td><strapi:domainTeamsSummary /></td>
+				<td><strapi:domainTeamsSupplementalInformation /></td>
+				<td><strapi:domainTeamsGoogleDriveUrl /></td>
+				<td><strapi:domainTeamsGoogleDriveLinkText /></td>
+				<td><strapi:domainTeamsGoogleGroupEmail /></td>
+				<td><strapi:domainTeamsJoinUrl /></td>
+				<td><strapi:domainTeamsJoinLinkText /></td>
+				<td><strapi:domainTeamsSlackUrl /></td>
+				<td><strapi:domainTeamsSlackLinkText /></td>
+				<td><strapi:domainTeamsCrossCutting /></td>
 			</tr>
 		</table>
+
+						<h2>DomainTeamsLeadsLinks List</h2>
+						<table class="table table-bordered table-striped table-hover table-datatable">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>DomainTeamId</th>
+									<th>BioId</th>
+									<th>BioOrder</th>
+									<th>DomainTeamOrder</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<strapi:foreachDomainTeamsLeadsLinks var="idIter">
+									<strapi:domainTeamsLeadsLinks>
+										<tr>
+											<td><a href="../domainTeamsLeadsLinks/show.jsp?ID=<strapi:domainTeamsLeadsLinksID />"><strapi:domainTeamsLeadsLinksID /></a></td>
+											<td><strapi:domainTeamsLeadsLinksDomainTeamId /></td>
+											<td><strapi:domainTeamsLeadsLinksBioId /></td>
+											<td><strapi:domainTeamsLeadsLinksBioOrder /></td>
+											<td><strapi:domainTeamsLeadsLinksDomainTeamOrder /></td>
+											<td><a href="../domainTeamsLeadsLinks/edit.jsp?ID=<strapi:domainTeamsLeadsLinksID />">edit</a></td>
+											<td><a href="../domainTeamsLeadsLinks/delete.jsp?ID=<strapi:domainTeamsLeadsLinksID />">delete</a></td>
+										</tr>
+									</strapi:domainTeamsLeadsLinks>
+								</strapi:foreachDomainTeamsLeadsLinks>
+							</tbody>
+							<tfoot>
+							</tfoot>
+						</table>
+
+						<br/>
+
+						<a class="btn" href="../domainTeamsLeadsLinks/add.jsp?ID=${param.ID}&ID=${param.ID}">add DomainTeamsLeadsLinks</a>
+						<br/><br/>
+
+		<strapi:foreachDomainTeamsLeadsLinks var="idIter">
+			<strapi:domainTeamsLeadsLinks>
+						<a href="../../strapi/domainTeamsLeadsLinks/domainTeamsLeadsLinks.jsp?ID=<strapi:domainTeamsLeadsLinksID />"><strapi:domainTeamsLeadsLinksID /></a>
+		<strapi:domainTeamsLeadsLinksDomainTeamId />
+		<strapi:domainTeamsLeadsLinksBioId />
+		<strapi:domainTeamsLeadsLinksBioOrder />
+		<strapi:domainTeamsLeadsLinksDomainTeamOrder />
+			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:domainTeamsLeadsLinks>
+			</strapi:foreachDomainTeamsLeadsLinks>
 
 						<h2>LandingPagesDomainTeamsLinks List</h2>
 						<table class="table table-bordered table-striped table-hover table-datatable">

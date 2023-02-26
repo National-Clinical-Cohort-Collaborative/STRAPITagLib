@@ -44,6 +44,46 @@
 										<input type="text" id="updatedById" name="updatedById" size="40" value="">
 										<br>
 
+										<label for="summary">Summary</label>
+										<input type="text" id="summary" name="summary" size="40" value="">
+										<br>
+
+										<label for="supplementalInformation">SupplementalInformation</label>
+										<input type="text" id="supplementalInformation" name="supplementalInformation" size="40" value="">
+										<br>
+
+										<label for="googleDriveUrl">GoogleDriveUrl</label>
+										<input type="text" id="googleDriveUrl" name="googleDriveUrl" size="40" value="">
+										<br>
+
+										<label for="googleDriveLinkText">GoogleDriveLinkText</label>
+										<input type="text" id="googleDriveLinkText" name="googleDriveLinkText" size="40" value="">
+										<br>
+
+										<label for="googleGroupEmail">GoogleGroupEmail</label>
+										<input type="text" id="googleGroupEmail" name="googleGroupEmail" size="40" value="">
+										<br>
+
+										<label for="joinUrl">JoinUrl</label>
+										<input type="text" id="joinUrl" name="joinUrl" size="40" value="">
+										<br>
+
+										<label for="joinLinkText">JoinLinkText</label>
+										<input type="text" id="joinLinkText" name="joinLinkText" size="40" value="">
+										<br>
+
+										<label for="slackUrl">SlackUrl</label>
+										<input type="text" id="slackUrl" name="slackUrl" size="40" value="">
+										<br>
+
+										<label for="slackLinkText">SlackLinkText</label>
+										<input type="text" id="slackLinkText" name="slackLinkText" size="40" value="">
+										<br>
+
+										<label for="crossCutting">CrossCutting</label>
+										<input type="text" id="crossCutting" name="crossCutting" size="40" value="">
+										<br>
+
 										<input type="submit" name="submit" value="Save">
 										<input type="submit" name="submit" value="Cancel">
 									</fieldset>
@@ -67,6 +107,16 @@
 			<strapi:domainTeamsPublishedAt publishedAt = "${param.publishedAt}" />
 			<strapi:domainTeamsCreatedById createdById = "${param.createdById}" />
 			<strapi:domainTeamsUpdatedById updatedById = "${param.updatedById}" />
+			<strapi:domainTeamsSummary summary = "${param.summary}" />
+			<strapi:domainTeamsSupplementalInformation supplementalInformation = "${param.supplementalInformation}" />
+			<strapi:domainTeamsGoogleDriveUrl googleDriveUrl = "${param.googleDriveUrl}" />
+			<strapi:domainTeamsGoogleDriveLinkText googleDriveLinkText = "${param.googleDriveLinkText}" />
+			<strapi:domainTeamsGoogleGroupEmail googleGroupEmail = "${param.googleGroupEmail}" />
+			<strapi:domainTeamsJoinUrl joinUrl = "${param.joinUrl}" />
+			<strapi:domainTeamsJoinLinkText joinLinkText = "${param.joinLinkText}" />
+			<strapi:domainTeamsSlackUrl slackUrl = "${param.slackUrl}" />
+			<strapi:domainTeamsSlackLinkText slackLinkText = "${param.slackLinkText}" />
+			<strapi:domainTeamsCrossCutting crossCutting = "${param.crossCutting}" />
 		</strapi:domainTeams>
 		<c:redirect url="list.jsp" />
 	</c:when>

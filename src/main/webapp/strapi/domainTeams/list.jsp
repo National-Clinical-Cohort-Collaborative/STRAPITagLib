@@ -23,6 +23,16 @@
 									<th>PublishedAt</th>
 									<th>CreatedById</th>
 									<th>UpdatedById</th>
+									<th>Summary</th>
+									<th>SupplementalInformation</th>
+									<th>GoogleDriveUrl</th>
+									<th>GoogleDriveLinkText</th>
+									<th>GoogleGroupEmail</th>
+									<th>JoinUrl</th>
+									<th>JoinLinkText</th>
+									<th>SlackUrl</th>
+									<th>SlackLinkText</th>
+									<th>CrossCutting</th>
 									<th></th>
 								</tr>
 							</thead>
@@ -38,6 +48,16 @@
 											<td><strapi:domainTeamsPublishedAt /></td>
 											<td><strapi:domainTeamsCreatedById /></td>
 											<td><strapi:domainTeamsUpdatedById /></td>
+											<td><strapi:domainTeamsSummary /></td>
+											<td><strapi:domainTeamsSupplementalInformation /></td>
+											<td><strapi:domainTeamsGoogleDriveUrl /></td>
+											<td><strapi:domainTeamsGoogleDriveLinkText /></td>
+											<td><strapi:domainTeamsGoogleGroupEmail /></td>
+											<td><strapi:domainTeamsJoinUrl /></td>
+											<td><strapi:domainTeamsJoinLinkText /></td>
+											<td><strapi:domainTeamsSlackUrl /></td>
+											<td><strapi:domainTeamsSlackLinkText /></td>
+											<td><strapi:domainTeamsCrossCutting /></td>
 											<td><a href="../domainTeams/edit.jsp?ID=<strapi:domainTeamsID />">edit</a></td>
 											<td><a href="../domainTeams/delete.jsp?ID=<strapi:domainTeamsID />">delete</a></td>
 										</tr>
@@ -63,6 +83,16 @@
 		<strapi:domainTeamsPublishedAt />
 		<strapi:domainTeamsCreatedById />
 		<strapi:domainTeamsUpdatedById />
+		<strapi:domainTeamsSummary />
+		<strapi:domainTeamsSupplementalInformation />
+		<strapi:domainTeamsGoogleDriveUrl />
+		<strapi:domainTeamsGoogleDriveLinkText />
+		<strapi:domainTeamsGoogleGroupEmail />
+		<strapi:domainTeamsJoinUrl />
+		<strapi:domainTeamsJoinLinkText />
+		<strapi:domainTeamsSlackUrl />
+		<strapi:domainTeamsSlackLinkText />
+		<strapi:domainTeamsCrossCutting />
 			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:domainTeams>
 			</strapi:foreachDomainTeams>
                 </div>
