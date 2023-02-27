@@ -11,16 +11,11 @@
                         </div>
                         <div class="col-xs-8">
 <fmt:parseNumber var="ID" value="${param.ID}" />
-<strapi:youTubeVideos ID="${ID}">
-	<h2>YouTubeVideos: <strapi:youTubeVideosID /></h2>
+<strapi:presentations ID="${ID}">
+	<h2>Presentations: <strapi:presentationsID /></h2>
 		<table border=1>
 			<tr>
 			<th>ID</th>
-			<th>Header</th>
-			<th>Url</th>
-			<th>Width</th>
-			<th>Height</th>
-			<th>Footer</th>
 			<th>CreatedAt</th>
 			<th>UpdatedAt</th>
 			<th>PublishedAt</th>
@@ -28,17 +23,12 @@
 			<th>UpdatedById</th>
 			</tr>
 			<tr>
-				<td><a href="edit.jsp?ID=<strapi:youTubeVideosID />"><strapi:youTubeVideosID /></a></td>
-				<td><strapi:youTubeVideosHeader /></td>
-				<td><strapi:youTubeVideosUrl /></td>
-				<td><strapi:youTubeVideosWidth /></td>
-				<td><strapi:youTubeVideosHeight /></td>
-				<td><strapi:youTubeVideosFooter /></td>
-				<td><strapi:youTubeVideosCreatedAt /></td>
-				<td><strapi:youTubeVideosUpdatedAt /></td>
-				<td><strapi:youTubeVideosPublishedAt /></td>
-				<td><strapi:youTubeVideosCreatedById /></td>
-				<td><strapi:youTubeVideosUpdatedById /></td>
+				<td><a href="edit.jsp?ID=<strapi:presentationsID />"><strapi:presentationsID /></a></td>
+				<td><strapi:presentationsCreatedAt /></td>
+				<td><strapi:presentationsUpdatedAt /></td>
+				<td><strapi:presentationsPublishedAt /></td>
+				<td><strapi:presentationsCreatedById /></td>
+				<td><strapi:presentationsUpdatedById /></td>
 			</tr>
 		</table>
 
@@ -84,7 +74,7 @@
 		<strapi:presentationsYouTubeVideosLinksYouTubeVideoOrder />
 			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:presentationsYouTubeVideosLinks>
 			</strapi:foreachPresentationsYouTubeVideosLinks>
-</strapi:youTubeVideos>
+</strapi:presentations>
                 </div>
             </div>
         </div>

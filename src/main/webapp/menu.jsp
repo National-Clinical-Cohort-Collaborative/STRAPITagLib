@@ -8,6 +8,7 @@
     <li><a href="<util:applicationRoot/>/domainTeams/list.jsp" />DomainTeams list</a></li>
     <li><a href="<util:applicationRoot/>/domainTeamsLeadsLinks/list.jsp" />DomainTeamsLeadsLinks list</a></li>
     <li><a href="<util:applicationRoot/>/domains/list.jsp" />Domains list</a></li>
+    <li><a href="<util:applicationRoot/>/domainsCrossCuttingTeamsLinks/list.jsp" />DomainsCrossCuttingTeamsLinks list</a></li>
     <li><a href="<util:applicationRoot/>/domainsDomainTeamsLinks/list.jsp" />DomainsDomainTeamsLinks list</a></li>
     <li><a href="<util:applicationRoot/>/faqs/list.jsp" />Faqs list</a></li>
     <li><a href="<util:applicationRoot/>/files/list.jsp" />Files list</a></li>
@@ -33,6 +34,8 @@
     <li><a href="<util:applicationRoot/>/phastrs/list.jsp" />Phastrs list</a></li>
     <li><a href="<util:applicationRoot/>/phastrsFaqsLinks/list.jsp" />PhastrsFaqsLinks list</a></li>
     <li><a href="<util:applicationRoot/>/phastrsPublicHealthQuestionsLinks/list.jsp" />PhastrsPublicHealthQuestionsLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/presentations/list.jsp" />Presentations list</a></li>
+    <li><a href="<util:applicationRoot/>/presentationsYouTubeVideosLinks/list.jsp" />PresentationsYouTubeVideosLinks list</a></li>
     <li><a href="<util:applicationRoot/>/pressReleases/list.jsp" />PressReleases list</a></li>
     <li><a href="<util:applicationRoot/>/publicHealthQuestions/list.jsp" />PublicHealthQuestions list</a></li>
     <li><a href="<util:applicationRoot/>/youTubeVideos/list.jsp" />YouTubeVideos list</a></li>
