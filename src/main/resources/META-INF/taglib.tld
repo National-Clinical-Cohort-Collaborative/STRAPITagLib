@@ -26,6 +26,222 @@
 	</tag>
 
 	<tag>
+		<name>foreachAbouts</name>
+		<tag-class>org.cd2h.STRAPITagLib.abouts.AboutsIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>abouts</name>
+		<tag-class>org.cd2h.STRAPITagLib.abouts.Abouts</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteAbouts</name>
+		<tag-class>org.cd2h.STRAPITagLib.abouts.AboutsDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>aboutsID</name>
+		<tag-class>org.cd2h.STRAPITagLib.abouts.AboutsID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>aboutsBlock1</name>
+		<tag-class>org.cd2h.STRAPITagLib.abouts.AboutsBlock1</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>block1</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>aboutsBlock2</name>
+		<tag-class>org.cd2h.STRAPITagLib.abouts.AboutsBlock2</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>block2</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>aboutsBlock3</name>
+		<tag-class>org.cd2h.STRAPITagLib.abouts.AboutsBlock3</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>block3</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>aboutsCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.abouts.AboutsCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>aboutsCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.abouts.AboutsCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>aboutsUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.abouts.AboutsUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>aboutsUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.abouts.AboutsUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>aboutsPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.abouts.AboutsPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>aboutsPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.abouts.AboutsPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>aboutsCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.abouts.AboutsCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>aboutsUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.abouts.AboutsUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>aboutsBlock4</name>
+		<tag-class>org.cd2h.STRAPITagLib.abouts.AboutsBlock4</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>block4</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
 		<name>foreachBioGroups</name>
 		<tag-class>org.cd2h.STRAPITagLib.bioGroups.BioGroupsIterator</tag-class>
 		<body-content>JSP</body-content>
@@ -1038,6 +1254,319 @@
 	<tag>
 		<name>domainTeamsLeadsLinksDomainTeamOrder</name>
 		<tag-class>org.cd2h.STRAPITagLib.domainTeamsLeadsLinks.DomainTeamsLeadsLinksDomainTeamOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>domainTeamOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachDomains</name>
+		<tag-class>org.cd2h.STRAPITagLib.domains.DomainsIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domains</name>
+		<tag-class>org.cd2h.STRAPITagLib.domains.Domains</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteDomains</name>
+		<tag-class>org.cd2h.STRAPITagLib.domains.DomainsDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainsID</name>
+		<tag-class>org.cd2h.STRAPITagLib.domains.DomainsID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainsBlock1</name>
+		<tag-class>org.cd2h.STRAPITagLib.domains.DomainsBlock1</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>block1</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainsBlock2</name>
+		<tag-class>org.cd2h.STRAPITagLib.domains.DomainsBlock2</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>block2</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainsCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.domains.DomainsCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainsCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.domains.DomainsCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainsUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.domains.DomainsUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainsUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.domains.DomainsUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainsPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.domains.DomainsPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainsPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.domains.DomainsPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainsCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.domains.DomainsCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainsUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.domains.DomainsUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachDomainsDomainTeamsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.domainsDomainTeamsLinks.DomainsDomainTeamsLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useDomainTeams</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useDomains</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>domainsDomainTeamsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.domainsDomainTeamsLinks.DomainsDomainTeamsLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteDomainsDomainTeamsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.domainsDomainTeamsLinks.DomainsDomainTeamsLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainsDomainTeamsLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.domainsDomainTeamsLinks.DomainsDomainTeamsLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainsDomainTeamsLinksDomainId</name>
+		<tag-class>org.cd2h.STRAPITagLib.domainsDomainTeamsLinks.DomainsDomainTeamsLinksDomainId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>domainId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainsDomainTeamsLinksDomainTeamId</name>
+		<tag-class>org.cd2h.STRAPITagLib.domainsDomainTeamsLinks.DomainsDomainTeamsLinksDomainTeamId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>domainTeamId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>domainsDomainTeamsLinksDomainTeamOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.domainsDomainTeamsLinks.DomainsDomainTeamsLinksDomainTeamOrder</tag-class>
 		<body-content>empty</body-content>
 
 		<attribute>
@@ -2634,6 +3163,319 @@
 	</tag>
 
 	<tag>
+		<name>foreachMissions</name>
+		<tag-class>org.cd2h.STRAPITagLib.missions.MissionsIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>missions</name>
+		<tag-class>org.cd2h.STRAPITagLib.missions.Missions</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteMissions</name>
+		<tag-class>org.cd2h.STRAPITagLib.missions.MissionsDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>missionsID</name>
+		<tag-class>org.cd2h.STRAPITagLib.missions.MissionsID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>missionsBlock1</name>
+		<tag-class>org.cd2h.STRAPITagLib.missions.MissionsBlock1</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>block1</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>missionsBlock2</name>
+		<tag-class>org.cd2h.STRAPITagLib.missions.MissionsBlock2</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>block2</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>missionsCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.missions.MissionsCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>missionsCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.missions.MissionsCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>missionsUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.missions.MissionsUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>missionsUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.missions.MissionsUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>missionsPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.missions.MissionsPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>missionsPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.missions.MissionsPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>missionsCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.missions.MissionsCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>missionsUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.missions.MissionsUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachMissionsPartnerGroupsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.missionsPartnerGroupsLinks.MissionsPartnerGroupsLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useMissions</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>usePartnerGroups</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>missionsPartnerGroupsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.missionsPartnerGroupsLinks.MissionsPartnerGroupsLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteMissionsPartnerGroupsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.missionsPartnerGroupsLinks.MissionsPartnerGroupsLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>missionsPartnerGroupsLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.missionsPartnerGroupsLinks.MissionsPartnerGroupsLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>missionsPartnerGroupsLinksMissionId</name>
+		<tag-class>org.cd2h.STRAPITagLib.missionsPartnerGroupsLinks.MissionsPartnerGroupsLinksMissionId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>missionId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>missionsPartnerGroupsLinksPartnerGroupId</name>
+		<tag-class>org.cd2h.STRAPITagLib.missionsPartnerGroupsLinks.MissionsPartnerGroupsLinksPartnerGroupId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>partnerGroupId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>missionsPartnerGroupsLinksPartnerGroupOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.missionsPartnerGroupsLinks.MissionsPartnerGroupsLinksPartnerGroupOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>partnerGroupOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
 		<name>foreachNavBars</name>
 		<tag-class>org.cd2h.STRAPITagLib.navBars.NavBarsIterator</tag-class>
 		<body-content>JSP</body-content>
@@ -3446,6 +4288,788 @@
 
 		<attribute>
 			<name>navItemOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachNewsItems</name>
+		<tag-class>org.cd2h.STRAPITagLib.newsItems.NewsItemsIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>newsItems</name>
+		<tag-class>org.cd2h.STRAPITagLib.newsItems.NewsItems</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteNewsItems</name>
+		<tag-class>org.cd2h.STRAPITagLib.newsItems.NewsItemsDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>newsItemsID</name>
+		<tag-class>org.cd2h.STRAPITagLib.newsItems.NewsItemsID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>newsItemsCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.newsItems.NewsItemsCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>newsItemsCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.newsItems.NewsItemsCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>newsItemsUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.newsItems.NewsItemsUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>newsItemsUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.newsItems.NewsItemsUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>newsItemsPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.newsItems.NewsItemsPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>newsItemsPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.newsItems.NewsItemsPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>newsItemsCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.newsItems.NewsItemsCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>newsItemsUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.newsItems.NewsItemsUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachNewsItemsPressReleasesLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.newsItemsPressReleasesLinks.NewsItemsPressReleasesLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useNewsItems</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>usePressReleases</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>newsItemsPressReleasesLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.newsItemsPressReleasesLinks.NewsItemsPressReleasesLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteNewsItemsPressReleasesLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.newsItemsPressReleasesLinks.NewsItemsPressReleasesLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>newsItemsPressReleasesLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.newsItemsPressReleasesLinks.NewsItemsPressReleasesLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>newsItemsPressReleasesLinksNewsItemId</name>
+		<tag-class>org.cd2h.STRAPITagLib.newsItemsPressReleasesLinks.NewsItemsPressReleasesLinksNewsItemId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>newsItemId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>newsItemsPressReleasesLinksPressReleaseId</name>
+		<tag-class>org.cd2h.STRAPITagLib.newsItemsPressReleasesLinks.NewsItemsPressReleasesLinksPressReleaseId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>pressReleaseId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>newsItemsPressReleasesLinksPressReleaseOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.newsItemsPressReleasesLinks.NewsItemsPressReleasesLinksPressReleaseOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>pressReleaseOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachPartnerGroups</name>
+		<tag-class>org.cd2h.STRAPITagLib.partnerGroups.PartnerGroupsIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>partnerGroups</name>
+		<tag-class>org.cd2h.STRAPITagLib.partnerGroups.PartnerGroups</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deletePartnerGroups</name>
+		<tag-class>org.cd2h.STRAPITagLib.partnerGroups.PartnerGroupsDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>partnerGroupsID</name>
+		<tag-class>org.cd2h.STRAPITagLib.partnerGroups.PartnerGroupsID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>partnerGroupsName</name>
+		<tag-class>org.cd2h.STRAPITagLib.partnerGroups.PartnerGroupsName</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>name</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>partnerGroupsCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.partnerGroups.PartnerGroupsCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>partnerGroupsCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.partnerGroups.PartnerGroupsCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>partnerGroupsUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.partnerGroups.PartnerGroupsUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>partnerGroupsUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.partnerGroups.PartnerGroupsUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>partnerGroupsPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.partnerGroups.PartnerGroupsPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>partnerGroupsPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.partnerGroups.PartnerGroupsPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>partnerGroupsCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.partnerGroups.PartnerGroupsCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>partnerGroupsUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.partnerGroups.PartnerGroupsUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachPartners</name>
+		<tag-class>org.cd2h.STRAPITagLib.partners.PartnersIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>partners</name>
+		<tag-class>org.cd2h.STRAPITagLib.partners.Partners</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deletePartners</name>
+		<tag-class>org.cd2h.STRAPITagLib.partners.PartnersDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>partnersID</name>
+		<tag-class>org.cd2h.STRAPITagLib.partners.PartnersID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>partnersName</name>
+		<tag-class>org.cd2h.STRAPITagLib.partners.PartnersName</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>name</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>partnersUrl</name>
+		<tag-class>org.cd2h.STRAPITagLib.partners.PartnersUrl</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>url</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>partnersCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.partners.PartnersCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>partnersCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.partners.PartnersCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>partnersUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.partners.PartnersUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>partnersUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.partners.PartnersUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>partnersPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.partners.PartnersPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>partnersPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.partners.PartnersPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>partnersCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.partners.PartnersCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>partnersUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.partners.PartnersUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachPartnersPartnerGroupLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.partnersPartnerGroupLinks.PartnersPartnerGroupLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>usePartnerGroups</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>usePartners</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>partnersPartnerGroupLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.partnersPartnerGroupLinks.PartnersPartnerGroupLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deletePartnersPartnerGroupLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.partnersPartnerGroupLinks.PartnersPartnerGroupLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>partnersPartnerGroupLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.partnersPartnerGroupLinks.PartnersPartnerGroupLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>partnersPartnerGroupLinksPartnerId</name>
+		<tag-class>org.cd2h.STRAPITagLib.partnersPartnerGroupLinks.PartnersPartnerGroupLinksPartnerId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>partnerId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>partnersPartnerGroupLinksPartnerGroupId</name>
+		<tag-class>org.cd2h.STRAPITagLib.partnersPartnerGroupLinks.PartnersPartnerGroupLinksPartnerGroupId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>partnerGroupId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>partnersPartnerGroupLinksPartnerOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.partnersPartnerGroupLinks.PartnersPartnerGroupLinksPartnerOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>partnerOrder</name>
 			<required>false</required>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
@@ -4665,6 +6289,246 @@
 		</attribute>
 	</tag>
 
+	<tag>
+		<name>foreachYouTubeVideos</name>
+		<tag-class>org.cd2h.STRAPITagLib.youTubeVideos.YouTubeVideosIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>youTubeVideos</name>
+		<tag-class>org.cd2h.STRAPITagLib.youTubeVideos.YouTubeVideos</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteYouTubeVideos</name>
+		<tag-class>org.cd2h.STRAPITagLib.youTubeVideos.YouTubeVideosDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>youTubeVideosID</name>
+		<tag-class>org.cd2h.STRAPITagLib.youTubeVideos.YouTubeVideosID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>youTubeVideosHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.youTubeVideos.YouTubeVideosHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>header</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>youTubeVideosUrl</name>
+		<tag-class>org.cd2h.STRAPITagLib.youTubeVideos.YouTubeVideosUrl</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>url</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>youTubeVideosWidth</name>
+		<tag-class>org.cd2h.STRAPITagLib.youTubeVideos.YouTubeVideosWidth</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>width</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>youTubeVideosHeight</name>
+		<tag-class>org.cd2h.STRAPITagLib.youTubeVideos.YouTubeVideosHeight</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>height</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>youTubeVideosFooter</name>
+		<tag-class>org.cd2h.STRAPITagLib.youTubeVideos.YouTubeVideosFooter</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>footer</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>youTubeVideosCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.youTubeVideos.YouTubeVideosCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>youTubeVideosCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.youTubeVideos.YouTubeVideosCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>youTubeVideosUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.youTubeVideos.YouTubeVideosUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>youTubeVideosUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.youTubeVideos.YouTubeVideosUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>youTubeVideosPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.youTubeVideos.YouTubeVideosPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>youTubeVideosPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.youTubeVideos.YouTubeVideosPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>youTubeVideosCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.youTubeVideos.YouTubeVideosCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>youTubeVideosUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.youTubeVideos.YouTubeVideosUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<function>
+		<name>aboutsCount</name>
+		<function-class>org.cd2h.STRAPITagLib.abouts.AboutsIterator</function-class>
+		<function-signature>java.lang.String aboutsCount()</function-signature>
+	</function>
+
+	<function>
+		<name>aboutsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.abouts.AboutsIterator</function-class>
+		<function-signature>java.lang.String aboutsExists(java.lang.String)</function-signature>
+	</function>
+
 	<function>
 		<name>bioGroupsCount</name>
 		<function-class>org.cd2h.STRAPITagLib.bioGroups.BioGroupsIterator</function-class>
@@ -4771,6 +6635,54 @@
 		<name>biosDomainTeamsExists</name>
 		<function-class>org.cd2h.STRAPITagLib.domainTeamsLeadsLinks.DomainTeamsLeadsLinksIterator</function-class>
 		<function-signature>java.lang.Boolean biosDomainTeamsExists(java.lang.String, java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>domainsCount</name>
+		<function-class>org.cd2h.STRAPITagLib.domains.DomainsIterator</function-class>
+		<function-signature>java.lang.String domainsCount()</function-signature>
+	</function>
+
+	<function>
+		<name>domainsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.domains.DomainsIterator</function-class>
+		<function-signature>java.lang.String domainsExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>domainsDomainTeamsLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.domainsDomainTeamsLinks.DomainsDomainTeamsLinksIterator</function-class>
+		<function-signature>java.lang.String domainsDomainTeamsLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>domainsDomainTeamsLinksCountByDomainTeams</name>
+		<function-class>org.cd2h.STRAPITagLib.domainsDomainTeamsLinks.DomainsDomainTeamsLinksIterator</function-class>
+		<function-signature>java.lang.String domainsDomainTeamsLinksCountByDomainTeams(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>domainTeamsHasDomainsDomainTeamsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.domainsDomainTeamsLinks.DomainsDomainTeamsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean domainTeamsHasDomainsDomainTeamsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>domainsDomainTeamsLinksCountByDomains</name>
+		<function-class>org.cd2h.STRAPITagLib.domainsDomainTeamsLinks.DomainsDomainTeamsLinksIterator</function-class>
+		<function-signature>java.lang.String domainsDomainTeamsLinksCountByDomains(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>domainsHasDomainsDomainTeamsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.domainsDomainTeamsLinks.DomainsDomainTeamsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean domainsHasDomainsDomainTeamsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>domainTeamsDomainsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.domainsDomainTeamsLinks.DomainsDomainTeamsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean domainTeamsDomainsExists(java.lang.String, java.lang.String)</function-signature>
 	</function>
 
 	<function>
@@ -4942,6 +6854,54 @@
 	</function>
 
 	<function>
+		<name>missionsCount</name>
+		<function-class>org.cd2h.STRAPITagLib.missions.MissionsIterator</function-class>
+		<function-signature>java.lang.String missionsCount()</function-signature>
+	</function>
+
+	<function>
+		<name>missionsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.missions.MissionsIterator</function-class>
+		<function-signature>java.lang.String missionsExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>missionsPartnerGroupsLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.missionsPartnerGroupsLinks.MissionsPartnerGroupsLinksIterator</function-class>
+		<function-signature>java.lang.String missionsPartnerGroupsLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>missionsPartnerGroupsLinksCountByMissions</name>
+		<function-class>org.cd2h.STRAPITagLib.missionsPartnerGroupsLinks.MissionsPartnerGroupsLinksIterator</function-class>
+		<function-signature>java.lang.String missionsPartnerGroupsLinksCountByMissions(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>missionsHasMissionsPartnerGroupsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.missionsPartnerGroupsLinks.MissionsPartnerGroupsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean missionsHasMissionsPartnerGroupsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>missionsPartnerGroupsLinksCountByPartnerGroups</name>
+		<function-class>org.cd2h.STRAPITagLib.missionsPartnerGroupsLinks.MissionsPartnerGroupsLinksIterator</function-class>
+		<function-signature>java.lang.String missionsPartnerGroupsLinksCountByPartnerGroups(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>partnerGroupsHasMissionsPartnerGroupsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.missionsPartnerGroupsLinks.MissionsPartnerGroupsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean partnerGroupsHasMissionsPartnerGroupsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>missionsPartnerGroupsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.missionsPartnerGroupsLinks.MissionsPartnerGroupsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean missionsPartnerGroupsExists(java.lang.String, java.lang.String)</function-signature>
+	</function>
+
+	<function>
 		<name>navBarsCount</name>
 		<function-class>org.cd2h.STRAPITagLib.navBars.NavBarsIterator</function-class>
 		<function-signature>java.lang.String navBarsCount()</function-signature>
@@ -5050,6 +7010,114 @@
 	</function>
 
 	<function>
+		<name>newsItemsCount</name>
+		<function-class>org.cd2h.STRAPITagLib.newsItems.NewsItemsIterator</function-class>
+		<function-signature>java.lang.String newsItemsCount()</function-signature>
+	</function>
+
+	<function>
+		<name>newsItemsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.newsItems.NewsItemsIterator</function-class>
+		<function-signature>java.lang.String newsItemsExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>newsItemsPressReleasesLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.newsItemsPressReleasesLinks.NewsItemsPressReleasesLinksIterator</function-class>
+		<function-signature>java.lang.String newsItemsPressReleasesLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>newsItemsPressReleasesLinksCountByNewsItems</name>
+		<function-class>org.cd2h.STRAPITagLib.newsItemsPressReleasesLinks.NewsItemsPressReleasesLinksIterator</function-class>
+		<function-signature>java.lang.String newsItemsPressReleasesLinksCountByNewsItems(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>newsItemsHasNewsItemsPressReleasesLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.newsItemsPressReleasesLinks.NewsItemsPressReleasesLinksIterator</function-class>
+		<function-signature>java.lang.Boolean newsItemsHasNewsItemsPressReleasesLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>newsItemsPressReleasesLinksCountByPressReleases</name>
+		<function-class>org.cd2h.STRAPITagLib.newsItemsPressReleasesLinks.NewsItemsPressReleasesLinksIterator</function-class>
+		<function-signature>java.lang.String newsItemsPressReleasesLinksCountByPressReleases(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>pressReleasesHasNewsItemsPressReleasesLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.newsItemsPressReleasesLinks.NewsItemsPressReleasesLinksIterator</function-class>
+		<function-signature>java.lang.Boolean pressReleasesHasNewsItemsPressReleasesLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>newsItemsPressReleasesExists</name>
+		<function-class>org.cd2h.STRAPITagLib.newsItemsPressReleasesLinks.NewsItemsPressReleasesLinksIterator</function-class>
+		<function-signature>java.lang.Boolean newsItemsPressReleasesExists(java.lang.String, java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>partnerGroupsCount</name>
+		<function-class>org.cd2h.STRAPITagLib.partnerGroups.PartnerGroupsIterator</function-class>
+		<function-signature>java.lang.String partnerGroupsCount()</function-signature>
+	</function>
+
+	<function>
+		<name>partnerGroupsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.partnerGroups.PartnerGroupsIterator</function-class>
+		<function-signature>java.lang.String partnerGroupsExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>partnersCount</name>
+		<function-class>org.cd2h.STRAPITagLib.partners.PartnersIterator</function-class>
+		<function-signature>java.lang.String partnersCount()</function-signature>
+	</function>
+
+	<function>
+		<name>partnersExists</name>
+		<function-class>org.cd2h.STRAPITagLib.partners.PartnersIterator</function-class>
+		<function-signature>java.lang.String partnersExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>partnersPartnerGroupLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.partnersPartnerGroupLinks.PartnersPartnerGroupLinksIterator</function-class>
+		<function-signature>java.lang.String partnersPartnerGroupLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>partnersPartnerGroupLinksCountByPartnerGroups</name>
+		<function-class>org.cd2h.STRAPITagLib.partnersPartnerGroupLinks.PartnersPartnerGroupLinksIterator</function-class>
+		<function-signature>java.lang.String partnersPartnerGroupLinksCountByPartnerGroups(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>partnerGroupsHasPartnersPartnerGroupLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.partnersPartnerGroupLinks.PartnersPartnerGroupLinksIterator</function-class>
+		<function-signature>java.lang.Boolean partnerGroupsHasPartnersPartnerGroupLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>partnersPartnerGroupLinksCountByPartners</name>
+		<function-class>org.cd2h.STRAPITagLib.partnersPartnerGroupLinks.PartnersPartnerGroupLinksIterator</function-class>
+		<function-signature>java.lang.String partnersPartnerGroupLinksCountByPartners(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>partnersHasPartnersPartnerGroupLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.partnersPartnerGroupLinks.PartnersPartnerGroupLinksIterator</function-class>
+		<function-signature>java.lang.Boolean partnersHasPartnersPartnerGroupLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>partnerGroupsPartnersExists</name>
+		<function-class>org.cd2h.STRAPITagLib.partnersPartnerGroupLinks.PartnersPartnerGroupLinksIterator</function-class>
+		<function-signature>java.lang.Boolean partnerGroupsPartnersExists(java.lang.String, java.lang.String)</function-signature>
+	</function>
+
+	<function>
 		<name>phastrsCount</name>
 		<function-class>org.cd2h.STRAPITagLib.phastrs.PhastrsIterator</function-class>
 		<function-signature>java.lang.String phastrsCount()</function-signature>
@@ -5155,5 +7223,17 @@
 		<name>publicHealthQuestionsExists</name>
 		<function-class>org.cd2h.STRAPITagLib.publicHealthQuestions.PublicHealthQuestionsIterator</function-class>
 		<function-signature>java.lang.String publicHealthQuestionsExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>youTubeVideosCount</name>
+		<function-class>org.cd2h.STRAPITagLib.youTubeVideos.YouTubeVideosIterator</function-class>
+		<function-signature>java.lang.String youTubeVideosCount()</function-signature>
+	</function>
+
+	<function>
+		<name>youTubeVideosExists</name>
+		<function-class>org.cd2h.STRAPITagLib.youTubeVideos.YouTubeVideosIterator</function-class>
+		<function-signature>java.lang.String youTubeVideosExists(java.lang.String)</function-signature>
 	</function>
 </taglib>
