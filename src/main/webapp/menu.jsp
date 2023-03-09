@@ -5,6 +5,9 @@
     <li><a href="<util:applicationRoot/>/bioGroups/list.jsp" />BioGroups list</a></li>
     <li><a href="<util:applicationRoot/>/bios/list.jsp" />Bios list</a></li>
     <li><a href="<util:applicationRoot/>/biosBioGroupsLinks/list.jsp" />BiosBioGroupsLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/contentImageBlockLefts/list.jsp" />ContentImageBlockLefts list</a></li>
+    <li><a href="<util:applicationRoot/>/contentImageBlockRights/list.jsp" />ContentImageBlockRights list</a></li>
+    <li><a href="<util:applicationRoot/>/contributors/list.jsp" />Contributors list</a></li>
     <li><a href="<util:applicationRoot/>/domainTeams/list.jsp" />DomainTeams list</a></li>
     <li><a href="<util:applicationRoot/>/domainTeamsLeadsLinks/list.jsp" />DomainTeamsLeadsLinks list</a></li>
     <li><a href="<util:applicationRoot/>/domains/list.jsp" />Domains list</a></li>
@@ -15,6 +18,9 @@
     <li><a href="<util:applicationRoot/>/filesFolderLinks/list.jsp" />FilesFolderLinks list</a></li>
     <li><a href="<util:applicationRoot/>/filesRelatedMorphs/list.jsp" />FilesRelatedMorphs list</a></li>
     <li><a href="<util:applicationRoot/>/footers/list.jsp" />Footers list</a></li>
+    <li><a href="<util:applicationRoot/>/forumPresentations/list.jsp" />ForumPresentations list</a></li>
+    <li><a href="<util:applicationRoot/>/forums/list.jsp" />Forums list</a></li>
+    <li><a href="<util:applicationRoot/>/forumsForumPresentationsLinks/list.jsp" />ForumsForumPresentationsLinks list</a></li>
     <li><a href="<util:applicationRoot/>/landingPages/list.jsp" />LandingPages list</a></li>
     <li><a href="<util:applicationRoot/>/landingPagesDomainTeamsLinks/list.jsp" />LandingPagesDomainTeamsLinks list</a></li>
     <li><a href="<util:applicationRoot/>/leaderships/list.jsp" />Leaderships list</a></li>
@@ -28,6 +34,9 @@
     <li><a href="<util:applicationRoot/>/navItemsNavColumnLinks/list.jsp" />NavItemsNavColumnLinks list</a></li>
     <li><a href="<util:applicationRoot/>/newsItems/list.jsp" />NewsItems list</a></li>
     <li><a href="<util:applicationRoot/>/newsItemsPressReleasesLinks/list.jsp" />NewsItemsPressReleasesLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/newsletterIssues/list.jsp" />NewsletterIssues list</a></li>
+    <li><a href="<util:applicationRoot/>/newsletters/list.jsp" />Newsletters list</a></li>
+    <li><a href="<util:applicationRoot/>/newslettersNewsletterIssuesLinks/list.jsp" />NewslettersNewsletterIssuesLinks list</a></li>
     <li><a href="<util:applicationRoot/>/partnerGroups/list.jsp" />PartnerGroups list</a></li>
     <li><a href="<util:applicationRoot/>/partners/list.jsp" />Partners list</a></li>
     <li><a href="<util:applicationRoot/>/partnersPartnerGroupLinks/list.jsp" />PartnersPartnerGroupLinks list</a></li>
@@ -38,5 +47,8 @@
     <li><a href="<util:applicationRoot/>/presentationsYouTubeVideosLinks/list.jsp" />PresentationsYouTubeVideosLinks list</a></li>
     <li><a href="<util:applicationRoot/>/pressReleases/list.jsp" />PressReleases list</a></li>
     <li><a href="<util:applicationRoot/>/publicHealthQuestions/list.jsp" />PublicHealthQuestions list</a></li>
+    <li><a href="<util:applicationRoot/>/workstreams/list.jsp" />Workstreams list</a></li>
+    <li><a href="<util:applicationRoot/>/workstreamsIntroLinks/list.jsp" />WorkstreamsIntroLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/workstreamsYouTubeVideoLinks/list.jsp" />WorkstreamsYouTubeVideoLinks list</a></li>
     <li><a href="<util:applicationRoot/>/youTubeVideos/list.jsp" />YouTubeVideos list</a></li>
 </ul>
