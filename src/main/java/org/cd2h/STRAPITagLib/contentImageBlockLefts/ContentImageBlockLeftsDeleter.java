@@ -25,6 +25,8 @@ public class ContentImageBlockLeftsDeleter extends STRAPITagLibBodyTagSupport {
     Timestamp publishedAt = null;
     int createdById = 0;
     int updatedById = 0;
+    String url = null;
+    String urlLabel = null;
 	Vector<STRAPITagLibTagSupport> parentEntities = new Vector<STRAPITagLibTagSupport>();
 
 	private static final Logger log = LogManager.getLogger(ContentImageBlockLeftsDeleter.class);

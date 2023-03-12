@@ -82,6 +82,92 @@
 		<strapi:phastrsFaqsLinksFaqOrder />
 			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:phastrsFaqsLinks>
 			</strapi:foreachPhastrsFaqsLinks>
+
+						<h2>PprlsFaqsLinks List</h2>
+						<table class="table table-bordered table-striped table-hover table-datatable">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>PprlId</th>
+									<th>FaqId</th>
+									<th>FaqOrder</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<strapi:foreachPprlsFaqsLinks var="idIter">
+									<strapi:pprlsFaqsLinks>
+										<tr>
+											<td><a href="../pprlsFaqsLinks/show.jsp?ID=<strapi:pprlsFaqsLinksID />"><strapi:pprlsFaqsLinksID /></a></td>
+											<td><strapi:pprlsFaqsLinksPprlId /></td>
+											<td><strapi:pprlsFaqsLinksFaqId /></td>
+											<td><strapi:pprlsFaqsLinksFaqOrder /></td>
+											<td><a href="../pprlsFaqsLinks/edit.jsp?ID=<strapi:pprlsFaqsLinksID />">edit</a></td>
+											<td><a href="../pprlsFaqsLinks/delete.jsp?ID=<strapi:pprlsFaqsLinksID />">delete</a></td>
+										</tr>
+									</strapi:pprlsFaqsLinks>
+								</strapi:foreachPprlsFaqsLinks>
+							</tbody>
+							<tfoot>
+							</tfoot>
+						</table>
+
+						<br/>
+
+						<a class="btn" href="../pprlsFaqsLinks/add.jsp?ID=${param.ID}&ID=${param.ID}">add PprlsFaqsLinks</a>
+						<br/><br/>
+
+		<strapi:foreachPprlsFaqsLinks var="idIter">
+			<strapi:pprlsFaqsLinks>
+						<a href="../../strapi/pprlsFaqsLinks/pprlsFaqsLinks.jsp?ID=<strapi:pprlsFaqsLinksID />"><strapi:pprlsFaqsLinksID /></a>
+		<strapi:pprlsFaqsLinksPprlId />
+		<strapi:pprlsFaqsLinksFaqId />
+		<strapi:pprlsFaqsLinksFaqOrder />
+			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:pprlsFaqsLinks>
+			</strapi:foreachPprlsFaqsLinks>
+
+						<h2>WorkstreamInstancesFaqsLinks List</h2>
+						<table class="table table-bordered table-striped table-hover table-datatable">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>WorkstreamInstanceId</th>
+									<th>FaqId</th>
+									<th>FaqOrder</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<strapi:foreachWorkstreamInstancesFaqsLinks var="idIter">
+									<strapi:workstreamInstancesFaqsLinks>
+										<tr>
+											<td><a href="../workstreamInstancesFaqsLinks/show.jsp?ID=<strapi:workstreamInstancesFaqsLinksID />"><strapi:workstreamInstancesFaqsLinksID /></a></td>
+											<td><strapi:workstreamInstancesFaqsLinksWorkstreamInstanceId /></td>
+											<td><strapi:workstreamInstancesFaqsLinksFaqId /></td>
+											<td><strapi:workstreamInstancesFaqsLinksFaqOrder /></td>
+											<td><a href="../workstreamInstancesFaqsLinks/edit.jsp?ID=<strapi:workstreamInstancesFaqsLinksID />">edit</a></td>
+											<td><a href="../workstreamInstancesFaqsLinks/delete.jsp?ID=<strapi:workstreamInstancesFaqsLinksID />">delete</a></td>
+										</tr>
+									</strapi:workstreamInstancesFaqsLinks>
+								</strapi:foreachWorkstreamInstancesFaqsLinks>
+							</tbody>
+							<tfoot>
+							</tfoot>
+						</table>
+
+						<br/>
+
+						<a class="btn" href="../workstreamInstancesFaqsLinks/add.jsp?ID=${param.ID}&ID=${param.ID}">add WorkstreamInstancesFaqsLinks</a>
+						<br/><br/>
+
+		<strapi:foreachWorkstreamInstancesFaqsLinks var="idIter">
+			<strapi:workstreamInstancesFaqsLinks>
+						<a href="../../strapi/workstreamInstancesFaqsLinks/workstreamInstancesFaqsLinks.jsp?ID=<strapi:workstreamInstancesFaqsLinksID />"><strapi:workstreamInstancesFaqsLinksID /></a>
+		<strapi:workstreamInstancesFaqsLinksWorkstreamInstanceId />
+		<strapi:workstreamInstancesFaqsLinksFaqId />
+		<strapi:workstreamInstancesFaqsLinksFaqOrder />
+			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:workstreamInstancesFaqsLinks>
+			</strapi:foreachWorkstreamInstancesFaqsLinks>
 </strapi:faqs>
                 </div>
             </div>

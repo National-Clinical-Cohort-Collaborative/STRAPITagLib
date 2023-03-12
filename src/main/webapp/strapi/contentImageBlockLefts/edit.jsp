@@ -46,6 +46,14 @@
 											<input type="text" id="updatedById" name="updatedById" size="40" value="<strapi:contentImageBlockLeftsUpdatedById />">
 											<br>
 
+											<label for="url">Url</label>
+											<input type="text" id="url" name="url" size="40" value="<strapi:contentImageBlockLeftsUrl />">
+											<br>
+
+											<label for="urlLabel">UrlLabel</label>
+											<input type="text" id="urlLabel" name="urlLabel" size="40" value="<strapi:contentImageBlockLeftsUrlLabel />">
+											<br>
+
 											<input type="submit" name="submit" value="Save">
 											<input type="submit" name="submit" value="Cancel">
 											<input type="hidden" name="ID" value="${param.ID}">
@@ -74,6 +82,8 @@
 			<strapi:contentImageBlockLeftsPublishedAt publishedAt = "${param.publishedAt}" />
 			<strapi:contentImageBlockLeftsCreatedById createdById = "${param.createdById}" />
 			<strapi:contentImageBlockLeftsUpdatedById updatedById = "${param.updatedById}" />
+			<strapi:contentImageBlockLeftsUrl url = "${param.url}" />
+			<strapi:contentImageBlockLeftsUrlLabel urlLabel = "${param.urlLabel}" />
 		</strapi:contentImageBlockLefts>
 		<c:redirect url="list.jsp" />
 	</c:when>

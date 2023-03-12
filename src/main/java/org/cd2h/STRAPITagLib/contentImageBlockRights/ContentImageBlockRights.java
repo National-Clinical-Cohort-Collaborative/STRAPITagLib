@@ -36,6 +36,8 @@ public class ContentImageBlockRights extends STRAPITagLibTagSupport {
 	Timestamp publishedAt = null;
 	int createdById = 0;
 	int updatedById = 0;
+	String url = null;
+	String urlLabel = null;
 
 	private String var = null;
 
@@ -59,7 +61,7 @@ public class ContentImageBlockRights extends STRAPITagLibTagSupport {
 			} else {
 				// an iterator or ID was provided as an attribute - we need to load a ContentImageBlockRights from the database
 				boolean found = false;
-				PreparedStatement stmt = getConnection().prepareStatement("select header,content,created_at,updated_at,published_at,created_by_id,updated_by_id from strapi.content_image_block_rights where id = ?");
+				PreparedStatement stmt = getConnection().prepareStatement("select header,content,created_at,updated_at,published_at,created_by_id,updated_by_id,url,url_label from strapi.content_image_block_rights where id = ?");
 				stmt.setInt(1,ID);
 				ResultSet rs = stmt.executeQuery();
 				while (rs.next()) {
@@ -77,6 +79,10 @@ public class ContentImageBlockRights extends STRAPITagLibTagSupport {
 						createdById = rs.getInt(6);
 					if (updatedById == 0)
 						updatedById = rs.getInt(7);
+					if (url == null)
+						url = rs.getString(8);
+					if (urlLabel == null)
+						urlLabel = rs.getString(9);
 					found = true;
 				}
 				stmt.close();
@@ -155,7 +161,7 @@ public class ContentImageBlockRights extends STRAPITagLibTagSupport {
 				}
 			}
 			if (commitNeeded) {
-				PreparedStatement stmt = getConnection().prepareStatement("update strapi.content_image_block_rights set header = ?, content = ?, created_at = ?, updated_at = ?, published_at = ?, created_by_id = ?, updated_by_id = ? where id = ? ");
+				PreparedStatement stmt = getConnection().prepareStatement("update strapi.content_image_block_rights set header = ?, content = ?, created_at = ?, updated_at = ?, published_at = ?, created_by_id = ?, updated_by_id = ?, url = ?, url_label = ? where id = ? ");
 				stmt.setString( 1, header );
 				stmt.setString( 2, content );
 				stmt.setTimestamp( 3, createdAt );
@@ -163,7 +169,9 @@ public class ContentImageBlockRights extends STRAPITagLibTagSupport {
 				stmt.setTimestamp( 5, publishedAt );
 				stmt.setInt( 6, createdById );
 				stmt.setInt( 7, updatedById );
-				stmt.setInt(8,ID);
+				stmt.setString( 8, url );
+				stmt.setString( 9, urlLabel );
+				stmt.setInt(10,ID);
 				stmt.executeUpdate();
 				stmt.close();
 			}
@@ -202,7 +210,13 @@ public class ContentImageBlockRights extends STRAPITagLibTagSupport {
 		if (content == null){
 			content = "";
 		}
-		PreparedStatement stmt = getConnection().prepareStatement("insert into strapi.content_image_block_rights(header,content,created_at,updated_at,published_at,created_by_id,updated_by_id) values (?,?,?,?,?,?,?)", java.sql.Statement.RETURN_GENERATED_KEYS);
+		if (url == null){
+			url = "";
+		}
+		if (urlLabel == null){
+			urlLabel = "";
+		}
+		PreparedStatement stmt = getConnection().prepareStatement("insert into strapi.content_image_block_rights(header,content,created_at,updated_at,published_at,created_by_id,updated_by_id,url,url_label) values (?,?,?,?,?,?,?,?,?)", java.sql.Statement.RETURN_GENERATED_KEYS);
 		stmt.setString(1,header);
 		stmt.setString(2,content);
 		stmt.setTimestamp(3,createdAt);
@@ -210,6 +224,8 @@ public class ContentImageBlockRights extends STRAPITagLibTagSupport {
 		stmt.setTimestamp(5,publishedAt);
 		stmt.setInt(6,createdById);
 		stmt.setInt(7,updatedById);
+		stmt.setString(8,url);
+		stmt.setString(9,urlLabel);
 		stmt.executeUpdate();
 
 		// snag the new auto-increment value
@@ -349,6 +365,38 @@ public class ContentImageBlockRights extends STRAPITagLibTagSupport {
 		return updatedById;
 	}
 
+	public String getUrl () {
+		if (commitNeeded)
+			return "";
+		else
+			return url;
+	}
+
+	public void setUrl (String url) {
+		this.url = url;
+		commitNeeded = true;
+	}
+
+	public String getActualUrl () {
+		return url;
+	}
+
+	public String getUrlLabel () {
+		if (commitNeeded)
+			return "";
+		else
+			return urlLabel;
+	}
+
+	public void setUrlLabel (String urlLabel) {
+		this.urlLabel = urlLabel;
+		commitNeeded = true;
+	}
+
+	public String getActualUrlLabel () {
+		return urlLabel;
+	}
+
 	public String getVar () {
 		return var;
 	}
@@ -425,6 +473,22 @@ public class ContentImageBlockRights extends STRAPITagLibTagSupport {
 		}
 	}
 
+	public static String urlValue() throws JspException {
+		try {
+			return currentInstance.getUrl();
+		} catch (Exception e) {
+			 throw new JspTagException("Error in tag function urlValue()");
+		}
+	}
+
+	public static String urlLabelValue() throws JspException {
+		try {
+			return currentInstance.getUrlLabel();
+		} catch (Exception e) {
+			 throw new JspTagException("Error in tag function urlLabelValue()");
+		}
+	}
+
 	private void clearServiceState () {
 		ID = 0;
 		header = null;
@@ -434,6 +498,8 @@ public class ContentImageBlockRights extends STRAPITagLibTagSupport {
 		publishedAt = null;
 		createdById = 0;
 		updatedById = 0;
+		url = null;
+		urlLabel = null;
 		newRecord = false;
 		commitNeeded = false;
 		parentEntities = new Vector<STRAPITagLibTagSupport>();

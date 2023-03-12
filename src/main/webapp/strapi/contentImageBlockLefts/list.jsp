@@ -23,6 +23,8 @@
 									<th>PublishedAt</th>
 									<th>CreatedById</th>
 									<th>UpdatedById</th>
+									<th>Url</th>
+									<th>UrlLabel</th>
 									<th></th>
 								</tr>
 							</thead>
@@ -38,6 +40,8 @@
 											<td><strapi:contentImageBlockLeftsPublishedAt /></td>
 											<td><strapi:contentImageBlockLeftsCreatedById /></td>
 											<td><strapi:contentImageBlockLeftsUpdatedById /></td>
+											<td><strapi:contentImageBlockLeftsUrl /></td>
+											<td><strapi:contentImageBlockLeftsUrlLabel /></td>
 											<td><a href="../contentImageBlockLefts/edit.jsp?ID=<strapi:contentImageBlockLeftsID />">edit</a></td>
 											<td><a href="../contentImageBlockLefts/delete.jsp?ID=<strapi:contentImageBlockLeftsID />">delete</a></td>
 										</tr>
@@ -63,6 +67,8 @@
 		<strapi:contentImageBlockLeftsPublishedAt />
 		<strapi:contentImageBlockLeftsCreatedById />
 		<strapi:contentImageBlockLeftsUpdatedById />
+		<strapi:contentImageBlockLeftsUrl />
+		<strapi:contentImageBlockLeftsUrlLabel />
 			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:contentImageBlockLefts>
 			</strapi:foreachContentImageBlockLefts>
                 </div>

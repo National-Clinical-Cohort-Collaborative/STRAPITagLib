@@ -1,0 +1,79 @@
+package org.cd2h.STRAPITagLib.workstreamInstances;
+
+import javax.servlet.jsp.JspException;
+import javax.servlet.jsp.JspTagException;
+import javax.servlet.jsp.tagext.Tag;
+
+import org.apache.logging.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+
+import org.cd2h.STRAPITagLib.STRAPITagLibTagSupport;
+
+@SuppressWarnings("serial")
+public class WorkstreamInstancesLeadershipHeader extends STRAPITagLibTagSupport {
+
+	private static final Logger log = LogManager.getLogger(WorkstreamInstancesLeadershipHeader.class);
+
+	public int doStartTag() throws JspException {
+		try {
+			WorkstreamInstances theWorkstreamInstances = (WorkstreamInstances)findAncestorWithClass(this, WorkstreamInstances.class);
+			if (!theWorkstreamInstances.commitNeeded) {
+				pageContext.getOut().print(theWorkstreamInstances.getLeadershipHeader());
+			}
+		} catch (Exception e) {
+			log.error("Can't find enclosing WorkstreamInstances for leadershipHeader tag ", e);
+			freeConnection();
+			Tag parent = getParent();
+			if(parent != null){
+				pageContext.setAttribute("tagError", true);
+				pageContext.setAttribute("tagErrorException", e);
+				pageContext.setAttribute("tagErrorMessage", "Error: Can't find enclosing WorkstreamInstances for leadershipHeader tag ");
+				return parent.doEndTag();
+			}else{
+				throw new JspTagException("Error: Can't find enclosing WorkstreamInstances for leadershipHeader tag ");
+			}
+
+		}
+		return SKIP_BODY;
+	}
+
+	public String getLeadershipHeader() throws JspException {
+		try {
+			WorkstreamInstances theWorkstreamInstances = (WorkstreamInstances)findAncestorWithClass(this, WorkstreamInstances.class);
+			return theWorkstreamInstances.getLeadershipHeader();
+		} catch (Exception e) {
+			log.error("Can't find enclosing WorkstreamInstances for leadershipHeader tag ", e);
+			freeConnection();
+			Tag parent = getParent();
+			if(parent != null){
+				pageContext.setAttribute("tagError", true);
+				pageContext.setAttribute("tagErrorException", e);
+				pageContext.setAttribute("tagErrorMessage", "Error: Can't find enclosing WorkstreamInstances for leadershipHeader tag ");
+				parent.doEndTag();
+				return null;
+			}else{
+				throw new JspTagException("Error: Can't find enclosing WorkstreamInstances for leadershipHeader tag ");
+			}
+		}
+	}
+
+	public void setLeadershipHeader(String leadershipHeader) throws JspException {
+		try {
+			WorkstreamInstances theWorkstreamInstances = (WorkstreamInstances)findAncestorWithClass(this, WorkstreamInstances.class);
+			theWorkstreamInstances.setLeadershipHeader(leadershipHeader);
+		} catch (Exception e) {
+			log.error("Can't find enclosing WorkstreamInstances for leadershipHeader tag ", e);
+			freeConnection();
+			Tag parent = getParent();
+			if(parent != null){
+				pageContext.setAttribute("tagError", true);
+				pageContext.setAttribute("tagErrorException", e);
+				pageContext.setAttribute("tagErrorMessage", "Error: Can't find enclosing WorkstreamInstances for leadershipHeader tag ");
+				parent.doEndTag();
+			}else{
+				throw new JspTagException("Error: Can't find enclosing WorkstreamInstances for leadershipHeader tag ");
+			}
+		}
+	}
+
+}
