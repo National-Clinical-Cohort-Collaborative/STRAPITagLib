@@ -126,6 +126,92 @@
 			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:pprlsFaqsLinks>
 			</strapi:foreachPprlsFaqsLinks>
 
+						<h2>PublicationReviewsFaqs1Links List</h2>
+						<table class="table table-bordered table-striped table-hover table-datatable">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>PublicationReviewId</th>
+									<th>FaqId</th>
+									<th>FaqOrder</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<strapi:foreachPublicationReviewsFaqs1Links var="idIter">
+									<strapi:publicationReviewsFaqs1Links>
+										<tr>
+											<td><a href="../publicationReviewsFaqs1Links/show.jsp?ID=<strapi:publicationReviewsFaqs1LinksID />"><strapi:publicationReviewsFaqs1LinksID /></a></td>
+											<td><strapi:publicationReviewsFaqs1LinksPublicationReviewId /></td>
+											<td><strapi:publicationReviewsFaqs1LinksFaqId /></td>
+											<td><strapi:publicationReviewsFaqs1LinksFaqOrder /></td>
+											<td><a href="../publicationReviewsFaqs1Links/edit.jsp?ID=<strapi:publicationReviewsFaqs1LinksID />">edit</a></td>
+											<td><a href="../publicationReviewsFaqs1Links/delete.jsp?ID=<strapi:publicationReviewsFaqs1LinksID />">delete</a></td>
+										</tr>
+									</strapi:publicationReviewsFaqs1Links>
+								</strapi:foreachPublicationReviewsFaqs1Links>
+							</tbody>
+							<tfoot>
+							</tfoot>
+						</table>
+
+						<br/>
+
+						<a class="btn" href="../publicationReviewsFaqs1Links/add.jsp?ID=${param.ID}&ID=${param.ID}">add PublicationReviewsFaqs1Links</a>
+						<br/><br/>
+
+		<strapi:foreachPublicationReviewsFaqs1Links var="idIter">
+			<strapi:publicationReviewsFaqs1Links>
+						<a href="../../strapi/publicationReviewsFaqs1Links/publicationReviewsFaqs1Links.jsp?ID=<strapi:publicationReviewsFaqs1LinksID />"><strapi:publicationReviewsFaqs1LinksID /></a>
+		<strapi:publicationReviewsFaqs1LinksPublicationReviewId />
+		<strapi:publicationReviewsFaqs1LinksFaqId />
+		<strapi:publicationReviewsFaqs1LinksFaqOrder />
+			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:publicationReviewsFaqs1Links>
+			</strapi:foreachPublicationReviewsFaqs1Links>
+
+						<h2>PublicationReviewsFaqs2Links List</h2>
+						<table class="table table-bordered table-striped table-hover table-datatable">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>PublicationReviewId</th>
+									<th>FaqId</th>
+									<th>FaqOrder</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<strapi:foreachPublicationReviewsFaqs2Links var="idIter">
+									<strapi:publicationReviewsFaqs2Links>
+										<tr>
+											<td><a href="../publicationReviewsFaqs2Links/show.jsp?ID=<strapi:publicationReviewsFaqs2LinksID />"><strapi:publicationReviewsFaqs2LinksID /></a></td>
+											<td><strapi:publicationReviewsFaqs2LinksPublicationReviewId /></td>
+											<td><strapi:publicationReviewsFaqs2LinksFaqId /></td>
+											<td><strapi:publicationReviewsFaqs2LinksFaqOrder /></td>
+											<td><a href="../publicationReviewsFaqs2Links/edit.jsp?ID=<strapi:publicationReviewsFaqs2LinksID />">edit</a></td>
+											<td><a href="../publicationReviewsFaqs2Links/delete.jsp?ID=<strapi:publicationReviewsFaqs2LinksID />">delete</a></td>
+										</tr>
+									</strapi:publicationReviewsFaqs2Links>
+								</strapi:foreachPublicationReviewsFaqs2Links>
+							</tbody>
+							<tfoot>
+							</tfoot>
+						</table>
+
+						<br/>
+
+						<a class="btn" href="../publicationReviewsFaqs2Links/add.jsp?ID=${param.ID}&ID=${param.ID}">add PublicationReviewsFaqs2Links</a>
+						<br/><br/>
+
+		<strapi:foreachPublicationReviewsFaqs2Links var="idIter">
+			<strapi:publicationReviewsFaqs2Links>
+						<a href="../../strapi/publicationReviewsFaqs2Links/publicationReviewsFaqs2Links.jsp?ID=<strapi:publicationReviewsFaqs2LinksID />"><strapi:publicationReviewsFaqs2LinksID /></a>
+		<strapi:publicationReviewsFaqs2LinksPublicationReviewId />
+		<strapi:publicationReviewsFaqs2LinksFaqId />
+		<strapi:publicationReviewsFaqs2LinksFaqOrder />
+			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:publicationReviewsFaqs2Links>
+			</strapi:foreachPublicationReviewsFaqs2Links>
+
 						<h2>WorkstreamInstancesFaqsLinks List</h2>
 						<table class="table table-bordered table-striped table-hover table-datatable">
 							<thead>

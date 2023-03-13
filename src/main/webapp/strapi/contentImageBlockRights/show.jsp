@@ -123,6 +123,92 @@
 			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:accountCreationsIntroLinks>
 			</strapi:foreachAccountCreationsIntroLinks>
 
+						<h2>AcknowledgementsContentImageBlockRightsLinks List</h2>
+						<table class="table table-bordered table-striped table-hover table-datatable">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>AcknowledgementId</th>
+									<th>ContentImageBlockRightId</th>
+									<th>ContentImageBlockRightOrder</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<strapi:foreachAcknowledgementsContentImageBlockRightsLinks var="idIter">
+									<strapi:acknowledgementsContentImageBlockRightsLinks>
+										<tr>
+											<td><a href="../acknowledgementsContentImageBlockRightsLinks/show.jsp?ID=<strapi:acknowledgementsContentImageBlockRightsLinksID />"><strapi:acknowledgementsContentImageBlockRightsLinksID /></a></td>
+											<td><strapi:acknowledgementsContentImageBlockRightsLinksAcknowledgementId /></td>
+											<td><strapi:acknowledgementsContentImageBlockRightsLinksContentImageBlockRightId /></td>
+											<td><strapi:acknowledgementsContentImageBlockRightsLinksContentImageBlockRightOrder /></td>
+											<td><a href="../acknowledgementsContentImageBlockRightsLinks/edit.jsp?ID=<strapi:acknowledgementsContentImageBlockRightsLinksID />">edit</a></td>
+											<td><a href="../acknowledgementsContentImageBlockRightsLinks/delete.jsp?ID=<strapi:acknowledgementsContentImageBlockRightsLinksID />">delete</a></td>
+										</tr>
+									</strapi:acknowledgementsContentImageBlockRightsLinks>
+								</strapi:foreachAcknowledgementsContentImageBlockRightsLinks>
+							</tbody>
+							<tfoot>
+							</tfoot>
+						</table>
+
+						<br/>
+
+						<a class="btn" href="../acknowledgementsContentImageBlockRightsLinks/add.jsp?ID=${param.ID}&ID=${param.ID}">add AcknowledgementsContentImageBlockRightsLinks</a>
+						<br/><br/>
+
+		<strapi:foreachAcknowledgementsContentImageBlockRightsLinks var="idIter">
+			<strapi:acknowledgementsContentImageBlockRightsLinks>
+						<a href="../../strapi/acknowledgementsContentImageBlockRightsLinks/acknowledgementsContentImageBlockRightsLinks.jsp?ID=<strapi:acknowledgementsContentImageBlockRightsLinksID />"><strapi:acknowledgementsContentImageBlockRightsLinksID /></a>
+		<strapi:acknowledgementsContentImageBlockRightsLinksAcknowledgementId />
+		<strapi:acknowledgementsContentImageBlockRightsLinksContentImageBlockRightId />
+		<strapi:acknowledgementsContentImageBlockRightsLinksContentImageBlockRightOrder />
+			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:acknowledgementsContentImageBlockRightsLinks>
+			</strapi:foreachAcknowledgementsContentImageBlockRightsLinks>
+
+						<h2>CommunicationMaterialsContentImageBlockRightsLinks List</h2>
+						<table class="table table-bordered table-striped table-hover table-datatable">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>CommunicationMaterialId</th>
+									<th>ContentImageBlockRightId</th>
+									<th>ContentImageBlockRightOrder</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<strapi:foreachCommunicationMaterialsContentImageBlockRightsLinks var="idIter">
+									<strapi:communicationMaterialsContentImageBlockRightsLinks>
+										<tr>
+											<td><a href="../communicationMaterialsContentImageBlockRightsLinks/show.jsp?ID=<strapi:communicationMaterialsContentImageBlockRightsLinksID />"><strapi:communicationMaterialsContentImageBlockRightsLinksID /></a></td>
+											<td><strapi:communicationMaterialsContentImageBlockRightsLinksCommunicationMaterialId /></td>
+											<td><strapi:communicationMaterialsContentImageBlockRightsLinksContentImageBlockRightId /></td>
+											<td><strapi:communicationMaterialsContentImageBlockRightsLinksContentImageBlockRightOrder /></td>
+											<td><a href="../communicationMaterialsContentImageBlockRightsLinks/edit.jsp?ID=<strapi:communicationMaterialsContentImageBlockRightsLinksID />">edit</a></td>
+											<td><a href="../communicationMaterialsContentImageBlockRightsLinks/delete.jsp?ID=<strapi:communicationMaterialsContentImageBlockRightsLinksID />">delete</a></td>
+										</tr>
+									</strapi:communicationMaterialsContentImageBlockRightsLinks>
+								</strapi:foreachCommunicationMaterialsContentImageBlockRightsLinks>
+							</tbody>
+							<tfoot>
+							</tfoot>
+						</table>
+
+						<br/>
+
+						<a class="btn" href="../communicationMaterialsContentImageBlockRightsLinks/add.jsp?ID=${param.ID}&ID=${param.ID}">add CommunicationMaterialsContentImageBlockRightsLinks</a>
+						<br/><br/>
+
+		<strapi:foreachCommunicationMaterialsContentImageBlockRightsLinks var="idIter">
+			<strapi:communicationMaterialsContentImageBlockRightsLinks>
+						<a href="../../strapi/communicationMaterialsContentImageBlockRightsLinks/communicationMaterialsContentImageBlockRightsLinks.jsp?ID=<strapi:communicationMaterialsContentImageBlockRightsLinksID />"><strapi:communicationMaterialsContentImageBlockRightsLinksID /></a>
+		<strapi:communicationMaterialsContentImageBlockRightsLinksCommunicationMaterialId />
+		<strapi:communicationMaterialsContentImageBlockRightsLinksContentImageBlockRightId />
+		<strapi:communicationMaterialsContentImageBlockRightsLinksContentImageBlockRightOrder />
+			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:communicationMaterialsContentImageBlockRightsLinks>
+			</strapi:foreachCommunicationMaterialsContentImageBlockRightsLinks>
+
 						<h2>ExternalDatasetsIngestionLinks List</h2>
 						<table class="table table-bordered table-striped table-hover table-datatable">
 							<thead>
@@ -162,6 +248,49 @@
 		<strapi:externalDatasetsIngestionLinksContentImageBlockRightId />
 			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:externalDatasetsIngestionLinks>
 			</strapi:foreachExternalDatasetsIngestionLinks>
+
+						<h2>FormsContentImageBlockRightsLinks List</h2>
+						<table class="table table-bordered table-striped table-hover table-datatable">
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>FormId</th>
+									<th>ContentImageBlockRightId</th>
+									<th>ContentImageBlockRightOrder</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								<strapi:foreachFormsContentImageBlockRightsLinks var="idIter">
+									<strapi:formsContentImageBlockRightsLinks>
+										<tr>
+											<td><a href="../formsContentImageBlockRightsLinks/show.jsp?ID=<strapi:formsContentImageBlockRightsLinksID />"><strapi:formsContentImageBlockRightsLinksID /></a></td>
+											<td><strapi:formsContentImageBlockRightsLinksFormId /></td>
+											<td><strapi:formsContentImageBlockRightsLinksContentImageBlockRightId /></td>
+											<td><strapi:formsContentImageBlockRightsLinksContentImageBlockRightOrder /></td>
+											<td><a href="../formsContentImageBlockRightsLinks/edit.jsp?ID=<strapi:formsContentImageBlockRightsLinksID />">edit</a></td>
+											<td><a href="../formsContentImageBlockRightsLinks/delete.jsp?ID=<strapi:formsContentImageBlockRightsLinksID />">delete</a></td>
+										</tr>
+									</strapi:formsContentImageBlockRightsLinks>
+								</strapi:foreachFormsContentImageBlockRightsLinks>
+							</tbody>
+							<tfoot>
+							</tfoot>
+						</table>
+
+						<br/>
+
+						<a class="btn" href="../formsContentImageBlockRightsLinks/add.jsp?ID=${param.ID}&ID=${param.ID}">add FormsContentImageBlockRightsLinks</a>
+						<br/><br/>
+
+		<strapi:foreachFormsContentImageBlockRightsLinks var="idIter">
+			<strapi:formsContentImageBlockRightsLinks>
+						<a href="../../strapi/formsContentImageBlockRightsLinks/formsContentImageBlockRightsLinks.jsp?ID=<strapi:formsContentImageBlockRightsLinksID />"><strapi:formsContentImageBlockRightsLinksID /></a>
+		<strapi:formsContentImageBlockRightsLinksFormId />
+		<strapi:formsContentImageBlockRightsLinksContentImageBlockRightId />
+		<strapi:formsContentImageBlockRightsLinksContentImageBlockRightOrder />
+			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:formsContentImageBlockRightsLinks>
+			</strapi:foreachFormsContentImageBlockRightsLinks>
 
 						<h2>InstitutionalEssentialsStepLinks List</h2>
 						<table class="table table-bordered table-striped table-hover table-datatable">
