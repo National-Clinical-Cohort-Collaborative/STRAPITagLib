@@ -10,6 +10,7 @@
     <li><a href="<util:applicationRoot/>/bioGroups/list.jsp" />BioGroups list</a></li>
     <li><a href="<util:applicationRoot/>/bios/list.jsp" />Bios list</a></li>
     <li><a href="<util:applicationRoot/>/biosBioGroupsLinks/list.jsp" />BiosBioGroupsLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/brochures/list.jsp" />Brochures list</a></li>
     <li><a href="<util:applicationRoot/>/calendars/list.jsp" />Calendars list</a></li>
     <li><a href="<util:applicationRoot/>/communicationMaterials/list.jsp" />CommunicationMaterials list</a></li>
     <li><a href="<util:applicationRoot/>/communicationMaterialsContentImageBlockRightsLinks/list.jsp" />CommunicationMaterialsContentImageBlockRightsLinks list</a></li>

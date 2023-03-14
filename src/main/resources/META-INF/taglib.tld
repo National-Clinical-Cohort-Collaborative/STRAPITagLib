@@ -1554,6 +1554,198 @@
 	</tag>
 
 	<tag>
+		<name>foreachBrochures</name>
+		<tag-class>org.cd2h.STRAPITagLib.brochures.BrochuresIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>brochures</name>
+		<tag-class>org.cd2h.STRAPITagLib.brochures.Brochures</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteBrochures</name>
+		<tag-class>org.cd2h.STRAPITagLib.brochures.BrochuresDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>brochuresID</name>
+		<tag-class>org.cd2h.STRAPITagLib.brochures.BrochuresID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>brochuresHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.brochures.BrochuresHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>header</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>brochuresPdfLinkHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.brochures.BrochuresPdfLinkHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>pdfLinkHeader</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>brochuresCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.brochures.BrochuresCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>brochuresCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.brochures.BrochuresCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>brochuresUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.brochures.BrochuresUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>brochuresUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.brochures.BrochuresUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>brochuresPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.brochures.BrochuresPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>brochuresPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.brochures.BrochuresPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>brochuresCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.brochures.BrochuresCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>brochuresUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.brochures.BrochuresUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
 		<name>foreachCalendars</name>
 		<tag-class>org.cd2h.STRAPITagLib.calendars.CalendarsIterator</tag-class>
 		<body-content>JSP</body-content>
@@ -20612,6 +20804,18 @@
 		<name>bioGroupsBiosExists</name>
 		<function-class>org.cd2h.STRAPITagLib.biosBioGroupsLinks.BiosBioGroupsLinksIterator</function-class>
 		<function-signature>java.lang.Boolean bioGroupsBiosExists(java.lang.String, java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>brochuresCount</name>
+		<function-class>org.cd2h.STRAPITagLib.brochures.BrochuresIterator</function-class>
+		<function-signature>java.lang.String brochuresCount()</function-signature>
+	</function>
+
+	<function>
+		<name>brochuresExists</name>
+		<function-class>org.cd2h.STRAPITagLib.brochures.BrochuresIterator</function-class>
+		<function-signature>java.lang.String brochuresExists(java.lang.String)</function-signature>
 	</function>
 
 	<function>
