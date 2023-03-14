@@ -5777,6 +5777,1008 @@
 	</tag>
 
 	<tag>
+		<name>foreachFaqLists</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqLists.FaqListsIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqLists</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqLists.FaqLists</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteFaqLists</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqLists.FaqListsDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsID</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqLists.FaqListsID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqLists.FaqListsHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>header</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsSubheader</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqLists.FaqListsSubheader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>subheader</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsIntroBlock</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqLists.FaqListsIntroBlock</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>introBlock</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsEnclaveHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqLists.FaqListsEnclaveHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>enclaveHeader</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsDomainHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqLists.FaqListsDomainHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>domainHeader</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsPhenotypeHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqLists.FaqListsPhenotypeHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>phenotypeHeader</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsHarmonizationHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqLists.FaqListsHarmonizationHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>harmonizationHeader</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsAnalyticsHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqLists.FaqListsAnalyticsHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>analyticsHeader</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsSyntheticHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqLists.FaqListsSyntheticHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>syntheticHeader</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqLists.FaqListsCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqLists.FaqListsCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqLists.FaqListsUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqLists.FaqListsUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqLists.FaqListsPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqLists.FaqListsPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqLists.FaqListsCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqLists.FaqListsUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachFaqListsAnalyticsFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsAnalyticsFaqsLinks.FaqListsAnalyticsFaqsLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useFaqLists</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useFaqs</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>faqListsAnalyticsFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsAnalyticsFaqsLinks.FaqListsAnalyticsFaqsLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteFaqListsAnalyticsFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsAnalyticsFaqsLinks.FaqListsAnalyticsFaqsLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsAnalyticsFaqsLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsAnalyticsFaqsLinks.FaqListsAnalyticsFaqsLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsAnalyticsFaqsLinksFaqListId</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsAnalyticsFaqsLinks.FaqListsAnalyticsFaqsLinksFaqListId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqListId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsAnalyticsFaqsLinksFaqId</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsAnalyticsFaqsLinks.FaqListsAnalyticsFaqsLinksFaqId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsAnalyticsFaqsLinksFaqOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsAnalyticsFaqsLinks.FaqListsAnalyticsFaqsLinksFaqOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachFaqListsDomainFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsDomainFaqsLinks.FaqListsDomainFaqsLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useFaqLists</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useFaqs</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>faqListsDomainFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsDomainFaqsLinks.FaqListsDomainFaqsLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteFaqListsDomainFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsDomainFaqsLinks.FaqListsDomainFaqsLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsDomainFaqsLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsDomainFaqsLinks.FaqListsDomainFaqsLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsDomainFaqsLinksFaqListId</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsDomainFaqsLinks.FaqListsDomainFaqsLinksFaqListId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqListId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsDomainFaqsLinksFaqId</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsDomainFaqsLinks.FaqListsDomainFaqsLinksFaqId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsDomainFaqsLinksFaqOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsDomainFaqsLinks.FaqListsDomainFaqsLinksFaqOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachFaqListsEnclaveFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsEnclaveFaqsLinks.FaqListsEnclaveFaqsLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useFaqLists</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useFaqs</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>faqListsEnclaveFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsEnclaveFaqsLinks.FaqListsEnclaveFaqsLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteFaqListsEnclaveFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsEnclaveFaqsLinks.FaqListsEnclaveFaqsLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsEnclaveFaqsLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsEnclaveFaqsLinks.FaqListsEnclaveFaqsLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsEnclaveFaqsLinksFaqListId</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsEnclaveFaqsLinks.FaqListsEnclaveFaqsLinksFaqListId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqListId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsEnclaveFaqsLinksFaqId</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsEnclaveFaqsLinks.FaqListsEnclaveFaqsLinksFaqId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsEnclaveFaqsLinksFaqOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsEnclaveFaqsLinks.FaqListsEnclaveFaqsLinksFaqOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachFaqListsHarmonizationFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsHarmonizationFaqsLinks.FaqListsHarmonizationFaqsLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useFaqLists</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useFaqs</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>faqListsHarmonizationFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsHarmonizationFaqsLinks.FaqListsHarmonizationFaqsLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteFaqListsHarmonizationFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsHarmonizationFaqsLinks.FaqListsHarmonizationFaqsLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsHarmonizationFaqsLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsHarmonizationFaqsLinks.FaqListsHarmonizationFaqsLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsHarmonizationFaqsLinksFaqListId</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsHarmonizationFaqsLinks.FaqListsHarmonizationFaqsLinksFaqListId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqListId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsHarmonizationFaqsLinksFaqId</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsHarmonizationFaqsLinks.FaqListsHarmonizationFaqsLinksFaqId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsHarmonizationFaqsLinksFaqOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsHarmonizationFaqsLinks.FaqListsHarmonizationFaqsLinksFaqOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachFaqListsPhenotypeFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsPhenotypeFaqsLinks.FaqListsPhenotypeFaqsLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useFaqLists</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useFaqs</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>faqListsPhenotypeFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsPhenotypeFaqsLinks.FaqListsPhenotypeFaqsLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteFaqListsPhenotypeFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsPhenotypeFaqsLinks.FaqListsPhenotypeFaqsLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsPhenotypeFaqsLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsPhenotypeFaqsLinks.FaqListsPhenotypeFaqsLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsPhenotypeFaqsLinksFaqListId</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsPhenotypeFaqsLinks.FaqListsPhenotypeFaqsLinksFaqListId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqListId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsPhenotypeFaqsLinksFaqId</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsPhenotypeFaqsLinks.FaqListsPhenotypeFaqsLinksFaqId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsPhenotypeFaqsLinksFaqOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsPhenotypeFaqsLinks.FaqListsPhenotypeFaqsLinksFaqOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachFaqListsSyntheticFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsSyntheticFaqsLinks.FaqListsSyntheticFaqsLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useFaqLists</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useFaqs</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>faqListsSyntheticFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsSyntheticFaqsLinks.FaqListsSyntheticFaqsLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteFaqListsSyntheticFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsSyntheticFaqsLinks.FaqListsSyntheticFaqsLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsSyntheticFaqsLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsSyntheticFaqsLinks.FaqListsSyntheticFaqsLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsSyntheticFaqsLinksFaqListId</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsSyntheticFaqsLinks.FaqListsSyntheticFaqsLinksFaqListId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqListId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsSyntheticFaqsLinksFaqId</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsSyntheticFaqsLinks.FaqListsSyntheticFaqsLinksFaqId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>faqListsSyntheticFaqsLinksFaqOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.faqListsSyntheticFaqsLinks.FaqListsSyntheticFaqsLinksFaqOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
 		<name>foreachFaqs</name>
 		<tag-class>org.cd2h.STRAPITagLib.faqs.FaqsIterator</tag-class>
 		<body-content>JSP</body-content>
@@ -8778,6 +9780,198 @@
 
 		<attribute>
 			<name>bioGroupOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachLiaisons</name>
+		<tag-class>org.cd2h.STRAPITagLib.liaisons.LiaisonsIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>liaisons</name>
+		<tag-class>org.cd2h.STRAPITagLib.liaisons.Liaisons</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteLiaisons</name>
+		<tag-class>org.cd2h.STRAPITagLib.liaisons.LiaisonsDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>liaisonsID</name>
+		<tag-class>org.cd2h.STRAPITagLib.liaisons.LiaisonsID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>liaisonsHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.liaisons.LiaisonsHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>header</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>liaisonsBlock</name>
+		<tag-class>org.cd2h.STRAPITagLib.liaisons.LiaisonsBlock</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>block</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>liaisonsCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.liaisons.LiaisonsCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>liaisonsCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.liaisons.LiaisonsCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>liaisonsUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.liaisons.LiaisonsUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>liaisonsUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.liaisons.LiaisonsUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>liaisonsPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.liaisons.LiaisonsPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>liaisonsPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.liaisons.LiaisonsPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>liaisonsCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.liaisons.LiaisonsCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>liaisonsUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.liaisons.LiaisonsUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
 			<required>false</required>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
@@ -16066,6 +17260,198 @@
 	</tag>
 
 	<tag>
+		<name>foreachSupports</name>
+		<tag-class>org.cd2h.STRAPITagLib.supports.SupportsIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>supports</name>
+		<tag-class>org.cd2h.STRAPITagLib.supports.Supports</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteSupports</name>
+		<tag-class>org.cd2h.STRAPITagLib.supports.SupportsDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>supportsID</name>
+		<tag-class>org.cd2h.STRAPITagLib.supports.SupportsID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>supportsHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.supports.SupportsHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>header</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>supportsBlock</name>
+		<tag-class>org.cd2h.STRAPITagLib.supports.SupportsBlock</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>block</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>supportsCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.supports.SupportsCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>supportsCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.supports.SupportsCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>supportsUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.supports.SupportsUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>supportsUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.supports.SupportsUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>supportsPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.supports.SupportsPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>supportsPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.supports.SupportsPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>supportsCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.supports.SupportsCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>supportsUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.supports.SupportsUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
 		<name>foreachTools</name>
 		<tag-class>org.cd2h.STRAPITagLib.tools.ToolsIterator</tag-class>
 		<body-content>JSP</body-content>
@@ -19757,6 +21143,204 @@
 	</function>
 
 	<function>
+		<name>faqListsCount</name>
+		<function-class>org.cd2h.STRAPITagLib.faqLists.FaqListsIterator</function-class>
+		<function-signature>java.lang.String faqListsCount()</function-signature>
+	</function>
+
+	<function>
+		<name>faqListsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.faqLists.FaqListsIterator</function-class>
+		<function-signature>java.lang.String faqListsExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqListsAnalyticsFaqsLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsAnalyticsFaqsLinks.FaqListsAnalyticsFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String faqListsAnalyticsFaqsLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqListsAnalyticsFaqsLinksCountByFaqLists</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsAnalyticsFaqsLinks.FaqListsAnalyticsFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String faqListsAnalyticsFaqsLinksCountByFaqLists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqListsHasFaqListsAnalyticsFaqsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsAnalyticsFaqsLinks.FaqListsAnalyticsFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean faqListsHasFaqListsAnalyticsFaqsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqListsAnalyticsFaqsLinksCountByFaqs</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsAnalyticsFaqsLinks.FaqListsAnalyticsFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String faqListsAnalyticsFaqsLinksCountByFaqs(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqsHasFaqListsAnalyticsFaqsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsAnalyticsFaqsLinks.FaqListsAnalyticsFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean faqsHasFaqListsAnalyticsFaqsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqListsFaqsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsAnalyticsFaqsLinks.FaqListsAnalyticsFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean faqListsFaqsExists(java.lang.String, java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqListsDomainFaqsLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsDomainFaqsLinks.FaqListsDomainFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String faqListsDomainFaqsLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqListsDomainFaqsLinksCountByFaqLists</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsDomainFaqsLinks.FaqListsDomainFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String faqListsDomainFaqsLinksCountByFaqLists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqListsHasFaqListsDomainFaqsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsDomainFaqsLinks.FaqListsDomainFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean faqListsHasFaqListsDomainFaqsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqListsDomainFaqsLinksCountByFaqs</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsDomainFaqsLinks.FaqListsDomainFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String faqListsDomainFaqsLinksCountByFaqs(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqsHasFaqListsDomainFaqsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsDomainFaqsLinks.FaqListsDomainFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean faqsHasFaqListsDomainFaqsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqListsEnclaveFaqsLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsEnclaveFaqsLinks.FaqListsEnclaveFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String faqListsEnclaveFaqsLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqListsEnclaveFaqsLinksCountByFaqLists</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsEnclaveFaqsLinks.FaqListsEnclaveFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String faqListsEnclaveFaqsLinksCountByFaqLists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqListsHasFaqListsEnclaveFaqsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsEnclaveFaqsLinks.FaqListsEnclaveFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean faqListsHasFaqListsEnclaveFaqsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqListsEnclaveFaqsLinksCountByFaqs</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsEnclaveFaqsLinks.FaqListsEnclaveFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String faqListsEnclaveFaqsLinksCountByFaqs(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqsHasFaqListsEnclaveFaqsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsEnclaveFaqsLinks.FaqListsEnclaveFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean faqsHasFaqListsEnclaveFaqsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqListsHarmonizationFaqsLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsHarmonizationFaqsLinks.FaqListsHarmonizationFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String faqListsHarmonizationFaqsLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqListsHarmonizationFaqsLinksCountByFaqLists</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsHarmonizationFaqsLinks.FaqListsHarmonizationFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String faqListsHarmonizationFaqsLinksCountByFaqLists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqListsHasFaqListsHarmonizationFaqsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsHarmonizationFaqsLinks.FaqListsHarmonizationFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean faqListsHasFaqListsHarmonizationFaqsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqListsHarmonizationFaqsLinksCountByFaqs</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsHarmonizationFaqsLinks.FaqListsHarmonizationFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String faqListsHarmonizationFaqsLinksCountByFaqs(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqsHasFaqListsHarmonizationFaqsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsHarmonizationFaqsLinks.FaqListsHarmonizationFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean faqsHasFaqListsHarmonizationFaqsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqListsPhenotypeFaqsLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsPhenotypeFaqsLinks.FaqListsPhenotypeFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String faqListsPhenotypeFaqsLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqListsPhenotypeFaqsLinksCountByFaqLists</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsPhenotypeFaqsLinks.FaqListsPhenotypeFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String faqListsPhenotypeFaqsLinksCountByFaqLists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqListsHasFaqListsPhenotypeFaqsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsPhenotypeFaqsLinks.FaqListsPhenotypeFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean faqListsHasFaqListsPhenotypeFaqsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqListsPhenotypeFaqsLinksCountByFaqs</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsPhenotypeFaqsLinks.FaqListsPhenotypeFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String faqListsPhenotypeFaqsLinksCountByFaqs(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqsHasFaqListsPhenotypeFaqsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsPhenotypeFaqsLinks.FaqListsPhenotypeFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean faqsHasFaqListsPhenotypeFaqsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqListsSyntheticFaqsLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsSyntheticFaqsLinks.FaqListsSyntheticFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String faqListsSyntheticFaqsLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqListsSyntheticFaqsLinksCountByFaqLists</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsSyntheticFaqsLinks.FaqListsSyntheticFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String faqListsSyntheticFaqsLinksCountByFaqLists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqListsHasFaqListsSyntheticFaqsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsSyntheticFaqsLinks.FaqListsSyntheticFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean faqListsHasFaqListsSyntheticFaqsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqListsSyntheticFaqsLinksCountByFaqs</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsSyntheticFaqsLinks.FaqListsSyntheticFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String faqListsSyntheticFaqsLinksCountByFaqs(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqsHasFaqListsSyntheticFaqsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.faqListsSyntheticFaqsLinks.FaqListsSyntheticFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean faqsHasFaqListsSyntheticFaqsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
 		<name>faqsCount</name>
 		<function-class>org.cd2h.STRAPITagLib.faqs.FaqsIterator</function-class>
 		<function-signature>java.lang.String faqsCount()</function-signature>
@@ -20144,6 +21728,18 @@
 		<name>bioGroupsLeadershipsExists</name>
 		<function-class>org.cd2h.STRAPITagLib.leadershipsBioGroupsLinks.LeadershipsBioGroupsLinksIterator</function-class>
 		<function-signature>java.lang.Boolean bioGroupsLeadershipsExists(java.lang.String, java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>liaisonsCount</name>
+		<function-class>org.cd2h.STRAPITagLib.liaisons.LiaisonsIterator</function-class>
+		<function-signature>java.lang.String liaisonsCount()</function-signature>
+	</function>
+
+	<function>
+		<name>liaisonsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.liaisons.LiaisonsIterator</function-class>
+		<function-signature>java.lang.String liaisonsExists(java.lang.String)</function-signature>
 	</function>
 
 	<function>
@@ -21158,6 +22754,18 @@
 		<name>resourcesExists</name>
 		<function-class>org.cd2h.STRAPITagLib.resources.ResourcesIterator</function-class>
 		<function-signature>java.lang.String resourcesExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>supportsCount</name>
+		<function-class>org.cd2h.STRAPITagLib.supports.SupportsIterator</function-class>
+		<function-signature>java.lang.String supportsCount()</function-signature>
+	</function>
+
+	<function>
+		<name>supportsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.supports.SupportsIterator</function-class>
+		<function-signature>java.lang.String supportsExists(java.lang.String)</function-signature>
 	</function>
 
 	<function>

@@ -34,6 +34,13 @@
     <li><a href="<util:applicationRoot/>/externalDatasetsSupportLinks/list.jsp" />ExternalDatasetsSupportLinks list</a></li>
     <li><a href="<util:applicationRoot/>/externalDatasetsYouTubeVideoLinks/list.jsp" />ExternalDatasetsYouTubeVideoLinks list</a></li>
     <li><a href="<util:applicationRoot/>/factSheets/list.jsp" />FactSheets list</a></li>
+    <li><a href="<util:applicationRoot/>/faqLists/list.jsp" />FaqLists list</a></li>
+    <li><a href="<util:applicationRoot/>/faqListsAnalyticsFaqsLinks/list.jsp" />FaqListsAnalyticsFaqsLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/faqListsDomainFaqsLinks/list.jsp" />FaqListsDomainFaqsLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/faqListsEnclaveFaqsLinks/list.jsp" />FaqListsEnclaveFaqsLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/faqListsHarmonizationFaqsLinks/list.jsp" />FaqListsHarmonizationFaqsLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/faqListsPhenotypeFaqsLinks/list.jsp" />FaqListsPhenotypeFaqsLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/faqListsSyntheticFaqsLinks/list.jsp" />FaqListsSyntheticFaqsLinks list</a></li>
     <li><a href="<util:applicationRoot/>/faqs/list.jsp" />Faqs list</a></li>
     <li><a href="<util:applicationRoot/>/files/list.jsp" />Files list</a></li>
     <li><a href="<util:applicationRoot/>/filesFolderLinks/list.jsp" />FilesFolderLinks list</a></li>
@@ -52,6 +59,7 @@
     <li><a href="<util:applicationRoot/>/landingPagesDomainTeamsLinks/list.jsp" />LandingPagesDomainTeamsLinks list</a></li>
     <li><a href="<util:applicationRoot/>/leaderships/list.jsp" />Leaderships list</a></li>
     <li><a href="<util:applicationRoot/>/leadershipsBioGroupsLinks/list.jsp" />LeadershipsBioGroupsLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/liaisons/list.jsp" />Liaisons list</a></li>
     <li><a href="<util:applicationRoot/>/missions/list.jsp" />Missions list</a></li>
     <li><a href="<util:applicationRoot/>/missionsPartnerGroupsLinks/list.jsp" />MissionsPartnerGroupsLinks list</a></li>
     <li><a href="<util:applicationRoot/>/navBars/list.jsp" />NavBars list</a></li>
@@ -95,6 +103,7 @@
     <li><a href="<util:applicationRoot/>/researcherEssentialsJoinBlockLinks/list.jsp" />ResearcherEssentialsJoinBlockLinks list</a></li>
     <li><a href="<util:applicationRoot/>/researcherEssentialsNavTileLinks/list.jsp" />ResearcherEssentialsNavTileLinks list</a></li>
     <li><a href="<util:applicationRoot/>/resources/list.jsp" />Resources list</a></li>
+    <li><a href="<util:applicationRoot/>/supports/list.jsp" />Supports list</a></li>
     <li><a href="<util:applicationRoot/>/tools/list.jsp" />Tools list</a></li>
     <li><a href="<util:applicationRoot/>/toolsDescriptionLinks/list.jsp" />ToolsDescriptionLinks list</a></li>
     <li><a href="<util:applicationRoot/>/toolsToolLinks/list.jsp" />ToolsToolLinks list</a></li>
