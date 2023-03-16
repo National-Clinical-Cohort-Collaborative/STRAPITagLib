@@ -78,30 +78,30 @@
 			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:institutionalEssentialsJoinBlockLinks>
 			</strapi:foreachInstitutionalEssentialsJoinBlockLinks>
 
-						<h2>InstitutionalEssentialsNavTileLinks List</h2>
+						<h2>InstitutionalEssentialsNavTilesLinks List</h2>
 						<table class="table table-bordered table-striped table-hover table-datatable">
 							<thead>
 								<tr>
 									<th>ID</th>
 									<th>InstitutionalEssentialId</th>
-									<th>ContentImageBlockLeftId</th>
-									<th>ContentImageBlockLeftOrder</th>
+									<th>NavTileId</th>
+									<th>NavTileOrder</th>
 									<th></th>
 								</tr>
 							</thead>
 							<tbody>
-								<strapi:foreachInstitutionalEssentialsNavTileLinks var="idIter">
-									<strapi:institutionalEssentialsNavTileLinks>
+								<strapi:foreachInstitutionalEssentialsNavTilesLinks var="idIter">
+									<strapi:institutionalEssentialsNavTilesLinks>
 										<tr>
-											<td><a href="../institutionalEssentialsNavTileLinks/show.jsp?ID=<strapi:institutionalEssentialsNavTileLinksID />"><strapi:institutionalEssentialsNavTileLinksID /></a></td>
-											<td><strapi:institutionalEssentialsNavTileLinksInstitutionalEssentialId /></td>
-											<td><strapi:institutionalEssentialsNavTileLinksContentImageBlockLeftId /></td>
-											<td><strapi:institutionalEssentialsNavTileLinksContentImageBlockLeftOrder /></td>
-											<td><a href="../institutionalEssentialsNavTileLinks/edit.jsp?ID=<strapi:institutionalEssentialsNavTileLinksID />">edit</a></td>
-											<td><a href="../institutionalEssentialsNavTileLinks/delete.jsp?ID=<strapi:institutionalEssentialsNavTileLinksID />">delete</a></td>
+											<td><a href="../institutionalEssentialsNavTilesLinks/show.jsp?ID=<strapi:institutionalEssentialsNavTilesLinksID />"><strapi:institutionalEssentialsNavTilesLinksID /></a></td>
+											<td><strapi:institutionalEssentialsNavTilesLinksInstitutionalEssentialId /></td>
+											<td><strapi:institutionalEssentialsNavTilesLinksNavTileId /></td>
+											<td><strapi:institutionalEssentialsNavTilesLinksNavTileOrder /></td>
+											<td><a href="../institutionalEssentialsNavTilesLinks/edit.jsp?ID=<strapi:institutionalEssentialsNavTilesLinksID />">edit</a></td>
+											<td><a href="../institutionalEssentialsNavTilesLinks/delete.jsp?ID=<strapi:institutionalEssentialsNavTilesLinksID />">delete</a></td>
 										</tr>
-									</strapi:institutionalEssentialsNavTileLinks>
-								</strapi:foreachInstitutionalEssentialsNavTileLinks>
+									</strapi:institutionalEssentialsNavTilesLinks>
+								</strapi:foreachInstitutionalEssentialsNavTilesLinks>
 							</tbody>
 							<tfoot>
 							</tfoot>
@@ -109,17 +109,17 @@
 
 						<br/>
 
-						<a class="btn" href="../institutionalEssentialsNavTileLinks/add.jsp?ID=${param.ID}&ID=${param.ID}">add InstitutionalEssentialsNavTileLinks</a>
+						<a class="btn" href="../institutionalEssentialsNavTilesLinks/add.jsp?ID=${param.ID}&ID=${param.ID}">add InstitutionalEssentialsNavTilesLinks</a>
 						<br/><br/>
 
-		<strapi:foreachInstitutionalEssentialsNavTileLinks var="idIter">
-			<strapi:institutionalEssentialsNavTileLinks>
-						<a href="../../strapi/institutionalEssentialsNavTileLinks/institutionalEssentialsNavTileLinks.jsp?ID=<strapi:institutionalEssentialsNavTileLinksID />"><strapi:institutionalEssentialsNavTileLinksID /></a>
-		<strapi:institutionalEssentialsNavTileLinksInstitutionalEssentialId />
-		<strapi:institutionalEssentialsNavTileLinksContentImageBlockLeftId />
-		<strapi:institutionalEssentialsNavTileLinksContentImageBlockLeftOrder />
-			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:institutionalEssentialsNavTileLinks>
-			</strapi:foreachInstitutionalEssentialsNavTileLinks>
+		<strapi:foreachInstitutionalEssentialsNavTilesLinks var="idIter">
+			<strapi:institutionalEssentialsNavTilesLinks>
+						<a href="../../strapi/institutionalEssentialsNavTilesLinks/institutionalEssentialsNavTilesLinks.jsp?ID=<strapi:institutionalEssentialsNavTilesLinksID />"><strapi:institutionalEssentialsNavTilesLinksID /></a>
+		<strapi:institutionalEssentialsNavTilesLinksInstitutionalEssentialId />
+		<strapi:institutionalEssentialsNavTilesLinksNavTileId />
+		<strapi:institutionalEssentialsNavTilesLinksNavTileOrder />
+			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:institutionalEssentialsNavTilesLinks>
+			</strapi:foreachInstitutionalEssentialsNavTilesLinks>
 
 						<h2>InstitutionalEssentialsStepLinks List</h2>
 						<table class="table table-bordered table-striped table-hover table-datatable">

@@ -1,4 +1,4 @@
-package org.cd2h.STRAPITagLib.institutionalEssentialsNavTileLinks;
+package org.cd2h.STRAPITagLib.institutionalEssentialsNavTilesLinks;
 
 
 import java.sql.PreparedStatement;
@@ -14,17 +14,17 @@ import javax.servlet.jsp.tagext.Tag;
 
 import org.cd2h.STRAPITagLib.STRAPITagLibTagSupport;
 import org.cd2h.STRAPITagLib.STRAPITagLibBodyTagSupport;
-import org.cd2h.STRAPITagLib.contentImageBlockLefts.ContentImageBlockLefts;
 import org.cd2h.STRAPITagLib.institutionalEssentials.InstitutionalEssentials;
+import org.cd2h.STRAPITagLib.navTiles.NavTiles;
 
 @SuppressWarnings("serial")
-public class InstitutionalEssentialsNavTileLinksIterator extends STRAPITagLibBodyTagSupport {
+public class InstitutionalEssentialsNavTilesLinksIterator extends STRAPITagLibBodyTagSupport {
     int ID = 0;
     int institutionalEssentialId = 0;
-    int contentImageBlockLeftId = 0;
+    int navTileId = 0;
 	Vector<STRAPITagLibTagSupport> parentEntities = new Vector<STRAPITagLibTagSupport>();
 
-	private static final Logger log = LogManager.getLogger(InstitutionalEssentialsNavTileLinksIterator.class);
+	private static final Logger log = LogManager.getLogger(InstitutionalEssentialsNavTilesLinksIterator.class);
 
 
     PreparedStatement stat = null;
@@ -34,42 +34,14 @@ public class InstitutionalEssentialsNavTileLinksIterator extends STRAPITagLibBod
     String var = null;
     int rsCount = 0;
 
-   boolean useContentImageBlockLefts = false;
    boolean useInstitutionalEssentials = false;
+   boolean useNavTiles = false;
 
-	public static String institutionalEssentialsNavTileLinksCountByContentImageBlockLefts(String ID) throws JspTagException {
+	public static String institutionalEssentialsNavTilesLinksCountByInstitutionalEssentials(String ID) throws JspTagException {
 		int count = 0;
-		InstitutionalEssentialsNavTileLinksIterator theIterator = new InstitutionalEssentialsNavTileLinksIterator();
+		InstitutionalEssentialsNavTilesLinksIterator theIterator = new InstitutionalEssentialsNavTilesLinksIterator();
 		try {
-			PreparedStatement stat = theIterator.getConnection().prepareStatement("SELECT count(*) from strapi.institutional_essentials_nav_tile_links where 1=1"
-						+ " and content_image_block_left_id = ?"
-						);
-
-			stat.setInt(1,Integer.parseInt(ID));
-			ResultSet crs = stat.executeQuery();
-
-			if (crs.next()) {
-				count = crs.getInt(1);
-			}
-			stat.close();
-		} catch (SQLException e) {
-			log.error("JDBC error generating InstitutionalEssentialsNavTileLinks iterator", e);
-			throw new JspTagException("Error: JDBC error generating InstitutionalEssentialsNavTileLinks iterator");
-		} finally {
-			theIterator.freeConnection();
-		}
-		return "" + count;
-	}
-
-	public static Boolean contentImageBlockLeftsHasInstitutionalEssentialsNavTileLinks(String ID) throws JspTagException {
-		return ! institutionalEssentialsNavTileLinksCountByContentImageBlockLefts(ID).equals("0");
-	}
-
-	public static String institutionalEssentialsNavTileLinksCountByInstitutionalEssentials(String ID) throws JspTagException {
-		int count = 0;
-		InstitutionalEssentialsNavTileLinksIterator theIterator = new InstitutionalEssentialsNavTileLinksIterator();
-		try {
-			PreparedStatement stat = theIterator.getConnection().prepareStatement("SELECT count(*) from strapi.institutional_essentials_nav_tile_links where 1=1"
+			PreparedStatement stat = theIterator.getConnection().prepareStatement("SELECT count(*) from strapi.institutional_essentials_nav_tiles_links where 1=1"
 						+ " and institutional_essential_id = ?"
 						);
 
@@ -81,23 +53,51 @@ public class InstitutionalEssentialsNavTileLinksIterator extends STRAPITagLibBod
 			}
 			stat.close();
 		} catch (SQLException e) {
-			log.error("JDBC error generating InstitutionalEssentialsNavTileLinks iterator", e);
-			throw new JspTagException("Error: JDBC error generating InstitutionalEssentialsNavTileLinks iterator");
+			log.error("JDBC error generating InstitutionalEssentialsNavTilesLinks iterator", e);
+			throw new JspTagException("Error: JDBC error generating InstitutionalEssentialsNavTilesLinks iterator");
 		} finally {
 			theIterator.freeConnection();
 		}
 		return "" + count;
 	}
 
-	public static Boolean institutionalEssentialsHasInstitutionalEssentialsNavTileLinks(String ID) throws JspTagException {
-		return ! institutionalEssentialsNavTileLinksCountByInstitutionalEssentials(ID).equals("0");
+	public static Boolean institutionalEssentialsHasInstitutionalEssentialsNavTilesLinks(String ID) throws JspTagException {
+		return ! institutionalEssentialsNavTilesLinksCountByInstitutionalEssentials(ID).equals("0");
 	}
 
-	public static Boolean institutionalEssentialsNavTileLinksExists (String ID) throws JspTagException {
+	public static String institutionalEssentialsNavTilesLinksCountByNavTiles(String ID) throws JspTagException {
 		int count = 0;
-		InstitutionalEssentialsNavTileLinksIterator theIterator = new InstitutionalEssentialsNavTileLinksIterator();
+		InstitutionalEssentialsNavTilesLinksIterator theIterator = new InstitutionalEssentialsNavTilesLinksIterator();
 		try {
-			PreparedStatement stat = theIterator.getConnection().prepareStatement("SELECT count(*) from strapi.institutional_essentials_nav_tile_links where 1=1"
+			PreparedStatement stat = theIterator.getConnection().prepareStatement("SELECT count(*) from strapi.institutional_essentials_nav_tiles_links where 1=1"
+						+ " and nav_tile_id = ?"
+						);
+
+			stat.setInt(1,Integer.parseInt(ID));
+			ResultSet crs = stat.executeQuery();
+
+			if (crs.next()) {
+				count = crs.getInt(1);
+			}
+			stat.close();
+		} catch (SQLException e) {
+			log.error("JDBC error generating InstitutionalEssentialsNavTilesLinks iterator", e);
+			throw new JspTagException("Error: JDBC error generating InstitutionalEssentialsNavTilesLinks iterator");
+		} finally {
+			theIterator.freeConnection();
+		}
+		return "" + count;
+	}
+
+	public static Boolean navTilesHasInstitutionalEssentialsNavTilesLinks(String ID) throws JspTagException {
+		return ! institutionalEssentialsNavTilesLinksCountByNavTiles(ID).equals("0");
+	}
+
+	public static Boolean institutionalEssentialsNavTilesLinksExists (String ID) throws JspTagException {
+		int count = 0;
+		InstitutionalEssentialsNavTilesLinksIterator theIterator = new InstitutionalEssentialsNavTilesLinksIterator();
+		try {
+			PreparedStatement stat = theIterator.getConnection().prepareStatement("SELECT count(*) from strapi.institutional_essentials_nav_tiles_links where 1=1"
 						+ " and id = ?"
 						);
 
@@ -109,19 +109,19 @@ public class InstitutionalEssentialsNavTileLinksIterator extends STRAPITagLibBod
 			}
 			stat.close();
 		} catch (SQLException e) {
-			log.error("JDBC error generating InstitutionalEssentialsNavTileLinks iterator", e);
-			throw new JspTagException("Error: JDBC error generating InstitutionalEssentialsNavTileLinks iterator");
+			log.error("JDBC error generating InstitutionalEssentialsNavTilesLinks iterator", e);
+			throw new JspTagException("Error: JDBC error generating InstitutionalEssentialsNavTilesLinks iterator");
 		} finally {
 			theIterator.freeConnection();
 		}
 		return count > 0;
 	}
 
-	public static Boolean contentImageBlockLeftsInstitutionalEssentialsExists (String ID) throws JspTagException {
+	public static Boolean institutionalEssentialsNavTilesExists (String ID) throws JspTagException {
 		int count = 0;
-		InstitutionalEssentialsNavTileLinksIterator theIterator = new InstitutionalEssentialsNavTileLinksIterator();
+		InstitutionalEssentialsNavTilesLinksIterator theIterator = new InstitutionalEssentialsNavTilesLinksIterator();
 		try {
-			PreparedStatement stat = theIterator.getConnection().prepareStatement("SELECT count(*) from strapi.institutional_essentials_nav_tile_links where 1=1"
+			PreparedStatement stat = theIterator.getConnection().prepareStatement("SELECT count(*) from strapi.institutional_essentials_nav_tiles_links where 1=1"
 						+ " and id = ?"
 						);
 
@@ -133,8 +133,8 @@ public class InstitutionalEssentialsNavTileLinksIterator extends STRAPITagLibBod
 			}
 			stat.close();
 		} catch (SQLException e) {
-			log.error("JDBC error generating InstitutionalEssentialsNavTileLinks iterator", e);
-			throw new JspTagException("Error: JDBC error generating InstitutionalEssentialsNavTileLinks iterator");
+			log.error("JDBC error generating InstitutionalEssentialsNavTilesLinks iterator", e);
+			throw new JspTagException("Error: JDBC error generating InstitutionalEssentialsNavTilesLinks iterator");
 		} finally {
 			theIterator.freeConnection();
 		}
@@ -142,20 +142,20 @@ public class InstitutionalEssentialsNavTileLinksIterator extends STRAPITagLibBod
 	}
 
     public int doStartTag() throws JspException {
-		ContentImageBlockLefts theContentImageBlockLefts = (ContentImageBlockLefts)findAncestorWithClass(this, ContentImageBlockLefts.class);
-		if (theContentImageBlockLefts!= null)
-			parentEntities.addElement(theContentImageBlockLefts);
 		InstitutionalEssentials theInstitutionalEssentials = (InstitutionalEssentials)findAncestorWithClass(this, InstitutionalEssentials.class);
 		if (theInstitutionalEssentials!= null)
 			parentEntities.addElement(theInstitutionalEssentials);
+		NavTiles theNavTiles = (NavTiles)findAncestorWithClass(this, NavTiles.class);
+		if (theNavTiles!= null)
+			parentEntities.addElement(theNavTiles);
 
-		if (theContentImageBlockLefts == null) {
-		} else {
-			contentImageBlockLeftId = theContentImageBlockLefts.getID();
-		}
 		if (theInstitutionalEssentials == null) {
 		} else {
 			institutionalEssentialId = theInstitutionalEssentials.getID();
+		}
+		if (theNavTiles == null) {
+		} else {
+			navTileId = theNavTiles.getID();
 		}
 
 
@@ -164,11 +164,11 @@ public class InstitutionalEssentialsNavTileLinksIterator extends STRAPITagLibBod
             int webapp_keySeq = 1;
             stat = getConnection().prepareStatement("SELECT count(*) from " + generateFromClause() + " where 1=1"
                                                         + generateJoinCriteria()
-                                                        + (contentImageBlockLeftId == 0 ? "" : " and content_image_block_left_id = ?")
                                                         + (institutionalEssentialId == 0 ? "" : " and institutional_essential_id = ?")
+                                                        + (navTileId == 0 ? "" : " and nav_tile_id = ?")
                                                         + generateLimitCriteria());
-            if (contentImageBlockLeftId != 0) stat.setInt(webapp_keySeq++, contentImageBlockLeftId);
             if (institutionalEssentialId != 0) stat.setInt(webapp_keySeq++, institutionalEssentialId);
+            if (navTileId != 0) stat.setInt(webapp_keySeq++, navTileId);
             rs = stat.executeQuery();
 
             if (rs.next()) {
@@ -178,13 +178,13 @@ public class InstitutionalEssentialsNavTileLinksIterator extends STRAPITagLibBod
 
             //run select id query  
             webapp_keySeq = 1;
-            stat = getConnection().prepareStatement("SELECT strapi.institutional_essentials_nav_tile_links.id from " + generateFromClause() + " where 1=1"
+            stat = getConnection().prepareStatement("SELECT strapi.institutional_essentials_nav_tiles_links.id from " + generateFromClause() + " where 1=1"
                                                         + generateJoinCriteria()
-                                                        + (contentImageBlockLeftId == 0 ? "" : " and content_image_block_left_id = ?")
                                                         + (institutionalEssentialId == 0 ? "" : " and institutional_essential_id = ?")
+                                                        + (navTileId == 0 ? "" : " and nav_tile_id = ?")
                                                         + " order by " + generateSortCriteria()  +  generateLimitCriteria());
-            if (contentImageBlockLeftId != 0) stat.setInt(webapp_keySeq++, contentImageBlockLeftId);
             if (institutionalEssentialId != 0) stat.setInt(webapp_keySeq++, institutionalEssentialId);
+            if (navTileId != 0) stat.setInt(webapp_keySeq++, navTileId);
             rs = stat.executeQuery();
 
             if ( rs != null && rs.next() ) {
@@ -194,7 +194,7 @@ public class InstitutionalEssentialsNavTileLinksIterator extends STRAPITagLibBod
                 return EVAL_BODY_INCLUDE;
             }
         } catch (SQLException e) {
-            log.error("JDBC error generating InstitutionalEssentialsNavTileLinks iterator: " + stat, e);
+            log.error("JDBC error generating InstitutionalEssentialsNavTilesLinks iterator: " + stat, e);
 
 			freeConnection();
 			clearServiceState();
@@ -203,10 +203,10 @@ public class InstitutionalEssentialsNavTileLinksIterator extends STRAPITagLibBod
 			if(parent != null){
 				pageContext.setAttribute("tagError", true);
 				pageContext.setAttribute("tagErrorException", e);
-				pageContext.setAttribute("tagErrorMessage", "Error: JDBC error generating InstitutionalEssentialsNavTileLinks iterator: " + stat);
+				pageContext.setAttribute("tagErrorMessage", "Error: JDBC error generating InstitutionalEssentialsNavTilesLinks iterator: " + stat);
 				return parent.doEndTag();
 			}else{
-				throw new JspException("Error: JDBC error generating InstitutionalEssentialsNavTileLinks iterator: " + stat,e);
+				throw new JspException("Error: JDBC error generating InstitutionalEssentialsNavTilesLinks iterator: " + stat,e);
 			}
 
         }
@@ -215,21 +215,21 @@ public class InstitutionalEssentialsNavTileLinksIterator extends STRAPITagLibBod
     }
 
     private String generateFromClause() {
-       StringBuffer theBuffer = new StringBuffer("strapi.institutional_essentials_nav_tile_links");
-       if (useContentImageBlockLefts)
-          theBuffer.append(", strapi.content_image_block_lefts");
+       StringBuffer theBuffer = new StringBuffer("strapi.institutional_essentials_nav_tiles_links");
        if (useInstitutionalEssentials)
           theBuffer.append(", strapi.institutional_essentials");
+       if (useNavTiles)
+          theBuffer.append(", strapi.nav_tiles");
 
       return theBuffer.toString();
     }
 
     private String generateJoinCriteria() {
        StringBuffer theBuffer = new StringBuffer();
-       if (useContentImageBlockLefts)
-          theBuffer.append(" and strapi.content_image_block_lefts.id = strapi.institutional_essentials_nav_tile_links.content_image_block_left_id");
        if (useInstitutionalEssentials)
-          theBuffer.append(" and strapi.institutional_essentials.id = strapi.institutional_essentials_nav_tile_links.institutional_essential_id");
+          theBuffer.append(" and strapi.institutional_essentials.id = strapi.institutional_essentials_nav_tiles_links.institutional_essential_id");
+       if (useNavTiles)
+          theBuffer.append(" and strapi.nav_tiles.id = strapi.institutional_essentials_nav_tiles_links.nav_tile_id");
 
       return theBuffer.toString();
     }
@@ -257,7 +257,7 @@ public class InstitutionalEssentialsNavTileLinksIterator extends STRAPITagLibBod
                 return EVAL_BODY_AGAIN;
             }
         } catch (SQLException e) {
-            log.error("JDBC error iterating across InstitutionalEssentialsNavTileLinks", e);
+            log.error("JDBC error iterating across InstitutionalEssentialsNavTilesLinks", e);
 
 			freeConnection();
 			clearServiceState();
@@ -266,10 +266,10 @@ public class InstitutionalEssentialsNavTileLinksIterator extends STRAPITagLibBod
 			if(parent != null){
 				pageContext.setAttribute("tagError", true);
 				pageContext.setAttribute("tagErrorException", e);
-				pageContext.setAttribute("tagErrorMessage", "JDBC error iterating across InstitutionalEssentialsNavTileLinks" + stat.toString());
+				pageContext.setAttribute("tagErrorMessage", "JDBC error iterating across InstitutionalEssentialsNavTilesLinks" + stat.toString());
 				return parent.doEndTag();
 			}else{
-				throw new JspException("JDBC error iterating across InstitutionalEssentialsNavTileLinks",e);
+				throw new JspException("JDBC error iterating across InstitutionalEssentialsNavTilesLinks",e);
 			}
 
         }
@@ -317,7 +317,7 @@ public class InstitutionalEssentialsNavTileLinksIterator extends STRAPITagLibBod
             }
 
         } catch ( SQLException e ) {
-            log.error("JDBC error ending InstitutionalEssentialsNavTileLinks iterator",e);
+            log.error("JDBC error ending InstitutionalEssentialsNavTilesLinks iterator",e);
 			freeConnection();
 
 			Tag parent = getParent();
@@ -327,7 +327,7 @@ public class InstitutionalEssentialsNavTileLinksIterator extends STRAPITagLibBod
 				pageContext.setAttribute("tagErrorMessage", "JDBC error retrieving ID " + ID);
 				return parent.doEndTag();
 			}else{
-				throw new JspException("Error: JDBC error ending InstitutionalEssentialsNavTileLinks iterator",e);
+				throw new JspException("Error: JDBC error ending InstitutionalEssentialsNavTilesLinks iterator",e);
 			}
 
         } finally {
@@ -381,20 +381,20 @@ public class InstitutionalEssentialsNavTileLinksIterator extends STRAPITagLibBod
     }
 
 
-   public boolean getUseContentImageBlockLefts() {
-        return useContentImageBlockLefts;
-    }
-
-    public void setUseContentImageBlockLefts(boolean useContentImageBlockLefts) {
-        this.useContentImageBlockLefts = useContentImageBlockLefts;
-    }
-
    public boolean getUseInstitutionalEssentials() {
         return useInstitutionalEssentials;
     }
 
     public void setUseInstitutionalEssentials(boolean useInstitutionalEssentials) {
         this.useInstitutionalEssentials = useInstitutionalEssentials;
+    }
+
+   public boolean getUseNavTiles() {
+        return useNavTiles;
+    }
+
+    public void setUseNavTiles(boolean useNavTiles) {
+        this.useNavTiles = useNavTiles;
     }
 
 

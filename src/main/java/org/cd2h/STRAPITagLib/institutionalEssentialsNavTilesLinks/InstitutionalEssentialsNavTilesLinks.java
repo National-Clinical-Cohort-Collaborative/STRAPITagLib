@@ -1,4 +1,4 @@
-package org.cd2h.STRAPITagLib.institutionalEssentialsNavTileLinks;
+package org.cd2h.STRAPITagLib.institutionalEssentialsNavTilesLinks;
 
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -12,74 +12,74 @@ import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.JspTagException;
 import javax.servlet.jsp.tagext.Tag;
 
-import org.cd2h.STRAPITagLib.contentImageBlockLefts.ContentImageBlockLefts;
 import org.cd2h.STRAPITagLib.institutionalEssentials.InstitutionalEssentials;
+import org.cd2h.STRAPITagLib.navTiles.NavTiles;
 
 import org.cd2h.STRAPITagLib.STRAPITagLibTagSupport;
 import org.cd2h.STRAPITagLib.Sequence;
 
 @SuppressWarnings("serial")
-public class InstitutionalEssentialsNavTileLinks extends STRAPITagLibTagSupport {
+public class InstitutionalEssentialsNavTilesLinks extends STRAPITagLibTagSupport {
 
-	static InstitutionalEssentialsNavTileLinks currentInstance = null;
+	static InstitutionalEssentialsNavTilesLinks currentInstance = null;
 	boolean commitNeeded = false;
 	boolean newRecord = false;
 
-	private static final Logger log = LogManager.getLogger(InstitutionalEssentialsNavTileLinks.class);
+	private static final Logger log = LogManager.getLogger(InstitutionalEssentialsNavTilesLinks.class);
 
 	Vector<STRAPITagLibTagSupport> parentEntities = new Vector<STRAPITagLibTagSupport>();
 
 	int ID = 0;
 	int institutionalEssentialId = 0;
-	int contentImageBlockLeftId = 0;
-	double contentImageBlockLeftOrder = 0.0;
+	int navTileId = 0;
+	double navTileOrder = 0.0;
 
 	private String var = null;
 
-	private InstitutionalEssentialsNavTileLinks cachedInstitutionalEssentialsNavTileLinks = null;
+	private InstitutionalEssentialsNavTilesLinks cachedInstitutionalEssentialsNavTilesLinks = null;
 
 	public int doStartTag() throws JspException {
 		currentInstance = this;
 		try {
-			ContentImageBlockLefts theContentImageBlockLefts = (ContentImageBlockLefts)findAncestorWithClass(this, ContentImageBlockLefts.class);
-			if (theContentImageBlockLefts!= null)
-				parentEntities.addElement(theContentImageBlockLefts);
 			InstitutionalEssentials theInstitutionalEssentials = (InstitutionalEssentials)findAncestorWithClass(this, InstitutionalEssentials.class);
 			if (theInstitutionalEssentials!= null)
 				parentEntities.addElement(theInstitutionalEssentials);
+			NavTiles theNavTiles = (NavTiles)findAncestorWithClass(this, NavTiles.class);
+			if (theNavTiles!= null)
+				parentEntities.addElement(theNavTiles);
 
-			if (theContentImageBlockLefts == null) {
-			} else {
-				contentImageBlockLeftId = theContentImageBlockLefts.getID();
-			}
 			if (theInstitutionalEssentials == null) {
 			} else {
 				institutionalEssentialId = theInstitutionalEssentials.getID();
 			}
-
-			InstitutionalEssentialsNavTileLinksIterator theInstitutionalEssentialsNavTileLinksIterator = (InstitutionalEssentialsNavTileLinksIterator)findAncestorWithClass(this, InstitutionalEssentialsNavTileLinksIterator.class);
-
-			if (theInstitutionalEssentialsNavTileLinksIterator != null) {
-				ID = theInstitutionalEssentialsNavTileLinksIterator.getID();
+			if (theNavTiles == null) {
+			} else {
+				navTileId = theNavTiles.getID();
 			}
 
-			if (theInstitutionalEssentialsNavTileLinksIterator == null && theContentImageBlockLefts == null && theInstitutionalEssentials == null && ID == 0) {
-				// no ID was provided - the default is to assume that it is a new InstitutionalEssentialsNavTileLinks and to generate a new ID
+			InstitutionalEssentialsNavTilesLinksIterator theInstitutionalEssentialsNavTilesLinksIterator = (InstitutionalEssentialsNavTilesLinksIterator)findAncestorWithClass(this, InstitutionalEssentialsNavTilesLinksIterator.class);
+
+			if (theInstitutionalEssentialsNavTilesLinksIterator != null) {
+				ID = theInstitutionalEssentialsNavTilesLinksIterator.getID();
+			}
+
+			if (theInstitutionalEssentialsNavTilesLinksIterator == null && theInstitutionalEssentials == null && theNavTiles == null && ID == 0) {
+				// no ID was provided - the default is to assume that it is a new InstitutionalEssentialsNavTilesLinks and to generate a new ID
 				ID = Sequence.generateID();
 				insertEntity();
-			} else if (theInstitutionalEssentialsNavTileLinksIterator == null && theContentImageBlockLefts != null && theInstitutionalEssentials == null) {
-				// an ID was provided as an attribute - we need to load a InstitutionalEssentialsNavTileLinks from the database
+			} else if (theInstitutionalEssentialsNavTilesLinksIterator == null && theInstitutionalEssentials != null && theNavTiles == null) {
+				// an ID was provided as an attribute - we need to load a InstitutionalEssentialsNavTilesLinks from the database
 				boolean found = false;
-				PreparedStatement stmt = getConnection().prepareStatement("select institutional_essential_id,content_image_block_left_id,content_image_block_left_order from strapi.institutional_essentials_nav_tile_links where id = ?");
+				PreparedStatement stmt = getConnection().prepareStatement("select institutional_essential_id,nav_tile_id,nav_tile_order from strapi.institutional_essentials_nav_tiles_links where id = ?");
 				stmt.setInt(1,ID);
 				ResultSet rs = stmt.executeQuery();
 				while (rs.next()) {
 					if (institutionalEssentialId == 0)
 						institutionalEssentialId = rs.getInt(1);
-					if (contentImageBlockLeftId == 0)
-						contentImageBlockLeftId = rs.getInt(2);
-					if (contentImageBlockLeftOrder == 0.0)
-						contentImageBlockLeftOrder = rs.getDouble(3);
+					if (navTileId == 0)
+						navTileId = rs.getInt(2);
+					if (navTileOrder == 0.0)
+						navTileOrder = rs.getDouble(3);
 					found = true;
 				}
 				stmt.close();
@@ -87,19 +87,19 @@ public class InstitutionalEssentialsNavTileLinks extends STRAPITagLibTagSupport 
 				if (!found) {
 					insertEntity();
 				}
-			} else if (theInstitutionalEssentialsNavTileLinksIterator == null && theContentImageBlockLefts == null && theInstitutionalEssentials != null) {
-				// an ID was provided as an attribute - we need to load a InstitutionalEssentialsNavTileLinks from the database
+			} else if (theInstitutionalEssentialsNavTilesLinksIterator == null && theInstitutionalEssentials == null && theNavTiles != null) {
+				// an ID was provided as an attribute - we need to load a InstitutionalEssentialsNavTilesLinks from the database
 				boolean found = false;
-				PreparedStatement stmt = getConnection().prepareStatement("select institutional_essential_id,content_image_block_left_id,content_image_block_left_order from strapi.institutional_essentials_nav_tile_links where id = ?");
+				PreparedStatement stmt = getConnection().prepareStatement("select institutional_essential_id,nav_tile_id,nav_tile_order from strapi.institutional_essentials_nav_tiles_links where id = ?");
 				stmt.setInt(1,ID);
 				ResultSet rs = stmt.executeQuery();
 				while (rs.next()) {
 					if (institutionalEssentialId == 0)
 						institutionalEssentialId = rs.getInt(1);
-					if (contentImageBlockLeftId == 0)
-						contentImageBlockLeftId = rs.getInt(2);
-					if (contentImageBlockLeftOrder == 0.0)
-						contentImageBlockLeftOrder = rs.getDouble(3);
+					if (navTileId == 0)
+						navTileId = rs.getInt(2);
+					if (navTileOrder == 0.0)
+						navTileOrder = rs.getDouble(3);
 					found = true;
 				}
 				stmt.close();
@@ -108,18 +108,18 @@ public class InstitutionalEssentialsNavTileLinks extends STRAPITagLibTagSupport 
 					insertEntity();
 				}
 			} else {
-				// an iterator or ID was provided as an attribute - we need to load a InstitutionalEssentialsNavTileLinks from the database
+				// an iterator or ID was provided as an attribute - we need to load a InstitutionalEssentialsNavTilesLinks from the database
 				boolean found = false;
-				PreparedStatement stmt = getConnection().prepareStatement("select institutional_essential_id,content_image_block_left_id,content_image_block_left_order from strapi.institutional_essentials_nav_tile_links where id = ?");
+				PreparedStatement stmt = getConnection().prepareStatement("select institutional_essential_id,nav_tile_id,nav_tile_order from strapi.institutional_essentials_nav_tiles_links where id = ?");
 				stmt.setInt(1,ID);
 				ResultSet rs = stmt.executeQuery();
 				while (rs.next()) {
 					if (institutionalEssentialId == 0)
 						institutionalEssentialId = rs.getInt(1);
-					if (contentImageBlockLeftId == 0)
-						contentImageBlockLeftId = rs.getInt(2);
-					if (contentImageBlockLeftOrder == 0.0)
-						contentImageBlockLeftOrder = rs.getDouble(3);
+					if (navTileId == 0)
+						navTileId = rs.getInt(2);
+					if (navTileOrder == 0.0)
+						navTileOrder = rs.getDouble(3);
 					found = true;
 				}
 				stmt.close();
@@ -149,12 +149,12 @@ public class InstitutionalEssentialsNavTileLinks extends STRAPITagLibTagSupport 
 		}
 
 		if(pageContext != null){
-			InstitutionalEssentialsNavTileLinks currentInstitutionalEssentialsNavTileLinks = (InstitutionalEssentialsNavTileLinks) pageContext.getAttribute("tag_institutionalEssentialsNavTileLinks");
-			if(currentInstitutionalEssentialsNavTileLinks != null){
-				cachedInstitutionalEssentialsNavTileLinks = currentInstitutionalEssentialsNavTileLinks;
+			InstitutionalEssentialsNavTilesLinks currentInstitutionalEssentialsNavTilesLinks = (InstitutionalEssentialsNavTilesLinks) pageContext.getAttribute("tag_institutionalEssentialsNavTilesLinks");
+			if(currentInstitutionalEssentialsNavTilesLinks != null){
+				cachedInstitutionalEssentialsNavTilesLinks = currentInstitutionalEssentialsNavTilesLinks;
 			}
-			currentInstitutionalEssentialsNavTileLinks = this;
-			pageContext.setAttribute((var == null ? "tag_institutionalEssentialsNavTileLinks" : var), currentInstitutionalEssentialsNavTileLinks);
+			currentInstitutionalEssentialsNavTilesLinks = this;
+			pageContext.setAttribute((var == null ? "tag_institutionalEssentialsNavTilesLinks" : var), currentInstitutionalEssentialsNavTilesLinks);
 		}
 
 		return EVAL_PAGE;
@@ -164,11 +164,11 @@ public class InstitutionalEssentialsNavTileLinks extends STRAPITagLibTagSupport 
 		currentInstance = null;
 
 		if(pageContext != null){
-			if(this.cachedInstitutionalEssentialsNavTileLinks != null){
-				pageContext.setAttribute((var == null ? "tag_institutionalEssentialsNavTileLinks" : var), this.cachedInstitutionalEssentialsNavTileLinks);
+			if(this.cachedInstitutionalEssentialsNavTilesLinks != null){
+				pageContext.setAttribute((var == null ? "tag_institutionalEssentialsNavTilesLinks" : var), this.cachedInstitutionalEssentialsNavTilesLinks);
 			}else{
-				pageContext.removeAttribute((var == null ? "tag_institutionalEssentialsNavTileLinks" : var));
-				this.cachedInstitutionalEssentialsNavTileLinks = null;
+				pageContext.removeAttribute((var == null ? "tag_institutionalEssentialsNavTilesLinks" : var));
+				this.cachedInstitutionalEssentialsNavTilesLinks = null;
 			}
 		}
 
@@ -198,18 +198,18 @@ public class InstitutionalEssentialsNavTileLinks extends STRAPITagLibTagSupport 
 				}
 			}
 			if (commitNeeded) {
-				PreparedStatement stmt = getConnection().prepareStatement("update strapi.institutional_essentials_nav_tile_links set institutional_essential_id = ?, content_image_block_left_id = ?, content_image_block_left_order = ? where id = ? ");
+				PreparedStatement stmt = getConnection().prepareStatement("update strapi.institutional_essentials_nav_tiles_links set institutional_essential_id = ?, nav_tile_id = ?, nav_tile_order = ? where id = ? ");
 				if ( institutionalEssentialId == 0 ) {
 					stmt.setNull( 1, java.sql.Types.INTEGER );
 				} else {
 					stmt.setInt( 1, institutionalEssentialId );
 				}
-				if ( contentImageBlockLeftId == 0 ) {
+				if ( navTileId == 0 ) {
 					stmt.setNull( 2, java.sql.Types.INTEGER );
 				} else {
-					stmt.setInt( 2, contentImageBlockLeftId );
+					stmt.setInt( 2, navTileId );
 				}
-				stmt.setDouble( 3, contentImageBlockLeftOrder );
+				stmt.setDouble( 3, navTileOrder );
 				stmt.setInt(4,ID);
 				stmt.executeUpdate();
 				stmt.close();
@@ -238,18 +238,18 @@ public class InstitutionalEssentialsNavTileLinks extends STRAPITagLibTagSupport 
 	}
 
 	public void insertEntity() throws JspException, SQLException {
-		PreparedStatement stmt = getConnection().prepareStatement("insert into strapi.institutional_essentials_nav_tile_links(institutional_essential_id,content_image_block_left_id,content_image_block_left_order) values (?,?,?)", java.sql.Statement.RETURN_GENERATED_KEYS);
+		PreparedStatement stmt = getConnection().prepareStatement("insert into strapi.institutional_essentials_nav_tiles_links(institutional_essential_id,nav_tile_id,nav_tile_order) values (?,?,?)", java.sql.Statement.RETURN_GENERATED_KEYS);
 		if (institutionalEssentialId == 0) {
 			stmt.setNull(1, java.sql.Types.INTEGER);
 		} else {
 			stmt.setInt(1,institutionalEssentialId);
 		}
-		if (contentImageBlockLeftId == 0) {
+		if (navTileId == 0) {
 			stmt.setNull(2, java.sql.Types.INTEGER);
 		} else {
-			stmt.setInt(2,contentImageBlockLeftId);
+			stmt.setInt(2,navTileId);
 		}
-		stmt.setDouble(3,contentImageBlockLeftOrder);
+		stmt.setDouble(3,navTileOrder);
 		stmt.executeUpdate();
 
 		// snag the new auto-increment value
@@ -260,7 +260,7 @@ public class InstitutionalEssentialsNavTileLinks extends STRAPITagLibTagSupport 
 
 		stmt.close();
 
-		log.debug("generating new InstitutionalEssentialsNavTileLinks " + ID);
+		log.debug("generating new InstitutionalEssentialsNavTilesLinks " + ID);
 
 		freeConnection();
 	}
@@ -290,30 +290,30 @@ public class InstitutionalEssentialsNavTileLinks extends STRAPITagLibTagSupport 
 		return institutionalEssentialId;
 	}
 
-	public int getContentImageBlockLeftId () {
-		return contentImageBlockLeftId;
+	public int getNavTileId () {
+		return navTileId;
 	}
 
-	public void setContentImageBlockLeftId (int contentImageBlockLeftId) {
-		this.contentImageBlockLeftId = contentImageBlockLeftId;
+	public void setNavTileId (int navTileId) {
+		this.navTileId = navTileId;
 		commitNeeded = true;
 	}
 
-	public int getActualContentImageBlockLeftId () {
-		return contentImageBlockLeftId;
+	public int getActualNavTileId () {
+		return navTileId;
 	}
 
-	public double getContentImageBlockLeftOrder () {
-		return contentImageBlockLeftOrder;
+	public double getNavTileOrder () {
+		return navTileOrder;
 	}
 
-	public void setContentImageBlockLeftOrder (double contentImageBlockLeftOrder) {
-		this.contentImageBlockLeftOrder = contentImageBlockLeftOrder;
+	public void setNavTileOrder (double navTileOrder) {
+		this.navTileOrder = navTileOrder;
 		commitNeeded = true;
 	}
 
-	public double getActualContentImageBlockLeftOrder () {
-		return contentImageBlockLeftOrder;
+	public double getActualNavTileOrder () {
+		return navTileOrder;
 	}
 
 	public String getVar () {
@@ -344,27 +344,27 @@ public class InstitutionalEssentialsNavTileLinks extends STRAPITagLibTagSupport 
 		}
 	}
 
-	public static Integer contentImageBlockLeftIdValue() throws JspException {
+	public static Integer navTileIdValue() throws JspException {
 		try {
-			return currentInstance.getContentImageBlockLeftId();
+			return currentInstance.getNavTileId();
 		} catch (Exception e) {
-			 throw new JspTagException("Error in tag function contentImageBlockLeftIdValue()");
+			 throw new JspTagException("Error in tag function navTileIdValue()");
 		}
 	}
 
-	public static Double contentImageBlockLeftOrderValue() throws JspException {
+	public static Double navTileOrderValue() throws JspException {
 		try {
-			return currentInstance.getContentImageBlockLeftOrder();
+			return currentInstance.getNavTileOrder();
 		} catch (Exception e) {
-			 throw new JspTagException("Error in tag function contentImageBlockLeftOrderValue()");
+			 throw new JspTagException("Error in tag function navTileOrderValue()");
 		}
 	}
 
 	private void clearServiceState () {
 		ID = 0;
 		institutionalEssentialId = 0;
-		contentImageBlockLeftId = 0;
-		contentImageBlockLeftOrder = 0.0;
+		navTileId = 0;
+		navTileOrder = 0.0;
 		newRecord = false;
 		commitNeeded = false;
 		parentEntities = new Vector<STRAPITagLibTagSupport>();

@@ -50,6 +50,14 @@
 											<input type="text" id="updatedById" name="updatedById" size="40" value="<strapi:onboardingsUpdatedById />">
 											<br>
 
+											<label for="block">Block</label>
+											<input type="text" id="block" name="block" size="40" value="<strapi:onboardingsBlock />">
+											<br>
+
+											<label for="block2">Block2</label>
+											<input type="text" id="block2" name="block2" size="40" value="<strapi:onboardingsBlock2 />">
+											<br>
+
 											<input type="submit" name="submit" value="Save">
 											<input type="submit" name="submit" value="Cancel">
 											<input type="hidden" name="ID" value="${param.ID}">
@@ -79,6 +87,8 @@
 			<strapi:onboardingsPublishedAt publishedAt = "${param.publishedAt}" />
 			<strapi:onboardingsCreatedById createdById = "${param.createdById}" />
 			<strapi:onboardingsUpdatedById updatedById = "${param.updatedById}" />
+			<strapi:onboardingsBlock block = "${param.block}" />
+			<strapi:onboardingsBlock2 block2 = "${param.block2}" />
 		</strapi:onboardings>
 		<c:redirect url="list.jsp" />
 	</c:when>

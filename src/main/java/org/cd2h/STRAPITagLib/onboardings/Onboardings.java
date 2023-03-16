@@ -37,6 +37,8 @@ public class Onboardings extends STRAPITagLibTagSupport {
 	Timestamp publishedAt = null;
 	int createdById = 0;
 	int updatedById = 0;
+	String block = null;
+	String block2 = null;
 
 	private String var = null;
 
@@ -60,7 +62,7 @@ public class Onboardings extends STRAPITagLibTagSupport {
 			} else {
 				// an iterator or ID was provided as an attribute - we need to load a Onboardings from the database
 				boolean found = false;
-				PreparedStatement stmt = getConnection().prepareStatement("select header,subheader,registration_header,created_at,updated_at,published_at,created_by_id,updated_by_id from strapi.onboardings where id = ?");
+				PreparedStatement stmt = getConnection().prepareStatement("select header,subheader,registration_header,created_at,updated_at,published_at,created_by_id,updated_by_id,block,block_2 from strapi.onboardings where id = ?");
 				stmt.setInt(1,ID);
 				ResultSet rs = stmt.executeQuery();
 				while (rs.next()) {
@@ -80,6 +82,10 @@ public class Onboardings extends STRAPITagLibTagSupport {
 						createdById = rs.getInt(7);
 					if (updatedById == 0)
 						updatedById = rs.getInt(8);
+					if (block == null)
+						block = rs.getString(9);
+					if (block2 == null)
+						block2 = rs.getString(10);
 					found = true;
 				}
 				stmt.close();
@@ -158,7 +164,7 @@ public class Onboardings extends STRAPITagLibTagSupport {
 				}
 			}
 			if (commitNeeded) {
-				PreparedStatement stmt = getConnection().prepareStatement("update strapi.onboardings set header = ?, subheader = ?, registration_header = ?, created_at = ?, updated_at = ?, published_at = ?, created_by_id = ?, updated_by_id = ? where id = ? ");
+				PreparedStatement stmt = getConnection().prepareStatement("update strapi.onboardings set header = ?, subheader = ?, registration_header = ?, created_at = ?, updated_at = ?, published_at = ?, created_by_id = ?, updated_by_id = ?, block = ?, block_2 = ? where id = ? ");
 				stmt.setString( 1, header );
 				stmt.setString( 2, subheader );
 				stmt.setString( 3, registrationHeader );
@@ -167,7 +173,9 @@ public class Onboardings extends STRAPITagLibTagSupport {
 				stmt.setTimestamp( 6, publishedAt );
 				stmt.setInt( 7, createdById );
 				stmt.setInt( 8, updatedById );
-				stmt.setInt(9,ID);
+				stmt.setString( 9, block );
+				stmt.setString( 10, block2 );
+				stmt.setInt(11,ID);
 				stmt.executeUpdate();
 				stmt.close();
 			}
@@ -209,7 +217,13 @@ public class Onboardings extends STRAPITagLibTagSupport {
 		if (registrationHeader == null){
 			registrationHeader = "";
 		}
-		PreparedStatement stmt = getConnection().prepareStatement("insert into strapi.onboardings(header,subheader,registration_header,created_at,updated_at,published_at,created_by_id,updated_by_id) values (?,?,?,?,?,?,?,?)", java.sql.Statement.RETURN_GENERATED_KEYS);
+		if (block == null){
+			block = "";
+		}
+		if (block2 == null){
+			block2 = "";
+		}
+		PreparedStatement stmt = getConnection().prepareStatement("insert into strapi.onboardings(header,subheader,registration_header,created_at,updated_at,published_at,created_by_id,updated_by_id,block,block_2) values (?,?,?,?,?,?,?,?,?,?)", java.sql.Statement.RETURN_GENERATED_KEYS);
 		stmt.setString(1,header);
 		stmt.setString(2,subheader);
 		stmt.setString(3,registrationHeader);
@@ -218,6 +232,8 @@ public class Onboardings extends STRAPITagLibTagSupport {
 		stmt.setTimestamp(6,publishedAt);
 		stmt.setInt(7,createdById);
 		stmt.setInt(8,updatedById);
+		stmt.setString(9,block);
+		stmt.setString(10,block2);
 		stmt.executeUpdate();
 
 		// snag the new auto-increment value
@@ -373,6 +389,38 @@ public class Onboardings extends STRAPITagLibTagSupport {
 		return updatedById;
 	}
 
+	public String getBlock () {
+		if (commitNeeded)
+			return "";
+		else
+			return block;
+	}
+
+	public void setBlock (String block) {
+		this.block = block;
+		commitNeeded = true;
+	}
+
+	public String getActualBlock () {
+		return block;
+	}
+
+	public String getBlock2 () {
+		if (commitNeeded)
+			return "";
+		else
+			return block2;
+	}
+
+	public void setBlock2 (String block2) {
+		this.block2 = block2;
+		commitNeeded = true;
+	}
+
+	public String getActualBlock2 () {
+		return block2;
+	}
+
 	public String getVar () {
 		return var;
 	}
@@ -457,6 +505,22 @@ public class Onboardings extends STRAPITagLibTagSupport {
 		}
 	}
 
+	public static String blockValue() throws JspException {
+		try {
+			return currentInstance.getBlock();
+		} catch (Exception e) {
+			 throw new JspTagException("Error in tag function blockValue()");
+		}
+	}
+
+	public static String block2Value() throws JspException {
+		try {
+			return currentInstance.getBlock2();
+		} catch (Exception e) {
+			 throw new JspTagException("Error in tag function block2Value()");
+		}
+	}
+
 	private void clearServiceState () {
 		ID = 0;
 		header = null;
@@ -467,6 +531,8 @@ public class Onboardings extends STRAPITagLibTagSupport {
 		publishedAt = null;
 		createdById = 0;
 		updatedById = 0;
+		block = null;
+		block2 = null;
 		newRecord = false;
 		commitNeeded = false;
 		parentEntities = new Vector<STRAPITagLibTagSupport>();

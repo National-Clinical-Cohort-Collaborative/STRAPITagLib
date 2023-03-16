@@ -1,4 +1,4 @@
-package org.cd2h.STRAPITagLib.researcherEssentialsNavTileLinks;
+package org.cd2h.STRAPITagLib.researcherEssentialsNavTilesLinks;
 
 
 import java.sql.PreparedStatement;
@@ -13,18 +13,18 @@ import javax.servlet.jsp.tagext.Tag;
 
 import org.cd2h.STRAPITagLib.STRAPITagLibTagSupport;
 import org.cd2h.STRAPITagLib.STRAPITagLibBodyTagSupport;
-import org.cd2h.STRAPITagLib.contentImageBlockLefts.ContentImageBlockLefts;
+import org.cd2h.STRAPITagLib.navTiles.NavTiles;
 import org.cd2h.STRAPITagLib.researcherEssentials.ResearcherEssentials;
 
 @SuppressWarnings("serial")
-public class ResearcherEssentialsNavTileLinksDeleter extends STRAPITagLibBodyTagSupport {
+public class ResearcherEssentialsNavTilesLinksDeleter extends STRAPITagLibBodyTagSupport {
     int ID = 0;
     int researcherEssentialId = 0;
-    int contentImageBlockLeftId = 0;
-    double contentImageBlockLeftOrder = 0.0;
+    int navTileId = 0;
+    double navTileOrder = 0.0;
 	Vector<STRAPITagLibTagSupport> parentEntities = new Vector<STRAPITagLibTagSupport>();
 
-	private static final Logger log = LogManager.getLogger(ResearcherEssentialsNavTileLinksDeleter.class);
+	private static final Logger log = LogManager.getLogger(ResearcherEssentialsNavTilesLinksDeleter.class);
 
 
     ResultSet rs = null;
@@ -32,16 +32,16 @@ public class ResearcherEssentialsNavTileLinksDeleter extends STRAPITagLibBodyTag
     int rsCount = 0;
 
     public int doStartTag() throws JspException {
-		ContentImageBlockLefts theContentImageBlockLefts = (ContentImageBlockLefts)findAncestorWithClass(this, ContentImageBlockLefts.class);
-		if (theContentImageBlockLefts!= null)
-			parentEntities.addElement(theContentImageBlockLefts);
+		NavTiles theNavTiles = (NavTiles)findAncestorWithClass(this, NavTiles.class);
+		if (theNavTiles!= null)
+			parentEntities.addElement(theNavTiles);
 		ResearcherEssentials theResearcherEssentials = (ResearcherEssentials)findAncestorWithClass(this, ResearcherEssentials.class);
 		if (theResearcherEssentials!= null)
 			parentEntities.addElement(theResearcherEssentials);
 
-		if (theContentImageBlockLefts == null) {
+		if (theNavTiles == null) {
 		} else {
-			contentImageBlockLeftId = theContentImageBlockLefts.getID();
+			navTileId = theNavTiles.getID();
 		}
 		if (theResearcherEssentials == null) {
 		} else {
@@ -52,18 +52,18 @@ public class ResearcherEssentialsNavTileLinksDeleter extends STRAPITagLibBodyTag
         PreparedStatement stat;
         try {
             int webapp_keySeq = 1;
-            stat = getConnection().prepareStatement("DELETE from strapi.researcher_essentials_nav_tile_links where 1=1"
+            stat = getConnection().prepareStatement("DELETE from strapi.researcher_essentials_nav_tiles_links where 1=1"
                                                         + (ID == 0 ? "" : " and id = ? ")
-                                                        + (contentImageBlockLeftId == 0 ? "" : " and content_image_block_left_id = ? ")
+                                                        + (navTileId == 0 ? "" : " and nav_tile_id = ? ")
                                                         + (researcherEssentialId == 0 ? "" : " and researcher_essential_id = ? "));
             if (ID != 0) stat.setInt(webapp_keySeq++, ID);
-			if (contentImageBlockLeftId != 0) stat.setInt(webapp_keySeq++, contentImageBlockLeftId);
+			if (navTileId != 0) stat.setInt(webapp_keySeq++, navTileId);
 			if (researcherEssentialId != 0) stat.setInt(webapp_keySeq++, researcherEssentialId);
             stat.execute();
 
 			webapp_keySeq = 1;
         } catch (SQLException e) {
-            log.error("JDBC error generating ResearcherEssentialsNavTileLinks deleter", e);
+            log.error("JDBC error generating ResearcherEssentialsNavTilesLinks deleter", e);
 
 			clearServiceState();
 			freeConnection();
@@ -72,10 +72,10 @@ public class ResearcherEssentialsNavTileLinksDeleter extends STRAPITagLibBodyTag
 			if(parent != null){
 				pageContext.setAttribute("tagError", true);
 				pageContext.setAttribute("tagErrorException", e);
-				pageContext.setAttribute("tagErrorMessage", "Error: JDBC error generating ResearcherEssentialsNavTileLinks deleter");
+				pageContext.setAttribute("tagErrorMessage", "Error: JDBC error generating ResearcherEssentialsNavTilesLinks deleter");
 				return parent.doEndTag();
 			}else{
-				throw new JspException("Error: JDBC error generating ResearcherEssentialsNavTileLinks deleter",e);
+				throw new JspException("Error: JDBC error generating ResearcherEssentialsNavTilesLinks deleter",e);
 			}
 
         } finally {

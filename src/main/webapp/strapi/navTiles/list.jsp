@@ -24,6 +24,8 @@
 									<th>PublishedAt</th>
 									<th>CreatedById</th>
 									<th>UpdatedById</th>
+									<th>Header</th>
+									<th>Block</th>
 									<th></th>
 								</tr>
 							</thead>
@@ -40,6 +42,8 @@
 											<td><strapi:navTilesPublishedAt /></td>
 											<td><strapi:navTilesCreatedById /></td>
 											<td><strapi:navTilesUpdatedById /></td>
+											<td><strapi:navTilesHeader /></td>
+											<td><strapi:navTilesBlock /></td>
 											<td><a href="../navTiles/edit.jsp?ID=<strapi:navTilesID />">edit</a></td>
 											<td><a href="../navTiles/delete.jsp?ID=<strapi:navTilesID />">delete</a></td>
 										</tr>
@@ -66,6 +70,8 @@
 		<strapi:navTilesPublishedAt />
 		<strapi:navTilesCreatedById />
 		<strapi:navTilesUpdatedById />
+		<strapi:navTilesHeader />
+		<strapi:navTilesBlock />
 			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:navTiles>
 			</strapi:foreachNavTiles>
                 </div>

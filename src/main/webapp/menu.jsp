@@ -54,7 +54,7 @@
     <li><a href="<util:applicationRoot/>/forumsForumPresentationsLinks/list.jsp" />ForumsForumPresentationsLinks list</a></li>
     <li><a href="<util:applicationRoot/>/institutionalEssentials/list.jsp" />InstitutionalEssentials list</a></li>
     <li><a href="<util:applicationRoot/>/institutionalEssentialsJoinBlockLinks/list.jsp" />InstitutionalEssentialsJoinBlockLinks list</a></li>
-    <li><a href="<util:applicationRoot/>/institutionalEssentialsNavTileLinks/list.jsp" />InstitutionalEssentialsNavTileLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/institutionalEssentialsNavTilesLinks/list.jsp" />InstitutionalEssentialsNavTilesLinks list</a></li>
     <li><a href="<util:applicationRoot/>/institutionalEssentialsStepLinks/list.jsp" />InstitutionalEssentialsStepLinks list</a></li>
     <li><a href="<util:applicationRoot/>/landingPages/list.jsp" />LandingPages list</a></li>
     <li><a href="<util:applicationRoot/>/landingPagesDomainTeamsLinks/list.jsp" />LandingPagesDomainTeamsLinks list</a></li>
@@ -75,7 +75,7 @@
     <li><a href="<util:applicationRoot/>/newsletters/list.jsp" />Newsletters list</a></li>
     <li><a href="<util:applicationRoot/>/newslettersNewsletterIssuesLinks/list.jsp" />NewslettersNewsletterIssuesLinks list</a></li>
     <li><a href="<util:applicationRoot/>/onboardings/list.jsp" />Onboardings list</a></li>
-    <li><a href="<util:applicationRoot/>/onboardingsNavTileLinks/list.jsp" />OnboardingsNavTileLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/onboardingsNavTilesLinks/list.jsp" />OnboardingsNavTilesLinks list</a></li>
     <li><a href="<util:applicationRoot/>/onboardingsStepLinks/list.jsp" />OnboardingsStepLinks list</a></li>
     <li><a href="<util:applicationRoot/>/partnerGroups/list.jsp" />PartnerGroups list</a></li>
     <li><a href="<util:applicationRoot/>/partners/list.jsp" />Partners list</a></li>
@@ -102,7 +102,7 @@
     <li><a href="<util:applicationRoot/>/researcherEssentialsDomainBlockLinks/list.jsp" />ResearcherEssentialsDomainBlockLinks list</a></li>
     <li><a href="<util:applicationRoot/>/researcherEssentialsGovernanceBlockLinks/list.jsp" />ResearcherEssentialsGovernanceBlockLinks list</a></li>
     <li><a href="<util:applicationRoot/>/researcherEssentialsJoinBlockLinks/list.jsp" />ResearcherEssentialsJoinBlockLinks list</a></li>
-    <li><a href="<util:applicationRoot/>/researcherEssentialsNavTileLinks/list.jsp" />ResearcherEssentialsNavTileLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/researcherEssentialsNavTilesLinks/list.jsp" />ResearcherEssentialsNavTilesLinks list</a></li>
     <li><a href="<util:applicationRoot/>/resources/list.jsp" />Resources list</a></li>
     <li><a href="<util:applicationRoot/>/supports/list.jsp" />Supports list</a></li>
     <li><a href="<util:applicationRoot/>/tools/list.jsp" />Tools list</a></li>

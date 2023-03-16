@@ -50,6 +50,14 @@
 											<input type="text" id="updatedById" name="updatedById" size="40" value="<strapi:navTilesUpdatedById />">
 											<br>
 
+											<label for="header">Header</label>
+											<input type="text" id="header" name="header" size="40" value="<strapi:navTilesHeader />">
+											<br>
+
+											<label for="block">Block</label>
+											<input type="text" id="block" name="block" size="40" value="<strapi:navTilesBlock />">
+											<br>
+
 											<input type="submit" name="submit" value="Save">
 											<input type="submit" name="submit" value="Cancel">
 											<input type="hidden" name="ID" value="${param.ID}">
@@ -79,6 +87,8 @@
 			<strapi:navTilesPublishedAt publishedAt = "${param.publishedAt}" />
 			<strapi:navTilesCreatedById createdById = "${param.createdById}" />
 			<strapi:navTilesUpdatedById updatedById = "${param.updatedById}" />
+			<strapi:navTilesHeader header = "${param.header}" />
+			<strapi:navTilesBlock block = "${param.block}" />
 		</strapi:navTiles>
 		<c:redirect url="list.jsp" />
 	</c:when>

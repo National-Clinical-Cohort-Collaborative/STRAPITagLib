@@ -9146,8 +9146,8 @@
 	</tag>
 
 	<tag>
-		<name>foreachInstitutionalEssentialsNavTileLinks</name>
-		<tag-class>org.cd2h.STRAPITagLib.institutionalEssentialsNavTileLinks.InstitutionalEssentialsNavTileLinksIterator</tag-class>
+		<name>foreachInstitutionalEssentialsNavTilesLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.institutionalEssentialsNavTilesLinks.InstitutionalEssentialsNavTilesLinksIterator</tag-class>
 		<body-content>JSP</body-content>
 
 		<attribute>
@@ -9175,13 +9175,13 @@
 		</attribute>
 
 		<attribute>
-			<name>useContentImageBlockLefts</name>
+			<name>useInstitutionalEssentials</name>
 			<required>false</required>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
 
 		<attribute>
-			<name>useInstitutionalEssentials</name>
+			<name>useNavTiles</name>
 			<required>false</required>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
@@ -9189,8 +9189,8 @@
 	</tag>
 
 	<tag>
-		<name>institutionalEssentialsNavTileLinks</name>
-		<tag-class>org.cd2h.STRAPITagLib.institutionalEssentialsNavTileLinks.InstitutionalEssentialsNavTileLinks</tag-class>
+		<name>institutionalEssentialsNavTilesLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.institutionalEssentialsNavTilesLinks.InstitutionalEssentialsNavTilesLinks</tag-class>
 		<body-content>JSP</body-content>
 
 		<attribute>
@@ -9207,8 +9207,8 @@
 	</tag>
 
 	<tag>
-		<name>deleteInstitutionalEssentialsNavTileLinks</name>
-		<tag-class>org.cd2h.STRAPITagLib.institutionalEssentialsNavTileLinks.InstitutionalEssentialsNavTileLinksDeleter</tag-class>
+		<name>deleteInstitutionalEssentialsNavTilesLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.institutionalEssentialsNavTilesLinks.InstitutionalEssentialsNavTilesLinksDeleter</tag-class>
 		<body-content>JSP</body-content>
 
 		<attribute>
@@ -9219,8 +9219,8 @@
 	</tag>
 
 	<tag>
-		<name>institutionalEssentialsNavTileLinksID</name>
-		<tag-class>org.cd2h.STRAPITagLib.institutionalEssentialsNavTileLinks.InstitutionalEssentialsNavTileLinksID</tag-class>
+		<name>institutionalEssentialsNavTilesLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.institutionalEssentialsNavTilesLinks.InstitutionalEssentialsNavTilesLinksID</tag-class>
 		<body-content>empty</body-content>
 
 		<attribute>
@@ -9231,8 +9231,8 @@
 	</tag>
 
 	<tag>
-		<name>institutionalEssentialsNavTileLinksInstitutionalEssentialId</name>
-		<tag-class>org.cd2h.STRAPITagLib.institutionalEssentialsNavTileLinks.InstitutionalEssentialsNavTileLinksInstitutionalEssentialId</tag-class>
+		<name>institutionalEssentialsNavTilesLinksInstitutionalEssentialId</name>
+		<tag-class>org.cd2h.STRAPITagLib.institutionalEssentialsNavTilesLinks.InstitutionalEssentialsNavTilesLinksInstitutionalEssentialId</tag-class>
 		<body-content>empty</body-content>
 
 		<attribute>
@@ -9243,24 +9243,24 @@
 	</tag>
 
 	<tag>
-		<name>institutionalEssentialsNavTileLinksContentImageBlockLeftId</name>
-		<tag-class>org.cd2h.STRAPITagLib.institutionalEssentialsNavTileLinks.InstitutionalEssentialsNavTileLinksContentImageBlockLeftId</tag-class>
+		<name>institutionalEssentialsNavTilesLinksNavTileId</name>
+		<tag-class>org.cd2h.STRAPITagLib.institutionalEssentialsNavTilesLinks.InstitutionalEssentialsNavTilesLinksNavTileId</tag-class>
 		<body-content>empty</body-content>
 
 		<attribute>
-			<name>contentImageBlockLeftId</name>
+			<name>navTileId</name>
 			<required>false</required>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
 	</tag>
 
 	<tag>
-		<name>institutionalEssentialsNavTileLinksContentImageBlockLeftOrder</name>
-		<tag-class>org.cd2h.STRAPITagLib.institutionalEssentialsNavTileLinks.InstitutionalEssentialsNavTileLinksContentImageBlockLeftOrder</tag-class>
+		<name>institutionalEssentialsNavTilesLinksNavTileOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.institutionalEssentialsNavTilesLinks.InstitutionalEssentialsNavTilesLinksNavTileOrder</tag-class>
 		<body-content>empty</body-content>
 
 		<attribute>
-			<name>contentImageBlockLeftOrder</name>
+			<name>navTileOrder</name>
 			<required>false</required>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
@@ -11505,6 +11505,30 @@
 	</tag>
 
 	<tag>
+		<name>navTilesHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.navTiles.NavTilesHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>header</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>navTilesBlock</name>
+		<tag-class>org.cd2h.STRAPITagLib.navTiles.NavTilesBlock</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>block</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
 		<name>foreachNewsItems</name>
 		<tag-class>org.cd2h.STRAPITagLib.newsItems.NewsItemsIterator</tag-class>
 		<body-content>JSP</body-content>
@@ -12491,8 +12515,32 @@
 	</tag>
 
 	<tag>
-		<name>foreachOnboardingsNavTileLinks</name>
-		<tag-class>org.cd2h.STRAPITagLib.onboardingsNavTileLinks.OnboardingsNavTileLinksIterator</tag-class>
+		<name>onboardingsBlock</name>
+		<tag-class>org.cd2h.STRAPITagLib.onboardings.OnboardingsBlock</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>block</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>onboardingsBlock2</name>
+		<tag-class>org.cd2h.STRAPITagLib.onboardings.OnboardingsBlock2</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>block2</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachOnboardingsNavTilesLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.onboardingsNavTilesLinks.OnboardingsNavTilesLinksIterator</tag-class>
 		<body-content>JSP</body-content>
 
 		<attribute>
@@ -12520,7 +12568,7 @@
 		</attribute>
 
 		<attribute>
-			<name>useContentImageBlockLefts</name>
+			<name>useNavTiles</name>
 			<required>false</required>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
@@ -12534,8 +12582,8 @@
 	</tag>
 
 	<tag>
-		<name>onboardingsNavTileLinks</name>
-		<tag-class>org.cd2h.STRAPITagLib.onboardingsNavTileLinks.OnboardingsNavTileLinks</tag-class>
+		<name>onboardingsNavTilesLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.onboardingsNavTilesLinks.OnboardingsNavTilesLinks</tag-class>
 		<body-content>JSP</body-content>
 
 		<attribute>
@@ -12552,8 +12600,8 @@
 	</tag>
 
 	<tag>
-		<name>deleteOnboardingsNavTileLinks</name>
-		<tag-class>org.cd2h.STRAPITagLib.onboardingsNavTileLinks.OnboardingsNavTileLinksDeleter</tag-class>
+		<name>deleteOnboardingsNavTilesLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.onboardingsNavTilesLinks.OnboardingsNavTilesLinksDeleter</tag-class>
 		<body-content>JSP</body-content>
 
 		<attribute>
@@ -12564,8 +12612,8 @@
 	</tag>
 
 	<tag>
-		<name>onboardingsNavTileLinksID</name>
-		<tag-class>org.cd2h.STRAPITagLib.onboardingsNavTileLinks.OnboardingsNavTileLinksID</tag-class>
+		<name>onboardingsNavTilesLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.onboardingsNavTilesLinks.OnboardingsNavTilesLinksID</tag-class>
 		<body-content>empty</body-content>
 
 		<attribute>
@@ -12576,8 +12624,8 @@
 	</tag>
 
 	<tag>
-		<name>onboardingsNavTileLinksOnboardingId</name>
-		<tag-class>org.cd2h.STRAPITagLib.onboardingsNavTileLinks.OnboardingsNavTileLinksOnboardingId</tag-class>
+		<name>onboardingsNavTilesLinksOnboardingId</name>
+		<tag-class>org.cd2h.STRAPITagLib.onboardingsNavTilesLinks.OnboardingsNavTilesLinksOnboardingId</tag-class>
 		<body-content>empty</body-content>
 
 		<attribute>
@@ -12588,24 +12636,24 @@
 	</tag>
 
 	<tag>
-		<name>onboardingsNavTileLinksContentImageBlockLeftId</name>
-		<tag-class>org.cd2h.STRAPITagLib.onboardingsNavTileLinks.OnboardingsNavTileLinksContentImageBlockLeftId</tag-class>
+		<name>onboardingsNavTilesLinksNavTileId</name>
+		<tag-class>org.cd2h.STRAPITagLib.onboardingsNavTilesLinks.OnboardingsNavTilesLinksNavTileId</tag-class>
 		<body-content>empty</body-content>
 
 		<attribute>
-			<name>contentImageBlockLeftId</name>
+			<name>navTileId</name>
 			<required>false</required>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
 	</tag>
 
 	<tag>
-		<name>onboardingsNavTileLinksContentImageBlockLeftOrder</name>
-		<tag-class>org.cd2h.STRAPITagLib.onboardingsNavTileLinks.OnboardingsNavTileLinksContentImageBlockLeftOrder</tag-class>
+		<name>onboardingsNavTilesLinksNavTileOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.onboardingsNavTilesLinks.OnboardingsNavTilesLinksNavTileOrder</tag-class>
 		<body-content>empty</body-content>
 
 		<attribute>
-			<name>contentImageBlockLeftOrder</name>
+			<name>navTileOrder</name>
 			<required>false</required>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
@@ -17115,8 +17163,8 @@
 	</tag>
 
 	<tag>
-		<name>foreachResearcherEssentialsNavTileLinks</name>
-		<tag-class>org.cd2h.STRAPITagLib.researcherEssentialsNavTileLinks.ResearcherEssentialsNavTileLinksIterator</tag-class>
+		<name>foreachResearcherEssentialsNavTilesLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.researcherEssentialsNavTilesLinks.ResearcherEssentialsNavTilesLinksIterator</tag-class>
 		<body-content>JSP</body-content>
 
 		<attribute>
@@ -17144,7 +17192,7 @@
 		</attribute>
 
 		<attribute>
-			<name>useContentImageBlockLefts</name>
+			<name>useNavTiles</name>
 			<required>false</required>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
@@ -17158,8 +17206,8 @@
 	</tag>
 
 	<tag>
-		<name>researcherEssentialsNavTileLinks</name>
-		<tag-class>org.cd2h.STRAPITagLib.researcherEssentialsNavTileLinks.ResearcherEssentialsNavTileLinks</tag-class>
+		<name>researcherEssentialsNavTilesLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.researcherEssentialsNavTilesLinks.ResearcherEssentialsNavTilesLinks</tag-class>
 		<body-content>JSP</body-content>
 
 		<attribute>
@@ -17176,8 +17224,8 @@
 	</tag>
 
 	<tag>
-		<name>deleteResearcherEssentialsNavTileLinks</name>
-		<tag-class>org.cd2h.STRAPITagLib.researcherEssentialsNavTileLinks.ResearcherEssentialsNavTileLinksDeleter</tag-class>
+		<name>deleteResearcherEssentialsNavTilesLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.researcherEssentialsNavTilesLinks.ResearcherEssentialsNavTilesLinksDeleter</tag-class>
 		<body-content>JSP</body-content>
 
 		<attribute>
@@ -17188,8 +17236,8 @@
 	</tag>
 
 	<tag>
-		<name>researcherEssentialsNavTileLinksID</name>
-		<tag-class>org.cd2h.STRAPITagLib.researcherEssentialsNavTileLinks.ResearcherEssentialsNavTileLinksID</tag-class>
+		<name>researcherEssentialsNavTilesLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.researcherEssentialsNavTilesLinks.ResearcherEssentialsNavTilesLinksID</tag-class>
 		<body-content>empty</body-content>
 
 		<attribute>
@@ -17200,8 +17248,8 @@
 	</tag>
 
 	<tag>
-		<name>researcherEssentialsNavTileLinksResearcherEssentialId</name>
-		<tag-class>org.cd2h.STRAPITagLib.researcherEssentialsNavTileLinks.ResearcherEssentialsNavTileLinksResearcherEssentialId</tag-class>
+		<name>researcherEssentialsNavTilesLinksResearcherEssentialId</name>
+		<tag-class>org.cd2h.STRAPITagLib.researcherEssentialsNavTilesLinks.ResearcherEssentialsNavTilesLinksResearcherEssentialId</tag-class>
 		<body-content>empty</body-content>
 
 		<attribute>
@@ -17212,24 +17260,24 @@
 	</tag>
 
 	<tag>
-		<name>researcherEssentialsNavTileLinksContentImageBlockLeftId</name>
-		<tag-class>org.cd2h.STRAPITagLib.researcherEssentialsNavTileLinks.ResearcherEssentialsNavTileLinksContentImageBlockLeftId</tag-class>
+		<name>researcherEssentialsNavTilesLinksNavTileId</name>
+		<tag-class>org.cd2h.STRAPITagLib.researcherEssentialsNavTilesLinks.ResearcherEssentialsNavTilesLinksNavTileId</tag-class>
 		<body-content>empty</body-content>
 
 		<attribute>
-			<name>contentImageBlockLeftId</name>
+			<name>navTileId</name>
 			<required>false</required>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
 	</tag>
 
 	<tag>
-		<name>researcherEssentialsNavTileLinksContentImageBlockLeftOrder</name>
-		<tag-class>org.cd2h.STRAPITagLib.researcherEssentialsNavTileLinks.ResearcherEssentialsNavTileLinksContentImageBlockLeftOrder</tag-class>
+		<name>researcherEssentialsNavTilesLinksNavTileOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.researcherEssentialsNavTilesLinks.ResearcherEssentialsNavTilesLinksNavTileOrder</tag-class>
 		<body-content>empty</body-content>
 
 		<attribute>
-			<name>contentImageBlockLeftOrder</name>
+			<name>navTileOrder</name>
 			<required>false</required>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
@@ -21773,33 +21821,39 @@
 	</function>
 
 	<function>
-		<name>institutionalEssentialsNavTileLinksExists</name>
-		<function-class>org.cd2h.STRAPITagLib.institutionalEssentialsNavTileLinks.InstitutionalEssentialsNavTileLinksIterator</function-class>
-		<function-signature>java.lang.String institutionalEssentialsNavTileLinksExists(java.lang.String)</function-signature>
+		<name>institutionalEssentialsNavTilesLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.institutionalEssentialsNavTilesLinks.InstitutionalEssentialsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.String institutionalEssentialsNavTilesLinksExists(java.lang.String)</function-signature>
 	</function>
 
 	<function>
-		<name>institutionalEssentialsNavTileLinksCountByContentImageBlockLefts</name>
-		<function-class>org.cd2h.STRAPITagLib.institutionalEssentialsNavTileLinks.InstitutionalEssentialsNavTileLinksIterator</function-class>
-		<function-signature>java.lang.String institutionalEssentialsNavTileLinksCountByContentImageBlockLefts(java.lang.String)</function-signature>
+		<name>institutionalEssentialsNavTilesLinksCountByInstitutionalEssentials</name>
+		<function-class>org.cd2h.STRAPITagLib.institutionalEssentialsNavTilesLinks.InstitutionalEssentialsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.String institutionalEssentialsNavTilesLinksCountByInstitutionalEssentials(java.lang.String)</function-signature>
 	</function>
 
 	<function>
-		<name>contentImageBlockLeftsHasInstitutionalEssentialsNavTileLinks</name>
-		<function-class>org.cd2h.STRAPITagLib.institutionalEssentialsNavTileLinks.InstitutionalEssentialsNavTileLinksIterator</function-class>
-		<function-signature>java.lang.Boolean contentImageBlockLeftsHasInstitutionalEssentialsNavTileLinks(java.lang.String)</function-signature>
+		<name>institutionalEssentialsHasInstitutionalEssentialsNavTilesLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.institutionalEssentialsNavTilesLinks.InstitutionalEssentialsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.Boolean institutionalEssentialsHasInstitutionalEssentialsNavTilesLinks(java.lang.String)</function-signature>
 	</function>
 
 	<function>
-		<name>institutionalEssentialsNavTileLinksCountByInstitutionalEssentials</name>
-		<function-class>org.cd2h.STRAPITagLib.institutionalEssentialsNavTileLinks.InstitutionalEssentialsNavTileLinksIterator</function-class>
-		<function-signature>java.lang.String institutionalEssentialsNavTileLinksCountByInstitutionalEssentials(java.lang.String)</function-signature>
+		<name>institutionalEssentialsNavTilesLinksCountByNavTiles</name>
+		<function-class>org.cd2h.STRAPITagLib.institutionalEssentialsNavTilesLinks.InstitutionalEssentialsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.String institutionalEssentialsNavTilesLinksCountByNavTiles(java.lang.String)</function-signature>
 	</function>
 
 	<function>
-		<name>institutionalEssentialsHasInstitutionalEssentialsNavTileLinks</name>
-		<function-class>org.cd2h.STRAPITagLib.institutionalEssentialsNavTileLinks.InstitutionalEssentialsNavTileLinksIterator</function-class>
-		<function-signature>java.lang.Boolean institutionalEssentialsHasInstitutionalEssentialsNavTileLinks(java.lang.String)</function-signature>
+		<name>navTilesHasInstitutionalEssentialsNavTilesLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.institutionalEssentialsNavTilesLinks.InstitutionalEssentialsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.Boolean navTilesHasInstitutionalEssentialsNavTilesLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>institutionalEssentialsNavTilesExists</name>
+		<function-class>org.cd2h.STRAPITagLib.institutionalEssentialsNavTilesLinks.InstitutionalEssentialsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.Boolean institutionalEssentialsNavTilesExists(java.lang.String, java.lang.String)</function-signature>
 	</function>
 
 	<function>
@@ -22235,39 +22289,39 @@
 	</function>
 
 	<function>
-		<name>onboardingsNavTileLinksExists</name>
-		<function-class>org.cd2h.STRAPITagLib.onboardingsNavTileLinks.OnboardingsNavTileLinksIterator</function-class>
-		<function-signature>java.lang.String onboardingsNavTileLinksExists(java.lang.String)</function-signature>
+		<name>onboardingsNavTilesLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.onboardingsNavTilesLinks.OnboardingsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.String onboardingsNavTilesLinksExists(java.lang.String)</function-signature>
 	</function>
 
 	<function>
-		<name>onboardingsNavTileLinksCountByContentImageBlockLefts</name>
-		<function-class>org.cd2h.STRAPITagLib.onboardingsNavTileLinks.OnboardingsNavTileLinksIterator</function-class>
-		<function-signature>java.lang.String onboardingsNavTileLinksCountByContentImageBlockLefts(java.lang.String)</function-signature>
+		<name>onboardingsNavTilesLinksCountByNavTiles</name>
+		<function-class>org.cd2h.STRAPITagLib.onboardingsNavTilesLinks.OnboardingsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.String onboardingsNavTilesLinksCountByNavTiles(java.lang.String)</function-signature>
 	</function>
 
 	<function>
-		<name>contentImageBlockLeftsHasOnboardingsNavTileLinks</name>
-		<function-class>org.cd2h.STRAPITagLib.onboardingsNavTileLinks.OnboardingsNavTileLinksIterator</function-class>
-		<function-signature>java.lang.Boolean contentImageBlockLeftsHasOnboardingsNavTileLinks(java.lang.String)</function-signature>
+		<name>navTilesHasOnboardingsNavTilesLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.onboardingsNavTilesLinks.OnboardingsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.Boolean navTilesHasOnboardingsNavTilesLinks(java.lang.String)</function-signature>
 	</function>
 
 	<function>
-		<name>onboardingsNavTileLinksCountByOnboardings</name>
-		<function-class>org.cd2h.STRAPITagLib.onboardingsNavTileLinks.OnboardingsNavTileLinksIterator</function-class>
-		<function-signature>java.lang.String onboardingsNavTileLinksCountByOnboardings(java.lang.String)</function-signature>
+		<name>onboardingsNavTilesLinksCountByOnboardings</name>
+		<function-class>org.cd2h.STRAPITagLib.onboardingsNavTilesLinks.OnboardingsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.String onboardingsNavTilesLinksCountByOnboardings(java.lang.String)</function-signature>
 	</function>
 
 	<function>
-		<name>onboardingsHasOnboardingsNavTileLinks</name>
-		<function-class>org.cd2h.STRAPITagLib.onboardingsNavTileLinks.OnboardingsNavTileLinksIterator</function-class>
-		<function-signature>java.lang.Boolean onboardingsHasOnboardingsNavTileLinks(java.lang.String)</function-signature>
+		<name>onboardingsHasOnboardingsNavTilesLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.onboardingsNavTilesLinks.OnboardingsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.Boolean onboardingsHasOnboardingsNavTilesLinks(java.lang.String)</function-signature>
 	</function>
 
 	<function>
-		<name>contentImageBlockLeftsOnboardingsExists</name>
-		<function-class>org.cd2h.STRAPITagLib.onboardingsNavTileLinks.OnboardingsNavTileLinksIterator</function-class>
-		<function-signature>java.lang.Boolean contentImageBlockLeftsOnboardingsExists(java.lang.String, java.lang.String)</function-signature>
+		<name>navTilesOnboardingsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.onboardingsNavTilesLinks.OnboardingsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.Boolean navTilesOnboardingsExists(java.lang.String, java.lang.String)</function-signature>
 	</function>
 
 	<function>
@@ -22919,33 +22973,39 @@
 	</function>
 
 	<function>
-		<name>researcherEssentialsNavTileLinksExists</name>
-		<function-class>org.cd2h.STRAPITagLib.researcherEssentialsNavTileLinks.ResearcherEssentialsNavTileLinksIterator</function-class>
-		<function-signature>java.lang.String researcherEssentialsNavTileLinksExists(java.lang.String)</function-signature>
+		<name>researcherEssentialsNavTilesLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.researcherEssentialsNavTilesLinks.ResearcherEssentialsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.String researcherEssentialsNavTilesLinksExists(java.lang.String)</function-signature>
 	</function>
 
 	<function>
-		<name>researcherEssentialsNavTileLinksCountByContentImageBlockLefts</name>
-		<function-class>org.cd2h.STRAPITagLib.researcherEssentialsNavTileLinks.ResearcherEssentialsNavTileLinksIterator</function-class>
-		<function-signature>java.lang.String researcherEssentialsNavTileLinksCountByContentImageBlockLefts(java.lang.String)</function-signature>
+		<name>researcherEssentialsNavTilesLinksCountByNavTiles</name>
+		<function-class>org.cd2h.STRAPITagLib.researcherEssentialsNavTilesLinks.ResearcherEssentialsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.String researcherEssentialsNavTilesLinksCountByNavTiles(java.lang.String)</function-signature>
 	</function>
 
 	<function>
-		<name>contentImageBlockLeftsHasResearcherEssentialsNavTileLinks</name>
-		<function-class>org.cd2h.STRAPITagLib.researcherEssentialsNavTileLinks.ResearcherEssentialsNavTileLinksIterator</function-class>
-		<function-signature>java.lang.Boolean contentImageBlockLeftsHasResearcherEssentialsNavTileLinks(java.lang.String)</function-signature>
+		<name>navTilesHasResearcherEssentialsNavTilesLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.researcherEssentialsNavTilesLinks.ResearcherEssentialsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.Boolean navTilesHasResearcherEssentialsNavTilesLinks(java.lang.String)</function-signature>
 	</function>
 
 	<function>
-		<name>researcherEssentialsNavTileLinksCountByResearcherEssentials</name>
-		<function-class>org.cd2h.STRAPITagLib.researcherEssentialsNavTileLinks.ResearcherEssentialsNavTileLinksIterator</function-class>
-		<function-signature>java.lang.String researcherEssentialsNavTileLinksCountByResearcherEssentials(java.lang.String)</function-signature>
+		<name>researcherEssentialsNavTilesLinksCountByResearcherEssentials</name>
+		<function-class>org.cd2h.STRAPITagLib.researcherEssentialsNavTilesLinks.ResearcherEssentialsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.String researcherEssentialsNavTilesLinksCountByResearcherEssentials(java.lang.String)</function-signature>
 	</function>
 
 	<function>
-		<name>researcherEssentialsHasResearcherEssentialsNavTileLinks</name>
-		<function-class>org.cd2h.STRAPITagLib.researcherEssentialsNavTileLinks.ResearcherEssentialsNavTileLinksIterator</function-class>
-		<function-signature>java.lang.Boolean researcherEssentialsHasResearcherEssentialsNavTileLinks(java.lang.String)</function-signature>
+		<name>researcherEssentialsHasResearcherEssentialsNavTilesLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.researcherEssentialsNavTilesLinks.ResearcherEssentialsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.Boolean researcherEssentialsHasResearcherEssentialsNavTilesLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>navTilesResearcherEssentialsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.researcherEssentialsNavTilesLinks.ResearcherEssentialsNavTilesLinksIterator</function-class>
+		<function-signature>java.lang.Boolean navTilesResearcherEssentialsExists(java.lang.String, java.lang.String)</function-signature>
 	</function>
 
 	<function>

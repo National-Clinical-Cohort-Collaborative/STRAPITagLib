@@ -37,6 +37,8 @@ public class NavTiles extends STRAPITagLibTagSupport {
 	Timestamp publishedAt = null;
 	int createdById = 0;
 	int updatedById = 0;
+	String header = null;
+	String block = null;
 
 	private String var = null;
 
@@ -60,7 +62,7 @@ public class NavTiles extends STRAPITagLibTagSupport {
 			} else {
 				// an iterator or ID was provided as an attribute - we need to load a NavTiles from the database
 				boolean found = false;
-				PreparedStatement stmt = getConnection().prepareStatement("select name,url,url_label,created_at,updated_at,published_at,created_by_id,updated_by_id from strapi.nav_tiles where id = ?");
+				PreparedStatement stmt = getConnection().prepareStatement("select name,url,url_label,created_at,updated_at,published_at,created_by_id,updated_by_id,header,block from strapi.nav_tiles where id = ?");
 				stmt.setInt(1,ID);
 				ResultSet rs = stmt.executeQuery();
 				while (rs.next()) {
@@ -80,6 +82,10 @@ public class NavTiles extends STRAPITagLibTagSupport {
 						createdById = rs.getInt(7);
 					if (updatedById == 0)
 						updatedById = rs.getInt(8);
+					if (header == null)
+						header = rs.getString(9);
+					if (block == null)
+						block = rs.getString(10);
 					found = true;
 				}
 				stmt.close();
@@ -158,7 +164,7 @@ public class NavTiles extends STRAPITagLibTagSupport {
 				}
 			}
 			if (commitNeeded) {
-				PreparedStatement stmt = getConnection().prepareStatement("update strapi.nav_tiles set name = ?, url = ?, url_label = ?, created_at = ?, updated_at = ?, published_at = ?, created_by_id = ?, updated_by_id = ? where id = ? ");
+				PreparedStatement stmt = getConnection().prepareStatement("update strapi.nav_tiles set name = ?, url = ?, url_label = ?, created_at = ?, updated_at = ?, published_at = ?, created_by_id = ?, updated_by_id = ?, header = ?, block = ? where id = ? ");
 				stmt.setString( 1, name );
 				stmt.setString( 2, url );
 				stmt.setString( 3, urlLabel );
@@ -167,7 +173,9 @@ public class NavTiles extends STRAPITagLibTagSupport {
 				stmt.setTimestamp( 6, publishedAt );
 				stmt.setInt( 7, createdById );
 				stmt.setInt( 8, updatedById );
-				stmt.setInt(9,ID);
+				stmt.setString( 9, header );
+				stmt.setString( 10, block );
+				stmt.setInt(11,ID);
 				stmt.executeUpdate();
 				stmt.close();
 			}
@@ -209,7 +217,13 @@ public class NavTiles extends STRAPITagLibTagSupport {
 		if (urlLabel == null){
 			urlLabel = "";
 		}
-		PreparedStatement stmt = getConnection().prepareStatement("insert into strapi.nav_tiles(name,url,url_label,created_at,updated_at,published_at,created_by_id,updated_by_id) values (?,?,?,?,?,?,?,?)", java.sql.Statement.RETURN_GENERATED_KEYS);
+		if (header == null){
+			header = "";
+		}
+		if (block == null){
+			block = "";
+		}
+		PreparedStatement stmt = getConnection().prepareStatement("insert into strapi.nav_tiles(name,url,url_label,created_at,updated_at,published_at,created_by_id,updated_by_id,header,block) values (?,?,?,?,?,?,?,?,?,?)", java.sql.Statement.RETURN_GENERATED_KEYS);
 		stmt.setString(1,name);
 		stmt.setString(2,url);
 		stmt.setString(3,urlLabel);
@@ -218,6 +232,8 @@ public class NavTiles extends STRAPITagLibTagSupport {
 		stmt.setTimestamp(6,publishedAt);
 		stmt.setInt(7,createdById);
 		stmt.setInt(8,updatedById);
+		stmt.setString(9,header);
+		stmt.setString(10,block);
 		stmt.executeUpdate();
 
 		// snag the new auto-increment value
@@ -373,6 +389,38 @@ public class NavTiles extends STRAPITagLibTagSupport {
 		return updatedById;
 	}
 
+	public String getHeader () {
+		if (commitNeeded)
+			return "";
+		else
+			return header;
+	}
+
+	public void setHeader (String header) {
+		this.header = header;
+		commitNeeded = true;
+	}
+
+	public String getActualHeader () {
+		return header;
+	}
+
+	public String getBlock () {
+		if (commitNeeded)
+			return "";
+		else
+			return block;
+	}
+
+	public void setBlock (String block) {
+		this.block = block;
+		commitNeeded = true;
+	}
+
+	public String getActualBlock () {
+		return block;
+	}
+
 	public String getVar () {
 		return var;
 	}
@@ -457,6 +505,22 @@ public class NavTiles extends STRAPITagLibTagSupport {
 		}
 	}
 
+	public static String headerValue() throws JspException {
+		try {
+			return currentInstance.getHeader();
+		} catch (Exception e) {
+			 throw new JspTagException("Error in tag function headerValue()");
+		}
+	}
+
+	public static String blockValue() throws JspException {
+		try {
+			return currentInstance.getBlock();
+		} catch (Exception e) {
+			 throw new JspTagException("Error in tag function blockValue()");
+		}
+	}
+
 	private void clearServiceState () {
 		ID = 0;
 		name = null;
@@ -467,6 +531,8 @@ public class NavTiles extends STRAPITagLibTagSupport {
 		publishedAt = null;
 		createdById = 0;
 		updatedById = 0;
+		header = null;
+		block = null;
 		newRecord = false;
 		commitNeeded = false;
 		parentEntities = new Vector<STRAPITagLibTagSupport>();

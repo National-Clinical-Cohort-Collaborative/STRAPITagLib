@@ -24,6 +24,8 @@
 			<th>PublishedAt</th>
 			<th>CreatedById</th>
 			<th>UpdatedById</th>
+			<th>Block</th>
+			<th>Block2</th>
 			</tr>
 			<tr>
 				<td><a href="edit.jsp?ID=<strapi:onboardingsID />"><strapi:onboardingsID /></a></td>
@@ -35,33 +37,35 @@
 				<td><strapi:onboardingsPublishedAt /></td>
 				<td><strapi:onboardingsCreatedById /></td>
 				<td><strapi:onboardingsUpdatedById /></td>
+				<td><strapi:onboardingsBlock /></td>
+				<td><strapi:onboardingsBlock2 /></td>
 			</tr>
 		</table>
 
-						<h2>OnboardingsNavTileLinks List</h2>
+						<h2>OnboardingsNavTilesLinks List</h2>
 						<table class="table table-bordered table-striped table-hover table-datatable">
 							<thead>
 								<tr>
 									<th>ID</th>
 									<th>OnboardingId</th>
-									<th>ContentImageBlockLeftId</th>
-									<th>ContentImageBlockLeftOrder</th>
+									<th>NavTileId</th>
+									<th>NavTileOrder</th>
 									<th></th>
 								</tr>
 							</thead>
 							<tbody>
-								<strapi:foreachOnboardingsNavTileLinks var="idIter">
-									<strapi:onboardingsNavTileLinks>
+								<strapi:foreachOnboardingsNavTilesLinks var="idIter">
+									<strapi:onboardingsNavTilesLinks>
 										<tr>
-											<td><a href="../onboardingsNavTileLinks/show.jsp?ID=<strapi:onboardingsNavTileLinksID />"><strapi:onboardingsNavTileLinksID /></a></td>
-											<td><strapi:onboardingsNavTileLinksOnboardingId /></td>
-											<td><strapi:onboardingsNavTileLinksContentImageBlockLeftId /></td>
-											<td><strapi:onboardingsNavTileLinksContentImageBlockLeftOrder /></td>
-											<td><a href="../onboardingsNavTileLinks/edit.jsp?ID=<strapi:onboardingsNavTileLinksID />">edit</a></td>
-											<td><a href="../onboardingsNavTileLinks/delete.jsp?ID=<strapi:onboardingsNavTileLinksID />">delete</a></td>
+											<td><a href="../onboardingsNavTilesLinks/show.jsp?ID=<strapi:onboardingsNavTilesLinksID />"><strapi:onboardingsNavTilesLinksID /></a></td>
+											<td><strapi:onboardingsNavTilesLinksOnboardingId /></td>
+											<td><strapi:onboardingsNavTilesLinksNavTileId /></td>
+											<td><strapi:onboardingsNavTilesLinksNavTileOrder /></td>
+											<td><a href="../onboardingsNavTilesLinks/edit.jsp?ID=<strapi:onboardingsNavTilesLinksID />">edit</a></td>
+											<td><a href="../onboardingsNavTilesLinks/delete.jsp?ID=<strapi:onboardingsNavTilesLinksID />">delete</a></td>
 										</tr>
-									</strapi:onboardingsNavTileLinks>
-								</strapi:foreachOnboardingsNavTileLinks>
+									</strapi:onboardingsNavTilesLinks>
+								</strapi:foreachOnboardingsNavTilesLinks>
 							</tbody>
 							<tfoot>
 							</tfoot>
@@ -69,17 +73,17 @@
 
 						<br/>
 
-						<a class="btn" href="../onboardingsNavTileLinks/add.jsp?ID=${param.ID}&ID=${param.ID}">add OnboardingsNavTileLinks</a>
+						<a class="btn" href="../onboardingsNavTilesLinks/add.jsp?ID=${param.ID}&ID=${param.ID}">add OnboardingsNavTilesLinks</a>
 						<br/><br/>
 
-		<strapi:foreachOnboardingsNavTileLinks var="idIter">
-			<strapi:onboardingsNavTileLinks>
-						<a href="../../strapi/onboardingsNavTileLinks/onboardingsNavTileLinks.jsp?ID=<strapi:onboardingsNavTileLinksID />"><strapi:onboardingsNavTileLinksID /></a>
-		<strapi:onboardingsNavTileLinksOnboardingId />
-		<strapi:onboardingsNavTileLinksContentImageBlockLeftId />
-		<strapi:onboardingsNavTileLinksContentImageBlockLeftOrder />
-			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:onboardingsNavTileLinks>
-			</strapi:foreachOnboardingsNavTileLinks>
+		<strapi:foreachOnboardingsNavTilesLinks var="idIter">
+			<strapi:onboardingsNavTilesLinks>
+						<a href="../../strapi/onboardingsNavTilesLinks/onboardingsNavTilesLinks.jsp?ID=<strapi:onboardingsNavTilesLinksID />"><strapi:onboardingsNavTilesLinksID /></a>
+		<strapi:onboardingsNavTilesLinksOnboardingId />
+		<strapi:onboardingsNavTilesLinksNavTileId />
+		<strapi:onboardingsNavTilesLinksNavTileOrder />
+			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:onboardingsNavTilesLinks>
+			</strapi:foreachOnboardingsNavTilesLinks>
 
 						<h2>OnboardingsStepLinks List</h2>
 						<table class="table table-bordered table-striped table-hover table-datatable">

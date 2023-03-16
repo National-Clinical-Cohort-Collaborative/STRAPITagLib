@@ -24,6 +24,8 @@
 									<th>PublishedAt</th>
 									<th>CreatedById</th>
 									<th>UpdatedById</th>
+									<th>Block</th>
+									<th>Block2</th>
 									<th></th>
 								</tr>
 							</thead>
@@ -40,6 +42,8 @@
 											<td><strapi:onboardingsPublishedAt /></td>
 											<td><strapi:onboardingsCreatedById /></td>
 											<td><strapi:onboardingsUpdatedById /></td>
+											<td><strapi:onboardingsBlock /></td>
+											<td><strapi:onboardingsBlock2 /></td>
 											<td><a href="../onboardings/edit.jsp?ID=<strapi:onboardingsID />">edit</a></td>
 											<td><a href="../onboardings/delete.jsp?ID=<strapi:onboardingsID />">delete</a></td>
 										</tr>
@@ -66,6 +70,8 @@
 		<strapi:onboardingsPublishedAt />
 		<strapi:onboardingsCreatedById />
 		<strapi:onboardingsUpdatedById />
+		<strapi:onboardingsBlock />
+		<strapi:onboardingsBlock2 />
 			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:onboardings>
 			</strapi:foreachOnboardings>
                 </div>

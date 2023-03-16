@@ -1,4 +1,4 @@
-package org.cd2h.STRAPITagLib.researcherEssentialsNavTileLinks;
+package org.cd2h.STRAPITagLib.researcherEssentialsNavTilesLinks;
 
 
 import java.sql.PreparedStatement;
@@ -14,17 +14,17 @@ import javax.servlet.jsp.tagext.Tag;
 
 import org.cd2h.STRAPITagLib.STRAPITagLibTagSupport;
 import org.cd2h.STRAPITagLib.STRAPITagLibBodyTagSupport;
-import org.cd2h.STRAPITagLib.contentImageBlockLefts.ContentImageBlockLefts;
+import org.cd2h.STRAPITagLib.navTiles.NavTiles;
 import org.cd2h.STRAPITagLib.researcherEssentials.ResearcherEssentials;
 
 @SuppressWarnings("serial")
-public class ResearcherEssentialsNavTileLinksIterator extends STRAPITagLibBodyTagSupport {
+public class ResearcherEssentialsNavTilesLinksIterator extends STRAPITagLibBodyTagSupport {
     int ID = 0;
     int researcherEssentialId = 0;
-    int contentImageBlockLeftId = 0;
+    int navTileId = 0;
 	Vector<STRAPITagLibTagSupport> parentEntities = new Vector<STRAPITagLibTagSupport>();
 
-	private static final Logger log = LogManager.getLogger(ResearcherEssentialsNavTileLinksIterator.class);
+	private static final Logger log = LogManager.getLogger(ResearcherEssentialsNavTilesLinksIterator.class);
 
 
     PreparedStatement stat = null;
@@ -34,15 +34,15 @@ public class ResearcherEssentialsNavTileLinksIterator extends STRAPITagLibBodyTa
     String var = null;
     int rsCount = 0;
 
-   boolean useContentImageBlockLefts = false;
+   boolean useNavTiles = false;
    boolean useResearcherEssentials = false;
 
-	public static String researcherEssentialsNavTileLinksCountByContentImageBlockLefts(String ID) throws JspTagException {
+	public static String researcherEssentialsNavTilesLinksCountByNavTiles(String ID) throws JspTagException {
 		int count = 0;
-		ResearcherEssentialsNavTileLinksIterator theIterator = new ResearcherEssentialsNavTileLinksIterator();
+		ResearcherEssentialsNavTilesLinksIterator theIterator = new ResearcherEssentialsNavTilesLinksIterator();
 		try {
-			PreparedStatement stat = theIterator.getConnection().prepareStatement("SELECT count(*) from strapi.researcher_essentials_nav_tile_links where 1=1"
-						+ " and content_image_block_left_id = ?"
+			PreparedStatement stat = theIterator.getConnection().prepareStatement("SELECT count(*) from strapi.researcher_essentials_nav_tiles_links where 1=1"
+						+ " and nav_tile_id = ?"
 						);
 
 			stat.setInt(1,Integer.parseInt(ID));
@@ -53,23 +53,23 @@ public class ResearcherEssentialsNavTileLinksIterator extends STRAPITagLibBodyTa
 			}
 			stat.close();
 		} catch (SQLException e) {
-			log.error("JDBC error generating ResearcherEssentialsNavTileLinks iterator", e);
-			throw new JspTagException("Error: JDBC error generating ResearcherEssentialsNavTileLinks iterator");
+			log.error("JDBC error generating ResearcherEssentialsNavTilesLinks iterator", e);
+			throw new JspTagException("Error: JDBC error generating ResearcherEssentialsNavTilesLinks iterator");
 		} finally {
 			theIterator.freeConnection();
 		}
 		return "" + count;
 	}
 
-	public static Boolean contentImageBlockLeftsHasResearcherEssentialsNavTileLinks(String ID) throws JspTagException {
-		return ! researcherEssentialsNavTileLinksCountByContentImageBlockLefts(ID).equals("0");
+	public static Boolean navTilesHasResearcherEssentialsNavTilesLinks(String ID) throws JspTagException {
+		return ! researcherEssentialsNavTilesLinksCountByNavTiles(ID).equals("0");
 	}
 
-	public static String researcherEssentialsNavTileLinksCountByResearcherEssentials(String ID) throws JspTagException {
+	public static String researcherEssentialsNavTilesLinksCountByResearcherEssentials(String ID) throws JspTagException {
 		int count = 0;
-		ResearcherEssentialsNavTileLinksIterator theIterator = new ResearcherEssentialsNavTileLinksIterator();
+		ResearcherEssentialsNavTilesLinksIterator theIterator = new ResearcherEssentialsNavTilesLinksIterator();
 		try {
-			PreparedStatement stat = theIterator.getConnection().prepareStatement("SELECT count(*) from strapi.researcher_essentials_nav_tile_links where 1=1"
+			PreparedStatement stat = theIterator.getConnection().prepareStatement("SELECT count(*) from strapi.researcher_essentials_nav_tiles_links where 1=1"
 						+ " and researcher_essential_id = ?"
 						);
 
@@ -81,23 +81,23 @@ public class ResearcherEssentialsNavTileLinksIterator extends STRAPITagLibBodyTa
 			}
 			stat.close();
 		} catch (SQLException e) {
-			log.error("JDBC error generating ResearcherEssentialsNavTileLinks iterator", e);
-			throw new JspTagException("Error: JDBC error generating ResearcherEssentialsNavTileLinks iterator");
+			log.error("JDBC error generating ResearcherEssentialsNavTilesLinks iterator", e);
+			throw new JspTagException("Error: JDBC error generating ResearcherEssentialsNavTilesLinks iterator");
 		} finally {
 			theIterator.freeConnection();
 		}
 		return "" + count;
 	}
 
-	public static Boolean researcherEssentialsHasResearcherEssentialsNavTileLinks(String ID) throws JspTagException {
-		return ! researcherEssentialsNavTileLinksCountByResearcherEssentials(ID).equals("0");
+	public static Boolean researcherEssentialsHasResearcherEssentialsNavTilesLinks(String ID) throws JspTagException {
+		return ! researcherEssentialsNavTilesLinksCountByResearcherEssentials(ID).equals("0");
 	}
 
-	public static Boolean researcherEssentialsNavTileLinksExists (String ID) throws JspTagException {
+	public static Boolean researcherEssentialsNavTilesLinksExists (String ID) throws JspTagException {
 		int count = 0;
-		ResearcherEssentialsNavTileLinksIterator theIterator = new ResearcherEssentialsNavTileLinksIterator();
+		ResearcherEssentialsNavTilesLinksIterator theIterator = new ResearcherEssentialsNavTilesLinksIterator();
 		try {
-			PreparedStatement stat = theIterator.getConnection().prepareStatement("SELECT count(*) from strapi.researcher_essentials_nav_tile_links where 1=1"
+			PreparedStatement stat = theIterator.getConnection().prepareStatement("SELECT count(*) from strapi.researcher_essentials_nav_tiles_links where 1=1"
 						+ " and id = ?"
 						);
 
@@ -109,19 +109,19 @@ public class ResearcherEssentialsNavTileLinksIterator extends STRAPITagLibBodyTa
 			}
 			stat.close();
 		} catch (SQLException e) {
-			log.error("JDBC error generating ResearcherEssentialsNavTileLinks iterator", e);
-			throw new JspTagException("Error: JDBC error generating ResearcherEssentialsNavTileLinks iterator");
+			log.error("JDBC error generating ResearcherEssentialsNavTilesLinks iterator", e);
+			throw new JspTagException("Error: JDBC error generating ResearcherEssentialsNavTilesLinks iterator");
 		} finally {
 			theIterator.freeConnection();
 		}
 		return count > 0;
 	}
 
-	public static Boolean contentImageBlockLeftsResearcherEssentialsExists (String ID) throws JspTagException {
+	public static Boolean navTilesResearcherEssentialsExists (String ID) throws JspTagException {
 		int count = 0;
-		ResearcherEssentialsNavTileLinksIterator theIterator = new ResearcherEssentialsNavTileLinksIterator();
+		ResearcherEssentialsNavTilesLinksIterator theIterator = new ResearcherEssentialsNavTilesLinksIterator();
 		try {
-			PreparedStatement stat = theIterator.getConnection().prepareStatement("SELECT count(*) from strapi.researcher_essentials_nav_tile_links where 1=1"
+			PreparedStatement stat = theIterator.getConnection().prepareStatement("SELECT count(*) from strapi.researcher_essentials_nav_tiles_links where 1=1"
 						+ " and id = ?"
 						);
 
@@ -133,8 +133,8 @@ public class ResearcherEssentialsNavTileLinksIterator extends STRAPITagLibBodyTa
 			}
 			stat.close();
 		} catch (SQLException e) {
-			log.error("JDBC error generating ResearcherEssentialsNavTileLinks iterator", e);
-			throw new JspTagException("Error: JDBC error generating ResearcherEssentialsNavTileLinks iterator");
+			log.error("JDBC error generating ResearcherEssentialsNavTilesLinks iterator", e);
+			throw new JspTagException("Error: JDBC error generating ResearcherEssentialsNavTilesLinks iterator");
 		} finally {
 			theIterator.freeConnection();
 		}
@@ -142,16 +142,16 @@ public class ResearcherEssentialsNavTileLinksIterator extends STRAPITagLibBodyTa
 	}
 
     public int doStartTag() throws JspException {
-		ContentImageBlockLefts theContentImageBlockLefts = (ContentImageBlockLefts)findAncestorWithClass(this, ContentImageBlockLefts.class);
-		if (theContentImageBlockLefts!= null)
-			parentEntities.addElement(theContentImageBlockLefts);
+		NavTiles theNavTiles = (NavTiles)findAncestorWithClass(this, NavTiles.class);
+		if (theNavTiles!= null)
+			parentEntities.addElement(theNavTiles);
 		ResearcherEssentials theResearcherEssentials = (ResearcherEssentials)findAncestorWithClass(this, ResearcherEssentials.class);
 		if (theResearcherEssentials!= null)
 			parentEntities.addElement(theResearcherEssentials);
 
-		if (theContentImageBlockLefts == null) {
+		if (theNavTiles == null) {
 		} else {
-			contentImageBlockLeftId = theContentImageBlockLefts.getID();
+			navTileId = theNavTiles.getID();
 		}
 		if (theResearcherEssentials == null) {
 		} else {
@@ -164,10 +164,10 @@ public class ResearcherEssentialsNavTileLinksIterator extends STRAPITagLibBodyTa
             int webapp_keySeq = 1;
             stat = getConnection().prepareStatement("SELECT count(*) from " + generateFromClause() + " where 1=1"
                                                         + generateJoinCriteria()
-                                                        + (contentImageBlockLeftId == 0 ? "" : " and content_image_block_left_id = ?")
+                                                        + (navTileId == 0 ? "" : " and nav_tile_id = ?")
                                                         + (researcherEssentialId == 0 ? "" : " and researcher_essential_id = ?")
                                                         + generateLimitCriteria());
-            if (contentImageBlockLeftId != 0) stat.setInt(webapp_keySeq++, contentImageBlockLeftId);
+            if (navTileId != 0) stat.setInt(webapp_keySeq++, navTileId);
             if (researcherEssentialId != 0) stat.setInt(webapp_keySeq++, researcherEssentialId);
             rs = stat.executeQuery();
 
@@ -178,12 +178,12 @@ public class ResearcherEssentialsNavTileLinksIterator extends STRAPITagLibBodyTa
 
             //run select id query  
             webapp_keySeq = 1;
-            stat = getConnection().prepareStatement("SELECT strapi.researcher_essentials_nav_tile_links.id from " + generateFromClause() + " where 1=1"
+            stat = getConnection().prepareStatement("SELECT strapi.researcher_essentials_nav_tiles_links.id from " + generateFromClause() + " where 1=1"
                                                         + generateJoinCriteria()
-                                                        + (contentImageBlockLeftId == 0 ? "" : " and content_image_block_left_id = ?")
+                                                        + (navTileId == 0 ? "" : " and nav_tile_id = ?")
                                                         + (researcherEssentialId == 0 ? "" : " and researcher_essential_id = ?")
                                                         + " order by " + generateSortCriteria()  +  generateLimitCriteria());
-            if (contentImageBlockLeftId != 0) stat.setInt(webapp_keySeq++, contentImageBlockLeftId);
+            if (navTileId != 0) stat.setInt(webapp_keySeq++, navTileId);
             if (researcherEssentialId != 0) stat.setInt(webapp_keySeq++, researcherEssentialId);
             rs = stat.executeQuery();
 
@@ -194,7 +194,7 @@ public class ResearcherEssentialsNavTileLinksIterator extends STRAPITagLibBodyTa
                 return EVAL_BODY_INCLUDE;
             }
         } catch (SQLException e) {
-            log.error("JDBC error generating ResearcherEssentialsNavTileLinks iterator: " + stat, e);
+            log.error("JDBC error generating ResearcherEssentialsNavTilesLinks iterator: " + stat, e);
 
 			freeConnection();
 			clearServiceState();
@@ -203,10 +203,10 @@ public class ResearcherEssentialsNavTileLinksIterator extends STRAPITagLibBodyTa
 			if(parent != null){
 				pageContext.setAttribute("tagError", true);
 				pageContext.setAttribute("tagErrorException", e);
-				pageContext.setAttribute("tagErrorMessage", "Error: JDBC error generating ResearcherEssentialsNavTileLinks iterator: " + stat);
+				pageContext.setAttribute("tagErrorMessage", "Error: JDBC error generating ResearcherEssentialsNavTilesLinks iterator: " + stat);
 				return parent.doEndTag();
 			}else{
-				throw new JspException("Error: JDBC error generating ResearcherEssentialsNavTileLinks iterator: " + stat,e);
+				throw new JspException("Error: JDBC error generating ResearcherEssentialsNavTilesLinks iterator: " + stat,e);
 			}
 
         }
@@ -215,9 +215,9 @@ public class ResearcherEssentialsNavTileLinksIterator extends STRAPITagLibBodyTa
     }
 
     private String generateFromClause() {
-       StringBuffer theBuffer = new StringBuffer("strapi.researcher_essentials_nav_tile_links");
-       if (useContentImageBlockLefts)
-          theBuffer.append(", strapi.content_image_block_lefts");
+       StringBuffer theBuffer = new StringBuffer("strapi.researcher_essentials_nav_tiles_links");
+       if (useNavTiles)
+          theBuffer.append(", strapi.nav_tiles");
        if (useResearcherEssentials)
           theBuffer.append(", strapi.researcher_essentials");
 
@@ -226,10 +226,10 @@ public class ResearcherEssentialsNavTileLinksIterator extends STRAPITagLibBodyTa
 
     private String generateJoinCriteria() {
        StringBuffer theBuffer = new StringBuffer();
-       if (useContentImageBlockLefts)
-          theBuffer.append(" and strapi.content_image_block_lefts.id = strapi.researcher_essentials_nav_tile_links.content_image_block_left_id");
+       if (useNavTiles)
+          theBuffer.append(" and strapi.nav_tiles.id = strapi.researcher_essentials_nav_tiles_links.nav_tile_id");
        if (useResearcherEssentials)
-          theBuffer.append(" and strapi.researcher_essentials.id = strapi.researcher_essentials_nav_tile_links.researcher_essential_id");
+          theBuffer.append(" and strapi.researcher_essentials.id = strapi.researcher_essentials_nav_tiles_links.researcher_essential_id");
 
       return theBuffer.toString();
     }
@@ -257,7 +257,7 @@ public class ResearcherEssentialsNavTileLinksIterator extends STRAPITagLibBodyTa
                 return EVAL_BODY_AGAIN;
             }
         } catch (SQLException e) {
-            log.error("JDBC error iterating across ResearcherEssentialsNavTileLinks", e);
+            log.error("JDBC error iterating across ResearcherEssentialsNavTilesLinks", e);
 
 			freeConnection();
 			clearServiceState();
@@ -266,10 +266,10 @@ public class ResearcherEssentialsNavTileLinksIterator extends STRAPITagLibBodyTa
 			if(parent != null){
 				pageContext.setAttribute("tagError", true);
 				pageContext.setAttribute("tagErrorException", e);
-				pageContext.setAttribute("tagErrorMessage", "JDBC error iterating across ResearcherEssentialsNavTileLinks" + stat.toString());
+				pageContext.setAttribute("tagErrorMessage", "JDBC error iterating across ResearcherEssentialsNavTilesLinks" + stat.toString());
 				return parent.doEndTag();
 			}else{
-				throw new JspException("JDBC error iterating across ResearcherEssentialsNavTileLinks",e);
+				throw new JspException("JDBC error iterating across ResearcherEssentialsNavTilesLinks",e);
 			}
 
         }
@@ -317,7 +317,7 @@ public class ResearcherEssentialsNavTileLinksIterator extends STRAPITagLibBodyTa
             }
 
         } catch ( SQLException e ) {
-            log.error("JDBC error ending ResearcherEssentialsNavTileLinks iterator",e);
+            log.error("JDBC error ending ResearcherEssentialsNavTilesLinks iterator",e);
 			freeConnection();
 
 			Tag parent = getParent();
@@ -327,7 +327,7 @@ public class ResearcherEssentialsNavTileLinksIterator extends STRAPITagLibBodyTa
 				pageContext.setAttribute("tagErrorMessage", "JDBC error retrieving ID " + ID);
 				return parent.doEndTag();
 			}else{
-				throw new JspException("Error: JDBC error ending ResearcherEssentialsNavTileLinks iterator",e);
+				throw new JspException("Error: JDBC error ending ResearcherEssentialsNavTilesLinks iterator",e);
 			}
 
         } finally {
@@ -381,12 +381,12 @@ public class ResearcherEssentialsNavTileLinksIterator extends STRAPITagLibBodyTa
     }
 
 
-   public boolean getUseContentImageBlockLefts() {
-        return useContentImageBlockLefts;
+   public boolean getUseNavTiles() {
+        return useNavTiles;
     }
 
-    public void setUseContentImageBlockLefts(boolean useContentImageBlockLefts) {
-        this.useContentImageBlockLefts = useContentImageBlockLefts;
+    public void setUseNavTiles(boolean useNavTiles) {
+        this.useNavTiles = useNavTiles;
     }
 
    public boolean getUseResearcherEssentials() {
