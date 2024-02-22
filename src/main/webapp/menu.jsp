@@ -118,6 +118,10 @@
     <li><a href="<util:applicationRoot/>/teamCreationsResourcesFaqsLinks/list.jsp" />TeamCreationsResourcesFaqsLinks list</a></li>
     <li><a href="<util:applicationRoot/>/teamCreationsResponsibilityFaqsLinks/list.jsp" />TeamCreationsResponsibilityFaqsLinks list</a></li>
     <li><a href="<util:applicationRoot/>/tenantAccountChecklists/list.jsp" />TenantAccountChecklists list</a></li>
+    <li><a href="<util:applicationRoot/>/tenantAccountCreations/list.jsp" />TenantAccountCreations list</a></li>
+    <li><a href="<util:applicationRoot/>/tenantAccountCreationsInstructionsLinks/list.jsp" />TenantAccountCreationsInstructionsLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/tenantAccountCreationsIntroLinks/list.jsp" />TenantAccountCreationsIntroLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/tenantDuaLists/list.jsp" />TenantDuaLists list</a></li>
     <li><a href="<util:applicationRoot/>/tenantDurRequests/list.jsp" />TenantDurRequests list</a></li>
     <li><a href="<util:applicationRoot/>/tenantInstitutionalEssentials/list.jsp" />TenantInstitutionalEssentials list</a></li>
     <li><a href="<util:applicationRoot/>/tenantInstitutionalEssentialsJoinBlockLinks/list.jsp" />TenantInstitutionalEssentialsJoinBlockLinks list</a></li>

@@ -161,6 +161,8 @@ database: strapitaglib	uid: null
 			child OnboardingsStepLinks
 			child ResearcherEssentialsAccessBlockLinks
 			child ResearcherEssentialsGovernanceBlockLinks
+			child TenantAccountCreationsInstructionsLinks
+			child TenantAccountCreationsIntroLinks
 			child TenantInstitutionalEssentialsStepLinks
 			child TenantResearcherEssentialsAccessBlockLinks
 			child TenantResearcherEssentialsGovernanceBlockLinks
@@ -1070,6 +1072,38 @@ database: strapitaglib	uid: null
 			attribute: publishedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: createdById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: updatedById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+		entity: TenantAccountCreations	uid: null
+			child TenantAccountCreationsInstructionsLinks
+			child TenantAccountCreationsIntroLinks
+			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: header	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: header2	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: beforeStartingHeader	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: beforeStartingBlock	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: createdAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: updatedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: publishedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: createdById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: updatedById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+		entity: TenantAccountCreationsInstructionsLinks	uid: null
+			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: tenantAccountCreationId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: contentImageBlockRightId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: contentImageBlockRightOrder	uid: null	type: double	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+		entity: TenantAccountCreationsIntroLinks	uid: null
+			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: tenantAccountCreationId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: contentImageBlockRightId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: contentImageBlockRightOrder	uid: null	type: double	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+		entity: TenantDuaLists	uid: null
+			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: header	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: block1	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: createdAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: updatedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: publishedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: createdById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: updatedById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 		entity: TenantDurRequests	uid: null
 			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: header	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
@@ -1359,6 +1393,8 @@ database: strapitaglib	uid: null
 		source entity: ContentImageBlockRights	target entity: OnboardingsStepLinks	uid: null
 		source entity: ContentImageBlockRights	target entity: ResearcherEssentialsAccessBlockLinks	uid: null
 		source entity: ContentImageBlockRights	target entity: ResearcherEssentialsGovernanceBlockLinks	uid: null
+		source entity: ContentImageBlockRights	target entity: TenantAccountCreationsInstructionsLinks	uid: null
+		source entity: ContentImageBlockRights	target entity: TenantAccountCreationsIntroLinks	uid: null
 		source entity: ContentImageBlockRights	target entity: TenantInstitutionalEssentialsStepLinks	uid: null
 		source entity: ContentImageBlockRights	target entity: TenantResearcherEssentialsAccessBlockLinks	uid: null
 		source entity: ContentImageBlockRights	target entity: TenantResearcherEssentialsGovernanceBlockLinks	uid: null
@@ -1459,6 +1495,8 @@ database: strapitaglib	uid: null
 		source entity: TeamCreations	target entity: TeamCreationsReadyFaqsLinks	uid: null
 		source entity: TeamCreations	target entity: TeamCreationsResourcesFaqsLinks	uid: null
 		source entity: TeamCreations	target entity: TeamCreationsResponsibilityFaqsLinks	uid: null
+		source entity: TenantAccountCreations	target entity: TenantAccountCreationsInstructionsLinks	uid: null
+		source entity: TenantAccountCreations	target entity: TenantAccountCreationsIntroLinks	uid: null
 		source entity: TenantInstitutionalEssentials	target entity: TenantInstitutionalEssentialsJoinBlockLinks	uid: null
 		source entity: TenantInstitutionalEssentials	target entity: TenantInstitutionalEssentialsNavTilesLinks	uid: null
 		source entity: TenantInstitutionalEssentials	target entity: TenantInstitutionalEssentialsStepLinks	uid: null

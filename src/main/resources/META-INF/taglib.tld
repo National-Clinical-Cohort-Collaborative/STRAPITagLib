@@ -20550,6 +20550,680 @@
 	</tag>
 
 	<tag>
+		<name>foreachTenantAccountCreations</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreations.TenantAccountCreationsIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountCreations</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreations.TenantAccountCreations</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteTenantAccountCreations</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreations.TenantAccountCreationsDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountCreationsID</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreations.TenantAccountCreationsID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountCreationsHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreations.TenantAccountCreationsHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>header</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountCreationsHeader2</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreations.TenantAccountCreationsHeader2</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>header2</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountCreationsBeforeStartingHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreations.TenantAccountCreationsBeforeStartingHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>beforeStartingHeader</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountCreationsBeforeStartingBlock</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreations.TenantAccountCreationsBeforeStartingBlock</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>beforeStartingBlock</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountCreationsCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreations.TenantAccountCreationsCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountCreationsCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreations.TenantAccountCreationsCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountCreationsUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreations.TenantAccountCreationsUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountCreationsUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreations.TenantAccountCreationsUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountCreationsPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreations.TenantAccountCreationsPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountCreationsPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreations.TenantAccountCreationsPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountCreationsCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreations.TenantAccountCreationsCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountCreationsUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreations.TenantAccountCreationsUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachTenantAccountCreationsInstructionsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreationsInstructionsLinks.TenantAccountCreationsInstructionsLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useContentImageBlockRights</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useTenantAccountCreations</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>tenantAccountCreationsInstructionsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreationsInstructionsLinks.TenantAccountCreationsInstructionsLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteTenantAccountCreationsInstructionsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreationsInstructionsLinks.TenantAccountCreationsInstructionsLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountCreationsInstructionsLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreationsInstructionsLinks.TenantAccountCreationsInstructionsLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountCreationsInstructionsLinksTenantAccountCreationId</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreationsInstructionsLinks.TenantAccountCreationsInstructionsLinksTenantAccountCreationId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>tenantAccountCreationId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountCreationsInstructionsLinksContentImageBlockRightId</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreationsInstructionsLinks.TenantAccountCreationsInstructionsLinksContentImageBlockRightId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>contentImageBlockRightId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountCreationsInstructionsLinksContentImageBlockRightOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreationsInstructionsLinks.TenantAccountCreationsInstructionsLinksContentImageBlockRightOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>contentImageBlockRightOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachTenantAccountCreationsIntroLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreationsIntroLinks.TenantAccountCreationsIntroLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useContentImageBlockRights</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useTenantAccountCreations</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>tenantAccountCreationsIntroLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreationsIntroLinks.TenantAccountCreationsIntroLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteTenantAccountCreationsIntroLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreationsIntroLinks.TenantAccountCreationsIntroLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountCreationsIntroLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreationsIntroLinks.TenantAccountCreationsIntroLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountCreationsIntroLinksTenantAccountCreationId</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreationsIntroLinks.TenantAccountCreationsIntroLinksTenantAccountCreationId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>tenantAccountCreationId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountCreationsIntroLinksContentImageBlockRightId</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreationsIntroLinks.TenantAccountCreationsIntroLinksContentImageBlockRightId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>contentImageBlockRightId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantAccountCreationsIntroLinksContentImageBlockRightOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantAccountCreationsIntroLinks.TenantAccountCreationsIntroLinksContentImageBlockRightOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>contentImageBlockRightOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachTenantDuaLists</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDuaLists.TenantDuaListsIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDuaLists</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDuaLists.TenantDuaLists</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteTenantDuaLists</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDuaLists.TenantDuaListsDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDuaListsID</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDuaLists.TenantDuaListsID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDuaListsHeader</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDuaLists.TenantDuaListsHeader</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>header</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDuaListsBlock1</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDuaLists.TenantDuaListsBlock1</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>block1</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDuaListsCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDuaLists.TenantDuaListsCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDuaListsCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDuaLists.TenantDuaListsCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDuaListsUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDuaLists.TenantDuaListsUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDuaListsUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDuaLists.TenantDuaListsUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDuaListsPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDuaLists.TenantDuaListsPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDuaListsPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDuaLists.TenantDuaListsPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDuaListsCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDuaLists.TenantDuaListsCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantDuaListsUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantDuaLists.TenantDuaListsUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
 		<name>foreachTenantDurRequests</name>
 		<tag-class>org.cd2h.STRAPITagLib.tenantDurRequests.TenantDurRequestsIterator</tag-class>
 		<body-content>JSP</body-content>
@@ -28345,6 +29019,96 @@
 		<name>tenantAccountChecklistsExists</name>
 		<function-class>org.cd2h.STRAPITagLib.tenantAccountChecklists.TenantAccountChecklistsIterator</function-class>
 		<function-signature>java.lang.String tenantAccountChecklistsExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantAccountCreationsCount</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantAccountCreations.TenantAccountCreationsIterator</function-class>
+		<function-signature>java.lang.String tenantAccountCreationsCount()</function-signature>
+	</function>
+
+	<function>
+		<name>tenantAccountCreationsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantAccountCreations.TenantAccountCreationsIterator</function-class>
+		<function-signature>java.lang.String tenantAccountCreationsExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantAccountCreationsInstructionsLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantAccountCreationsInstructionsLinks.TenantAccountCreationsInstructionsLinksIterator</function-class>
+		<function-signature>java.lang.String tenantAccountCreationsInstructionsLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantAccountCreationsInstructionsLinksCountByContentImageBlockRights</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantAccountCreationsInstructionsLinks.TenantAccountCreationsInstructionsLinksIterator</function-class>
+		<function-signature>java.lang.String tenantAccountCreationsInstructionsLinksCountByContentImageBlockRights(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>contentImageBlockRightsHasTenantAccountCreationsInstructionsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantAccountCreationsInstructionsLinks.TenantAccountCreationsInstructionsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean contentImageBlockRightsHasTenantAccountCreationsInstructionsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantAccountCreationsInstructionsLinksCountByTenantAccountCreations</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantAccountCreationsInstructionsLinks.TenantAccountCreationsInstructionsLinksIterator</function-class>
+		<function-signature>java.lang.String tenantAccountCreationsInstructionsLinksCountByTenantAccountCreations(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantAccountCreationsHasTenantAccountCreationsInstructionsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantAccountCreationsInstructionsLinks.TenantAccountCreationsInstructionsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean tenantAccountCreationsHasTenantAccountCreationsInstructionsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>contentImageBlockRightsTenantAccountCreationsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantAccountCreationsInstructionsLinks.TenantAccountCreationsInstructionsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean contentImageBlockRightsTenantAccountCreationsExists(java.lang.String, java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantAccountCreationsIntroLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantAccountCreationsIntroLinks.TenantAccountCreationsIntroLinksIterator</function-class>
+		<function-signature>java.lang.String tenantAccountCreationsIntroLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantAccountCreationsIntroLinksCountByContentImageBlockRights</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantAccountCreationsIntroLinks.TenantAccountCreationsIntroLinksIterator</function-class>
+		<function-signature>java.lang.String tenantAccountCreationsIntroLinksCountByContentImageBlockRights(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>contentImageBlockRightsHasTenantAccountCreationsIntroLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantAccountCreationsIntroLinks.TenantAccountCreationsIntroLinksIterator</function-class>
+		<function-signature>java.lang.Boolean contentImageBlockRightsHasTenantAccountCreationsIntroLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantAccountCreationsIntroLinksCountByTenantAccountCreations</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantAccountCreationsIntroLinks.TenantAccountCreationsIntroLinksIterator</function-class>
+		<function-signature>java.lang.String tenantAccountCreationsIntroLinksCountByTenantAccountCreations(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantAccountCreationsHasTenantAccountCreationsIntroLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantAccountCreationsIntroLinks.TenantAccountCreationsIntroLinksIterator</function-class>
+		<function-signature>java.lang.Boolean tenantAccountCreationsHasTenantAccountCreationsIntroLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>tenantDuaListsCount</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantDuaLists.TenantDuaListsIterator</function-class>
+		<function-signature>java.lang.String tenantDuaListsCount()</function-signature>
+	</function>
+
+	<function>
+		<name>tenantDuaListsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantDuaLists.TenantDuaListsIterator</function-class>
+		<function-signature>java.lang.String tenantDuaListsExists(java.lang.String)</function-signature>
 	</function>
 
 	<function>
