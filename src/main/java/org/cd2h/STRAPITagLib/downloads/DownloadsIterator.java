@@ -45,6 +45,7 @@ public class DownloadsIterator extends STRAPITagLibBodyTagSupport {
 			if (crs.next()) {
 				count = crs.getInt(1);
 			}
+			crs.close();
 			stat.close();
 		} catch (SQLException e) {
 			log.error("JDBC error generating Downloads iterator", e);
@@ -69,6 +70,7 @@ public class DownloadsIterator extends STRAPITagLibBodyTagSupport {
 			if (crs.next()) {
 				count = crs.getInt(1);
 			}
+			crs.close();
 			stat.close();
 		} catch (SQLException e) {
 			log.error("JDBC error generating Downloads iterator", e);
@@ -105,8 +107,10 @@ public class DownloadsIterator extends STRAPITagLibBodyTagSupport {
 
             if ( rs != null && rs.next() ) {
                 ID = rs.getInt(1);
-                if (var != null)
+                if (var != null) {
                     pageContext.setAttribute(var, this);
+                    pageContext.setAttribute(var+"Count", ++rsCount);
+                }
                 return EVAL_BODY_INCLUDE;
             }
         } catch (SQLException e) {
@@ -168,6 +172,7 @@ public class DownloadsIterator extends STRAPITagLibBodyTagSupport {
         try {
             if ( rs != null && rs.next() ) {
                 ID = rs.getInt(1);
+                pageContext.setAttribute(var+"Count", ++rsCount);
                 return EVAL_BODY_AGAIN;
             }
         } catch (SQLException e) {

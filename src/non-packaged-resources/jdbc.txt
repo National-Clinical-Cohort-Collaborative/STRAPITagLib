@@ -186,6 +186,27 @@ database: strapitaglib	uid: null
 			attribute: publishedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: createdById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: updatedById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+		entity: CovidExtensions	uid: null
+			child CovidExtensionsFaqsLinks
+			child CovidExtensionsFileLinkagesLinks
+			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: title	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: textBlock1	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: createdAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: updatedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: publishedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: createdById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: updatedById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+		entity: CovidExtensionsFaqsLinks	uid: null
+			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: covidExtensionId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: faqId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: faqOrder	uid: null	type: double	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+		entity: CovidExtensionsFileLinkagesLinks	uid: null
+			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: covidExtensionId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: fileLinkageId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: fileLinkageOrder	uid: null	type: double	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 		entity: DomainTeams	uid: null
 			child DomainTeamsLeadsLinks
 			child DomainTeamsYouTubeVideosLinks
@@ -420,6 +441,7 @@ database: strapitaglib	uid: null
 			attribute: faqId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: faqOrder	uid: null	type: double	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 		entity: Faqs	uid: null
+			child CovidExtensionsFaqsLinks
 			child FaqListsAnalyticsFaqsLinks
 			child FaqListsDomainFaqsLinks
 			child FaqListsEnclaveFaqsLinks
@@ -446,6 +468,16 @@ database: strapitaglib	uid: null
 			attribute: createdById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: updatedById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: label	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+		entity: FileLinkages	uid: null
+			child CovidExtensionsFileLinkagesLinks
+			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: label	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: description	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: createdAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: updatedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: publishedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: createdById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: updatedById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 		entity: Files	uid: null
 			child FilesFolderLinks
 			child FilesRelatedMorphs
@@ -1400,6 +1432,8 @@ database: strapitaglib	uid: null
 		source entity: ContentImageBlockRights	target entity: TenantResearcherEssentialsGovernanceBlockLinks	uid: null
 		source entity: ContentImageBlockRights	target entity: ToolsToolLinks	uid: null
 		source entity: ContentImageBlockRights	target entity: WorkstreamsIntroLinks	uid: null
+		source entity: CovidExtensions	target entity: CovidExtensionsFaqsLinks	uid: null
+		source entity: CovidExtensions	target entity: CovidExtensionsFileLinkagesLinks	uid: null
 		source entity: DomainTeams	target entity: DomainTeamsLeadsLinks	uid: null
 		source entity: DomainTeams	target entity: DomainTeamsYouTubeVideosLinks	uid: null
 		source entity: DomainTeams	target entity: DomainsCrossCuttingTeamsLinks	uid: null
@@ -1420,6 +1454,7 @@ database: strapitaglib	uid: null
 		source entity: FaqLists	target entity: FaqListsHarmonizationFaqsLinks	uid: null
 		source entity: FaqLists	target entity: FaqListsPhenotypeFaqsLinks	uid: null
 		source entity: FaqLists	target entity: FaqListsSyntheticFaqsLinks	uid: null
+		source entity: Faqs	target entity: CovidExtensionsFaqsLinks	uid: null
 		source entity: Faqs	target entity: FaqListsAnalyticsFaqsLinks	uid: null
 		source entity: Faqs	target entity: FaqListsDomainFaqsLinks	uid: null
 		source entity: Faqs	target entity: FaqListsEnclaveFaqsLinks	uid: null
@@ -1436,6 +1471,7 @@ database: strapitaglib	uid: null
 		source entity: Faqs	target entity: TeamCreationsResourcesFaqsLinks	uid: null
 		source entity: Faqs	target entity: TeamCreationsResponsibilityFaqsLinks	uid: null
 		source entity: Faqs	target entity: WorkstreamInstancesFaqsLinks	uid: null
+		source entity: FileLinkages	target entity: CovidExtensionsFileLinkagesLinks	uid: null
 		source entity: Files	target entity: FilesFolderLinks	uid: null
 		source entity: Files	target entity: FilesRelatedMorphs	uid: null
 		source entity: Forms	target entity: FormsContentImageBlockRightsLinks	uid: null

@@ -3205,6 +3205,458 @@
 	</tag>
 
 	<tag>
+		<name>foreachCovidExtensions</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensions.CovidExtensionsIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>covidExtensions</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensions.CovidExtensions</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteCovidExtensions</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensions.CovidExtensionsDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>covidExtensionsID</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensions.CovidExtensionsID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>covidExtensionsTitle</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensions.CovidExtensionsTitle</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>title</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>covidExtensionsTextBlock1</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensions.CovidExtensionsTextBlock1</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>textBlock1</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>covidExtensionsCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensions.CovidExtensionsCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>covidExtensionsCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensions.CovidExtensionsCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>covidExtensionsUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensions.CovidExtensionsUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>covidExtensionsUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensions.CovidExtensionsUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>covidExtensionsPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensions.CovidExtensionsPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>covidExtensionsPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensions.CovidExtensionsPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>covidExtensionsCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensions.CovidExtensionsCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>covidExtensionsUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensions.CovidExtensionsUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachCovidExtensionsFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensionsFaqsLinks.CovidExtensionsFaqsLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useCovidExtensions</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useFaqs</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>covidExtensionsFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensionsFaqsLinks.CovidExtensionsFaqsLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteCovidExtensionsFaqsLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensionsFaqsLinks.CovidExtensionsFaqsLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>covidExtensionsFaqsLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensionsFaqsLinks.CovidExtensionsFaqsLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>covidExtensionsFaqsLinksCovidExtensionId</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensionsFaqsLinks.CovidExtensionsFaqsLinksCovidExtensionId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>covidExtensionId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>covidExtensionsFaqsLinksFaqId</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensionsFaqsLinks.CovidExtensionsFaqsLinksFaqId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>covidExtensionsFaqsLinksFaqOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensionsFaqsLinks.CovidExtensionsFaqsLinksFaqOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>faqOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachCovidExtensionsFileLinkagesLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensionsFileLinkagesLinks.CovidExtensionsFileLinkagesLinksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useCovidExtensions</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>useFileLinkages</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+	</tag>
+
+	<tag>
+		<name>covidExtensionsFileLinkagesLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensionsFileLinkagesLinks.CovidExtensionsFileLinkagesLinks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteCovidExtensionsFileLinkagesLinks</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensionsFileLinkagesLinks.CovidExtensionsFileLinkagesLinksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>covidExtensionsFileLinkagesLinksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensionsFileLinkagesLinks.CovidExtensionsFileLinkagesLinksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>covidExtensionsFileLinkagesLinksCovidExtensionId</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensionsFileLinkagesLinks.CovidExtensionsFileLinkagesLinksCovidExtensionId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>covidExtensionId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>covidExtensionsFileLinkagesLinksFileLinkageId</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensionsFileLinkagesLinks.CovidExtensionsFileLinkagesLinksFileLinkageId</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>fileLinkageId</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>covidExtensionsFileLinkagesLinksFileLinkageOrder</name>
+		<tag-class>org.cd2h.STRAPITagLib.covidExtensionsFileLinkagesLinks.CovidExtensionsFileLinkagesLinksFileLinkageOrder</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>fileLinkageOrder</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
 		<name>foreachDomainTeams</name>
 		<tag-class>org.cd2h.STRAPITagLib.domainTeams.DomainTeamsIterator</tag-class>
 		<body-content>JSP</body-content>
@@ -8016,6 +8468,204 @@
 
 		<attribute>
 			<name>label</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachFileLinkages</name>
+		<tag-class>org.cd2h.STRAPITagLib.fileLinkages.FileLinkagesIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>fileLinkages</name>
+		<tag-class>org.cd2h.STRAPITagLib.fileLinkages.FileLinkages</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteFileLinkages</name>
+		<tag-class>org.cd2h.STRAPITagLib.fileLinkages.FileLinkagesDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>fileLinkagesID</name>
+		<tag-class>org.cd2h.STRAPITagLib.fileLinkages.FileLinkagesID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>fileLinkagesLabel</name>
+		<tag-class>org.cd2h.STRAPITagLib.fileLinkages.FileLinkagesLabel</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>label</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>fileLinkagesDescription</name>
+		<tag-class>org.cd2h.STRAPITagLib.fileLinkages.FileLinkagesDescription</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>description</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>fileLinkagesCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.fileLinkages.FileLinkagesCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>fileLinkagesCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.fileLinkages.FileLinkagesCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>fileLinkagesUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.fileLinkages.FileLinkagesUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>fileLinkagesUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.fileLinkages.FileLinkagesUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>fileLinkagesPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.fileLinkages.FileLinkagesPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>fileLinkagesPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.fileLinkages.FileLinkagesPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>fileLinkagesCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.fileLinkages.FileLinkagesCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>fileLinkagesUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.fileLinkages.FileLinkagesUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
 			<required>false</required>
 			<rtexprvalue>true</rtexprvalue>
 		</attribute>
@@ -26640,6 +27290,90 @@
 	</function>
 
 	<function>
+		<name>covidExtensionsCount</name>
+		<function-class>org.cd2h.STRAPITagLib.covidExtensions.CovidExtensionsIterator</function-class>
+		<function-signature>java.lang.String covidExtensionsCount()</function-signature>
+	</function>
+
+	<function>
+		<name>covidExtensionsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.covidExtensions.CovidExtensionsIterator</function-class>
+		<function-signature>java.lang.String covidExtensionsExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>covidExtensionsFaqsLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.covidExtensionsFaqsLinks.CovidExtensionsFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String covidExtensionsFaqsLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>covidExtensionsFaqsLinksCountByCovidExtensions</name>
+		<function-class>org.cd2h.STRAPITagLib.covidExtensionsFaqsLinks.CovidExtensionsFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String covidExtensionsFaqsLinksCountByCovidExtensions(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>covidExtensionsHasCovidExtensionsFaqsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.covidExtensionsFaqsLinks.CovidExtensionsFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean covidExtensionsHasCovidExtensionsFaqsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>covidExtensionsFaqsLinksCountByFaqs</name>
+		<function-class>org.cd2h.STRAPITagLib.covidExtensionsFaqsLinks.CovidExtensionsFaqsLinksIterator</function-class>
+		<function-signature>java.lang.String covidExtensionsFaqsLinksCountByFaqs(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>faqsHasCovidExtensionsFaqsLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.covidExtensionsFaqsLinks.CovidExtensionsFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean faqsHasCovidExtensionsFaqsLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>covidExtensionsFaqsExists</name>
+		<function-class>org.cd2h.STRAPITagLib.covidExtensionsFaqsLinks.CovidExtensionsFaqsLinksIterator</function-class>
+		<function-signature>java.lang.Boolean covidExtensionsFaqsExists(java.lang.String, java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>covidExtensionsFileLinkagesLinksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.covidExtensionsFileLinkagesLinks.CovidExtensionsFileLinkagesLinksIterator</function-class>
+		<function-signature>java.lang.String covidExtensionsFileLinkagesLinksExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>covidExtensionsFileLinkagesLinksCountByCovidExtensions</name>
+		<function-class>org.cd2h.STRAPITagLib.covidExtensionsFileLinkagesLinks.CovidExtensionsFileLinkagesLinksIterator</function-class>
+		<function-signature>java.lang.String covidExtensionsFileLinkagesLinksCountByCovidExtensions(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>covidExtensionsHasCovidExtensionsFileLinkagesLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.covidExtensionsFileLinkagesLinks.CovidExtensionsFileLinkagesLinksIterator</function-class>
+		<function-signature>java.lang.Boolean covidExtensionsHasCovidExtensionsFileLinkagesLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>covidExtensionsFileLinkagesLinksCountByFileLinkages</name>
+		<function-class>org.cd2h.STRAPITagLib.covidExtensionsFileLinkagesLinks.CovidExtensionsFileLinkagesLinksIterator</function-class>
+		<function-signature>java.lang.String covidExtensionsFileLinkagesLinksCountByFileLinkages(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>fileLinkagesHasCovidExtensionsFileLinkagesLinks</name>
+		<function-class>org.cd2h.STRAPITagLib.covidExtensionsFileLinkagesLinks.CovidExtensionsFileLinkagesLinksIterator</function-class>
+		<function-signature>java.lang.Boolean fileLinkagesHasCovidExtensionsFileLinkagesLinks(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>covidExtensionsFileLinkagesExists</name>
+		<function-class>org.cd2h.STRAPITagLib.covidExtensionsFileLinkagesLinks.CovidExtensionsFileLinkagesLinksIterator</function-class>
+		<function-signature>java.lang.Boolean covidExtensionsFileLinkagesExists(java.lang.String, java.lang.String)</function-signature>
+	</function>
+
+	<function>
 		<name>domainTeamsCount</name>
 		<function-class>org.cd2h.STRAPITagLib.domainTeams.DomainTeamsIterator</function-class>
 		<function-signature>java.lang.String domainTeamsCount()</function-signature>
@@ -27327,6 +28061,18 @@
 		<name>faqsExists</name>
 		<function-class>org.cd2h.STRAPITagLib.faqs.FaqsIterator</function-class>
 		<function-signature>java.lang.String faqsExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>fileLinkagesCount</name>
+		<function-class>org.cd2h.STRAPITagLib.fileLinkages.FileLinkagesIterator</function-class>
+		<function-signature>java.lang.String fileLinkagesCount()</function-signature>
+	</function>
+
+	<function>
+		<name>fileLinkagesExists</name>
+		<function-class>org.cd2h.STRAPITagLib.fileLinkages.FileLinkagesIterator</function-class>
+		<function-signature>java.lang.String fileLinkagesExists(java.lang.String)</function-signature>
 	</function>
 
 	<function>

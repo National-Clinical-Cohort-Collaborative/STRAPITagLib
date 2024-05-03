@@ -18,6 +18,9 @@
     <li><a href="<util:applicationRoot/>/contentImageBlockLefts/list.jsp" />ContentImageBlockLefts list</a></li>
     <li><a href="<util:applicationRoot/>/contentImageBlockRights/list.jsp" />ContentImageBlockRights list</a></li>
     <li><a href="<util:applicationRoot/>/contributors/list.jsp" />Contributors list</a></li>
+    <li><a href="<util:applicationRoot/>/covidExtensions/list.jsp" />CovidExtensions list</a></li>
+    <li><a href="<util:applicationRoot/>/covidExtensionsFaqsLinks/list.jsp" />CovidExtensionsFaqsLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/covidExtensionsFileLinkagesLinks/list.jsp" />CovidExtensionsFileLinkagesLinks list</a></li>
     <li><a href="<util:applicationRoot/>/domainTeams/list.jsp" />DomainTeams list</a></li>
     <li><a href="<util:applicationRoot/>/domainTeamsLeadsLinks/list.jsp" />DomainTeamsLeadsLinks list</a></li>
     <li><a href="<util:applicationRoot/>/domainTeamsYouTubeVideosLinks/list.jsp" />DomainTeamsYouTubeVideosLinks list</a></li>
@@ -46,6 +49,7 @@
     <li><a href="<util:applicationRoot/>/faqListsPhenotypeFaqsLinks/list.jsp" />FaqListsPhenotypeFaqsLinks list</a></li>
     <li><a href="<util:applicationRoot/>/faqListsSyntheticFaqsLinks/list.jsp" />FaqListsSyntheticFaqsLinks list</a></li>
     <li><a href="<util:applicationRoot/>/faqs/list.jsp" />Faqs list</a></li>
+    <li><a href="<util:applicationRoot/>/fileLinkages/list.jsp" />FileLinkages list</a></li>
     <li><a href="<util:applicationRoot/>/files/list.jsp" />Files list</a></li>
     <li><a href="<util:applicationRoot/>/filesFolderLinks/list.jsp" />FilesFolderLinks list</a></li>
     <li><a href="<util:applicationRoot/>/filesRelatedMorphs/list.jsp" />FilesRelatedMorphs list</a></li>
