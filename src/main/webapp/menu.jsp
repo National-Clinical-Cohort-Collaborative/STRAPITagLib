@@ -127,6 +127,7 @@
     <li><a href="<util:applicationRoot/>/tenantAccountCreationsIntroLinks/list.jsp" />TenantAccountCreationsIntroLinks list</a></li>
     <li><a href="<util:applicationRoot/>/tenantDuaLists/list.jsp" />TenantDuaLists list</a></li>
     <li><a href="<util:applicationRoot/>/tenantDurRequests/list.jsp" />TenantDurRequests list</a></li>
+    <li><a href="<util:applicationRoot/>/tenantFooters/list.jsp" />TenantFooters list</a></li>
     <li><a href="<util:applicationRoot/>/tenantInstitutionalEssentials/list.jsp" />TenantInstitutionalEssentials list</a></li>
     <li><a href="<util:applicationRoot/>/tenantInstitutionalEssentialsJoinBlockLinks/list.jsp" />TenantInstitutionalEssentialsJoinBlockLinks list</a></li>
     <li><a href="<util:applicationRoot/>/tenantInstitutionalEssentialsNavTilesLinks/list.jsp" />TenantInstitutionalEssentialsNavTilesLinks list</a></li>
