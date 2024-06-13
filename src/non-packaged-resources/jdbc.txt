@@ -1194,6 +1194,17 @@ database: strapitaglib	uid: null
 			attribute: tenantInstitutionalEssentialId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: contentImageBlockRightId	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: contentImageBlockRightOrder	uid: null	type: double	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+		entity: TenantProfiles	uid: null
+			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: blurb	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: description	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: createdAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: updatedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: publishedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: createdById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: updatedById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: label	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: url	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 		entity: TenantResearcherEssentials	uid: null
 			child TenantResearcherEssentialsAccessBlockLinks
 			child TenantResearcherEssentialsDomainBlockLinks
@@ -1234,6 +1245,15 @@ database: strapitaglib	uid: null
 			attribute: name	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: quote	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: author	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: createdAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: updatedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: publishedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: createdById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: updatedById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+		entity: TextBlocks	uid: null
+			attribute: ID	uid: null	type: int	mandatory: true	primary: true	auto-increment: true	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: label	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: content	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: createdAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: updatedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: publishedAt	uid: null	type: Timestamp	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null

@@ -132,6 +132,7 @@
     <li><a href="<util:applicationRoot/>/tenantInstitutionalEssentialsJoinBlockLinks/list.jsp" />TenantInstitutionalEssentialsJoinBlockLinks list</a></li>
     <li><a href="<util:applicationRoot/>/tenantInstitutionalEssentialsNavTilesLinks/list.jsp" />TenantInstitutionalEssentialsNavTilesLinks list</a></li>
     <li><a href="<util:applicationRoot/>/tenantInstitutionalEssentialsStepLinks/list.jsp" />TenantInstitutionalEssentialsStepLinks list</a></li>
+    <li><a href="<util:applicationRoot/>/tenantProfiles/list.jsp" />TenantProfiles list</a></li>
     <li><a href="<util:applicationRoot/>/tenantResearcherEssentials/list.jsp" />TenantResearcherEssentials list</a></li>
     <li><a href="<util:applicationRoot/>/tenantResearcherEssentialsAccessBlockLinks/list.jsp" />TenantResearcherEssentialsAccessBlockLinks list</a></li>
     <li><a href="<util:applicationRoot/>/tenantResearcherEssentialsDomainBlockLinks/list.jsp" />TenantResearcherEssentialsDomainBlockLinks list</a></li>
@@ -139,6 +140,7 @@
     <li><a href="<util:applicationRoot/>/tenantResearcherEssentialsJoinBlockLinks/list.jsp" />TenantResearcherEssentialsJoinBlockLinks list</a></li>
     <li><a href="<util:applicationRoot/>/tenantResearcherEssentialsNavTilesLinks/list.jsp" />TenantResearcherEssentialsNavTilesLinks list</a></li>
     <li><a href="<util:applicationRoot/>/testimonials/list.jsp" />Testimonials list</a></li>
+    <li><a href="<util:applicationRoot/>/textBlocks/list.jsp" />TextBlocks list</a></li>
     <li><a href="<util:applicationRoot/>/tools/list.jsp" />Tools list</a></li>
     <li><a href="<util:applicationRoot/>/toolsDescriptionLinks/list.jsp" />ToolsDescriptionLinks list</a></li>
     <li><a href="<util:applicationRoot/>/toolsToolLinks/list.jsp" />ToolsToolLinks list</a></li>

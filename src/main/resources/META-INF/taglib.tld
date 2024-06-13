@@ -23005,6 +23005,228 @@
 	</tag>
 
 	<tag>
+		<name>foreachTenantProfiles</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantProfiles.TenantProfilesIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantProfiles</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantProfiles.TenantProfiles</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteTenantProfiles</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantProfiles.TenantProfilesDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantProfilesID</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantProfiles.TenantProfilesID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantProfilesBlurb</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantProfiles.TenantProfilesBlurb</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>blurb</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantProfilesDescription</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantProfiles.TenantProfilesDescription</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>description</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantProfilesCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantProfiles.TenantProfilesCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantProfilesCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantProfiles.TenantProfilesCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantProfilesUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantProfiles.TenantProfilesUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantProfilesUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantProfiles.TenantProfilesUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantProfilesPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantProfiles.TenantProfilesPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantProfilesPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantProfiles.TenantProfilesPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantProfilesCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantProfiles.TenantProfilesCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantProfilesUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantProfiles.TenantProfilesUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantProfilesLabel</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantProfiles.TenantProfilesLabel</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>label</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantProfilesUrl</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantProfiles.TenantProfilesUrl</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>url</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
 		<name>foreachTenantResearcherEssentials</name>
 		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentials.TenantResearcherEssentialsIterator</tag-class>
 		<body-content>JSP</body-content>
@@ -23978,6 +24200,204 @@
 	<tag>
 		<name>testimonialsUpdatedById</name>
 		<tag-class>org.cd2h.STRAPITagLib.testimonials.TestimonialsUpdatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>foreachTextBlocks</name>
+		<tag-class>org.cd2h.STRAPITagLib.textBlocks.TextBlocksIterator</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>true</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>sortCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>filterCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>limitCriteria</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>textBlocks</name>
+		<tag-class>org.cd2h.STRAPITagLib.textBlocks.TextBlocks</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>var</name>
+			<required>false</required>
+			<rtexprvalue>false</rtexprvalue>
+		</attribute>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>deleteTextBlocks</name>
+		<tag-class>org.cd2h.STRAPITagLib.textBlocks.TextBlocksDeleter</tag-class>
+		<body-content>JSP</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>textBlocksID</name>
+		<tag-class>org.cd2h.STRAPITagLib.textBlocks.TextBlocksID</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>ID</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>textBlocksLabel</name>
+		<tag-class>org.cd2h.STRAPITagLib.textBlocks.TextBlocksLabel</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>label</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>textBlocksContent</name>
+		<tag-class>org.cd2h.STRAPITagLib.textBlocks.TextBlocksContent</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>content</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>textBlocksCreatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.textBlocks.TextBlocksCreatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>textBlocksCreatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.textBlocks.TextBlocksCreatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>textBlocksUpdatedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.textBlocks.TextBlocksUpdatedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>textBlocksUpdatedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.textBlocks.TextBlocksUpdatedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>updatedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>textBlocksPublishedAt</name>
+		<tag-class>org.cd2h.STRAPITagLib.textBlocks.TextBlocksPublishedAt</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>textBlocksPublishedAtToNow</name>
+		<tag-class>org.cd2h.STRAPITagLib.textBlocks.TextBlocksPublishedAtToNow</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>publishedAt</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>textBlocksCreatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.textBlocks.TextBlocksCreatedById</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>createdById</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>textBlocksUpdatedById</name>
+		<tag-class>org.cd2h.STRAPITagLib.textBlocks.TextBlocksUpdatedById</tag-class>
 		<body-content>empty</body-content>
 
 		<attribute>
@@ -30236,6 +30656,18 @@
 	</function>
 
 	<function>
+		<name>tenantProfilesCount</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantProfiles.TenantProfilesIterator</function-class>
+		<function-signature>java.lang.String tenantProfilesCount()</function-signature>
+	</function>
+
+	<function>
+		<name>tenantProfilesExists</name>
+		<function-class>org.cd2h.STRAPITagLib.tenantProfiles.TenantProfilesIterator</function-class>
+		<function-signature>java.lang.String tenantProfilesExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
 		<name>tenantResearcherEssentialsCount</name>
 		<function-class>org.cd2h.STRAPITagLib.tenantResearcherEssentials.TenantResearcherEssentialsIterator</function-class>
 		<function-signature>java.lang.String tenantResearcherEssentialsCount()</function-signature>
@@ -30425,6 +30857,18 @@
 		<name>testimonialsExists</name>
 		<function-class>org.cd2h.STRAPITagLib.testimonials.TestimonialsIterator</function-class>
 		<function-signature>java.lang.String testimonialsExists(java.lang.String)</function-signature>
+	</function>
+
+	<function>
+		<name>textBlocksCount</name>
+		<function-class>org.cd2h.STRAPITagLib.textBlocks.TextBlocksIterator</function-class>
+		<function-signature>java.lang.String textBlocksCount()</function-signature>
+	</function>
+
+	<function>
+		<name>textBlocksExists</name>
+		<function-class>org.cd2h.STRAPITagLib.textBlocks.TextBlocksIterator</function-class>
+		<function-signature>java.lang.String textBlocksExists(java.lang.String)</function-signature>
 	</function>
 
 	<function>
