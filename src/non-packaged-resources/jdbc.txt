@@ -1205,6 +1205,10 @@ database: strapitaglib	uid: null
 			attribute: updatedById	uid: null	type: int	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: label	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 			attribute: url	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: footerCite	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: footerCredit	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: footerSignup	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
+			attribute: footerSocial	uid: null	type: String	mandatory: false	primary: false	auto-increment: false	remarks: 	counter: false	sequence: false	sequence name: null
 		entity: TenantResearcherEssentials	uid: null
 			child TenantResearcherEssentialsAccessBlockLinks
 			child TenantResearcherEssentialsDomainBlockLinks

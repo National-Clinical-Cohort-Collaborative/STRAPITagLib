@@ -1550,6 +1550,10 @@ src/main/java/org/cd2h/STRAPITagLib/tenantProfiles/TenantProfilesCreatedAtToNow.
 src/main/java/org/cd2h/STRAPITagLib/tenantProfiles/TenantProfilesCreatedById.java -text
 src/main/java/org/cd2h/STRAPITagLib/tenantProfiles/TenantProfilesDeleter.java -text
 src/main/java/org/cd2h/STRAPITagLib/tenantProfiles/TenantProfilesDescription.java -text
+src/main/java/org/cd2h/STRAPITagLib/tenantProfiles/TenantProfilesFooterCite.java -text
+src/main/java/org/cd2h/STRAPITagLib/tenantProfiles/TenantProfilesFooterCredit.java -text
+src/main/java/org/cd2h/STRAPITagLib/tenantProfiles/TenantProfilesFooterSignup.java -text
+src/main/java/org/cd2h/STRAPITagLib/tenantProfiles/TenantProfilesFooterSocial.java -text
 src/main/java/org/cd2h/STRAPITagLib/tenantProfiles/TenantProfilesID.java -text
 src/main/java/org/cd2h/STRAPITagLib/tenantProfiles/TenantProfilesIterator.java -text
 src/main/java/org/cd2h/STRAPITagLib/tenantProfiles/TenantProfilesLabel.java -text

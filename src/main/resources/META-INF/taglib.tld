@@ -23227,6 +23227,54 @@
 	</tag>
 
 	<tag>
+		<name>tenantProfilesFooterCite</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantProfiles.TenantProfilesFooterCite</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>footerCite</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantProfilesFooterCredit</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantProfiles.TenantProfilesFooterCredit</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>footerCredit</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantProfilesFooterSignup</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantProfiles.TenantProfilesFooterSignup</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>footerSignup</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
+		<name>tenantProfilesFooterSocial</name>
+		<tag-class>org.cd2h.STRAPITagLib.tenantProfiles.TenantProfilesFooterSocial</tag-class>
+		<body-content>empty</body-content>
+
+		<attribute>
+			<name>footerSocial</name>
+			<required>false</required>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+	</tag>
+
+	<tag>
 		<name>foreachTenantResearcherEssentials</name>
 		<tag-class>org.cd2h.STRAPITagLib.tenantResearcherEssentials.TenantResearcherEssentialsIterator</tag-class>
 		<body-content>JSP</body-content>

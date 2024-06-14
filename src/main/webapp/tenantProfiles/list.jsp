@@ -25,6 +25,10 @@
 									<th>UpdatedById</th>
 									<th>Label</th>
 									<th>Url</th>
+									<th>FooterCite</th>
+									<th>FooterCredit</th>
+									<th>FooterSignup</th>
+									<th>FooterSocial</th>
 									<th></th>
 								</tr>
 							</thead>
@@ -42,6 +46,10 @@
 											<td><strapi:tenantProfilesUpdatedById /></td>
 											<td><strapi:tenantProfilesLabel /></td>
 											<td><strapi:tenantProfilesUrl /></td>
+											<td><strapi:tenantProfilesFooterCite /></td>
+											<td><strapi:tenantProfilesFooterCredit /></td>
+											<td><strapi:tenantProfilesFooterSignup /></td>
+											<td><strapi:tenantProfilesFooterSocial /></td>
 											<td><a href="../tenantProfiles/edit.jsp?ID=<strapi:tenantProfilesID />">edit</a></td>
 											<td><a href="../tenantProfiles/delete.jsp?ID=<strapi:tenantProfilesID />">delete</a></td>
 										</tr>
@@ -69,6 +77,10 @@
 		<strapi:tenantProfilesUpdatedById />
 		<strapi:tenantProfilesLabel />
 		<strapi:tenantProfilesUrl />
+		<strapi:tenantProfilesFooterCite />
+		<strapi:tenantProfilesFooterCredit />
+		<strapi:tenantProfilesFooterSignup />
+		<strapi:tenantProfilesFooterSocial />
 			<c:if test="${ ! idIter.isLast() }" >, </c:if>					</strapi:tenantProfiles>
 			</strapi:foreachTenantProfiles>
                 </div>

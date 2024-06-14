@@ -27,6 +27,10 @@ public class TenantProfilesDeleter extends STRAPITagLibBodyTagSupport {
     int updatedById = 0;
     String label = null;
     String url = null;
+    String footerCite = null;
+    String footerCredit = null;
+    String footerSignup = null;
+    String footerSocial = null;
 	Vector<STRAPITagLibTagSupport> parentEntities = new Vector<STRAPITagLibTagSupport>();
 
 	private static final Logger log = LogManager.getLogger(TenantProfilesDeleter.class);

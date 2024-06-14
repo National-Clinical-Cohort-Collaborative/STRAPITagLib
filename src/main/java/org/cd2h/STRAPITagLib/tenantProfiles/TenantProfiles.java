@@ -38,6 +38,10 @@ public class TenantProfiles extends STRAPITagLibTagSupport {
 	int updatedById = 0;
 	String label = null;
 	String url = null;
+	String footerCite = null;
+	String footerCredit = null;
+	String footerSignup = null;
+	String footerSocial = null;
 
 	private String var = null;
 
@@ -61,7 +65,7 @@ public class TenantProfiles extends STRAPITagLibTagSupport {
 			} else {
 				// an iterator or ID was provided as an attribute - we need to load a TenantProfiles from the database
 				boolean found = false;
-				PreparedStatement stmt = getConnection().prepareStatement("select blurb,description,created_at,updated_at,published_at,created_by_id,updated_by_id,label,url from strapi.tenant_profiles where id = ?");
+				PreparedStatement stmt = getConnection().prepareStatement("select blurb,description,created_at,updated_at,published_at,created_by_id,updated_by_id,label,url,footer_cite,footer_credit,footer_signup,footer_social from strapi.tenant_profiles where id = ?");
 				stmt.setInt(1,ID);
 				ResultSet rs = stmt.executeQuery();
 				while (rs.next()) {
@@ -83,6 +87,14 @@ public class TenantProfiles extends STRAPITagLibTagSupport {
 						label = rs.getString(8);
 					if (url == null)
 						url = rs.getString(9);
+					if (footerCite == null)
+						footerCite = rs.getString(10);
+					if (footerCredit == null)
+						footerCredit = rs.getString(11);
+					if (footerSignup == null)
+						footerSignup = rs.getString(12);
+					if (footerSocial == null)
+						footerSocial = rs.getString(13);
 					found = true;
 				}
 				rs.close();
@@ -162,7 +174,7 @@ public class TenantProfiles extends STRAPITagLibTagSupport {
 				}
 			}
 			if (commitNeeded) {
-				PreparedStatement stmt = getConnection().prepareStatement("update strapi.tenant_profiles set blurb = ?, description = ?, created_at = ?, updated_at = ?, published_at = ?, created_by_id = ?, updated_by_id = ?, label = ?, url = ? where id = ? ");
+				PreparedStatement stmt = getConnection().prepareStatement("update strapi.tenant_profiles set blurb = ?, description = ?, created_at = ?, updated_at = ?, published_at = ?, created_by_id = ?, updated_by_id = ?, label = ?, url = ?, footer_cite = ?, footer_credit = ?, footer_signup = ?, footer_social = ? where id = ? ");
 				stmt.setString( 1, blurb );
 				stmt.setString( 2, description );
 				stmt.setTimestamp( 3, createdAt );
@@ -172,7 +184,11 @@ public class TenantProfiles extends STRAPITagLibTagSupport {
 				stmt.setInt( 7, updatedById );
 				stmt.setString( 8, label );
 				stmt.setString( 9, url );
-				stmt.setInt(10,ID);
+				stmt.setString( 10, footerCite );
+				stmt.setString( 11, footerCredit );
+				stmt.setString( 12, footerSignup );
+				stmt.setString( 13, footerSocial );
+				stmt.setInt(14,ID);
 				stmt.executeUpdate();
 				stmt.close();
 			}
@@ -217,7 +233,19 @@ public class TenantProfiles extends STRAPITagLibTagSupport {
 		if (url == null){
 			url = "";
 		}
-		PreparedStatement stmt = getConnection().prepareStatement("insert into strapi.tenant_profiles(blurb,description,created_at,updated_at,published_at,created_by_id,updated_by_id,label,url) values (?,?,?,?,?,?,?,?,?)", java.sql.Statement.RETURN_GENERATED_KEYS);
+		if (footerCite == null){
+			footerCite = "";
+		}
+		if (footerCredit == null){
+			footerCredit = "";
+		}
+		if (footerSignup == null){
+			footerSignup = "";
+		}
+		if (footerSocial == null){
+			footerSocial = "";
+		}
+		PreparedStatement stmt = getConnection().prepareStatement("insert into strapi.tenant_profiles(blurb,description,created_at,updated_at,published_at,created_by_id,updated_by_id,label,url,footer_cite,footer_credit,footer_signup,footer_social) values (?,?,?,?,?,?,?,?,?,?,?,?,?)", java.sql.Statement.RETURN_GENERATED_KEYS);
 		stmt.setString(1,blurb);
 		stmt.setString(2,description);
 		stmt.setTimestamp(3,createdAt);
@@ -227,6 +255,10 @@ public class TenantProfiles extends STRAPITagLibTagSupport {
 		stmt.setInt(7,updatedById);
 		stmt.setString(8,label);
 		stmt.setString(9,url);
+		stmt.setString(10,footerCite);
+		stmt.setString(11,footerCredit);
+		stmt.setString(12,footerSignup);
+		stmt.setString(13,footerSocial);
 		stmt.executeUpdate();
 
 		// snag the new auto-increment value
@@ -399,6 +431,70 @@ public class TenantProfiles extends STRAPITagLibTagSupport {
 		return url;
 	}
 
+	public String getFooterCite () {
+		if (commitNeeded)
+			return "";
+		else
+			return footerCite;
+	}
+
+	public void setFooterCite (String footerCite) {
+		this.footerCite = footerCite;
+		commitNeeded = true;
+	}
+
+	public String getActualFooterCite () {
+		return footerCite;
+	}
+
+	public String getFooterCredit () {
+		if (commitNeeded)
+			return "";
+		else
+			return footerCredit;
+	}
+
+	public void setFooterCredit (String footerCredit) {
+		this.footerCredit = footerCredit;
+		commitNeeded = true;
+	}
+
+	public String getActualFooterCredit () {
+		return footerCredit;
+	}
+
+	public String getFooterSignup () {
+		if (commitNeeded)
+			return "";
+		else
+			return footerSignup;
+	}
+
+	public void setFooterSignup (String footerSignup) {
+		this.footerSignup = footerSignup;
+		commitNeeded = true;
+	}
+
+	public String getActualFooterSignup () {
+		return footerSignup;
+	}
+
+	public String getFooterSocial () {
+		if (commitNeeded)
+			return "";
+		else
+			return footerSocial;
+	}
+
+	public void setFooterSocial (String footerSocial) {
+		this.footerSocial = footerSocial;
+		commitNeeded = true;
+	}
+
+	public String getActualFooterSocial () {
+		return footerSocial;
+	}
+
 	public String getVar () {
 		return var;
 	}
@@ -491,6 +587,38 @@ public class TenantProfiles extends STRAPITagLibTagSupport {
 		}
 	}
 
+	public static String footerCiteValue() throws JspException {
+		try {
+			return currentInstance.getFooterCite();
+		} catch (Exception e) {
+			 throw new JspTagException("Error in tag function footerCiteValue()");
+		}
+	}
+
+	public static String footerCreditValue() throws JspException {
+		try {
+			return currentInstance.getFooterCredit();
+		} catch (Exception e) {
+			 throw new JspTagException("Error in tag function footerCreditValue()");
+		}
+	}
+
+	public static String footerSignupValue() throws JspException {
+		try {
+			return currentInstance.getFooterSignup();
+		} catch (Exception e) {
+			 throw new JspTagException("Error in tag function footerSignupValue()");
+		}
+	}
+
+	public static String footerSocialValue() throws JspException {
+		try {
+			return currentInstance.getFooterSocial();
+		} catch (Exception e) {
+			 throw new JspTagException("Error in tag function footerSocialValue()");
+		}
+	}
+
 	private void clearServiceState () {
 		ID = 0;
 		blurb = null;
@@ -502,6 +630,10 @@ public class TenantProfiles extends STRAPITagLibTagSupport {
 		updatedById = 0;
 		label = null;
 		url = null;
+		footerCite = null;
+		footerCredit = null;
+		footerSignup = null;
+		footerSocial = null;
 		newRecord = false;
 		commitNeeded = false;
 		parentEntities = new Vector<STRAPITagLibTagSupport>();

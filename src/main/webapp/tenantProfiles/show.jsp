@@ -25,6 +25,10 @@
 			<th>UpdatedById</th>
 			<th>Label</th>
 			<th>Url</th>
+			<th>FooterCite</th>
+			<th>FooterCredit</th>
+			<th>FooterSignup</th>
+			<th>FooterSocial</th>
 			</tr>
 			<tr>
 				<td><a href="edit.jsp?ID=<strapi:tenantProfilesID />"><strapi:tenantProfilesID /></a></td>
@@ -37,6 +41,10 @@
 				<td><strapi:tenantProfilesUpdatedById /></td>
 				<td><strapi:tenantProfilesLabel /></td>
 				<td><strapi:tenantProfilesUrl /></td>
+				<td><strapi:tenantProfilesFooterCite /></td>
+				<td><strapi:tenantProfilesFooterCredit /></td>
+				<td><strapi:tenantProfilesFooterSignup /></td>
+				<td><strapi:tenantProfilesFooterSocial /></td>
 			</tr>
 		</table>
 </strapi:tenantProfiles>

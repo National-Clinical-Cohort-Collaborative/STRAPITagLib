@@ -52,6 +52,22 @@
 										<input type="text" id="url" name="url" size="40" value="">
 										<br>
 
+										<label for="footerCite">FooterCite</label>
+										<input type="text" id="footerCite" name="footerCite" size="40" value="">
+										<br>
+
+										<label for="footerCredit">FooterCredit</label>
+										<input type="text" id="footerCredit" name="footerCredit" size="40" value="">
+										<br>
+
+										<label for="footerSignup">FooterSignup</label>
+										<input type="text" id="footerSignup" name="footerSignup" size="40" value="">
+										<br>
+
+										<label for="footerSocial">FooterSocial</label>
+										<input type="text" id="footerSocial" name="footerSocial" size="40" value="">
+										<br>
+
 										<input type="submit" name="submit" value="Save">
 										<input type="submit" name="submit" value="Cancel">
 									</fieldset>
@@ -77,6 +93,10 @@
 			<strapi:tenantProfilesUpdatedById updatedById = "${param.updatedById}" />
 			<strapi:tenantProfilesLabel label = "${param.label}" />
 			<strapi:tenantProfilesUrl url = "${param.url}" />
+			<strapi:tenantProfilesFooterCite footerCite = "${param.footerCite}" />
+			<strapi:tenantProfilesFooterCredit footerCredit = "${param.footerCredit}" />
+			<strapi:tenantProfilesFooterSignup footerSignup = "${param.footerSignup}" />
+			<strapi:tenantProfilesFooterSocial footerSocial = "${param.footerSocial}" />
 		</strapi:tenantProfiles>
 		<c:redirect url="list.jsp" />
 	</c:when>
